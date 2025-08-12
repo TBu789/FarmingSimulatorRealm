@@ -1,0 +1,44 @@
+# Tillo Resource Pack License (TRPL) — Version 1.0
+
+Copyright © 2025 `TBu789`
+
+**Definitionen.**
+
+* **„Resource Pack“** bezeichnet das hier lizenzierte Minecraft-Resourcepack inklusive aller Texturen, Sounds, Fonts, Metadateien und sonstiger darin enthaltener Dateien.
+* **„Server Files“** bezeichnet die serverseitigen Dateien des zugehörigen Projekts (z. B. World-Daten, Server-Plugins, Server-Konfigurationen), wie sie im Original-Repository oder Release bereitgestellt werden.
+* **„Kombinierte Veröffentlichung / Kombinierte Nutzung“** bedeutet, dass das Resource Pack nur zusammen mit den Server Files bereitgestellt, verteilt oder benutzt wird, entweder direkt gebündelt oder über einen offiziellen Server-Downloadlink, der auf das Original-Repository verweist.
+
+1. **Lizenzgewährung – eingeschränkte Nutzung**
+   Der Rechteinhaber räumt hiermit jeder natürlichen oder juristischen Person ein **nicht-ausschließliches, nicht-übertragbares, widerrufliches** Recht ein, das Resource Pack **ausschließlich** für das Spielen bzw. Betreiben des zugehörigen Servers zu verwenden, **sofern** es in kombinierter Form mit den Server Files verwendet bzw. verteilt wird.
+
+2. **Verbotene Handlungen**
+   Ohne ausdrückliche, schriftliche Genehmigung des Rechteinhabers ist Jede/r untersagt:
+
+   * das Resource Pack **allein** (separat von den Server Files) zu vervielfältigen, zu verbreiten, öffentlich bereitzustellen oder zu veröffentlichen;
+   * einzelne Dateien, Texturen, Sounds oder sonstige Inhalte aus dem Resource Pack zu extrahieren, zu kopieren, zu modifizieren, zu remixen oder in anderen Projekten/Resource Packs zu verwenden;
+   * das Resource Pack oder Teile davon kommerziell zu verwerten (zu verkaufen, zu lizenzieren oder in anderer Form zu monetarisieren) unabhängig vom Serverbetrieb;
+   * das Resource Pack in anderer Form öffentlich anzubieten, die nicht ausdrücklich einer kombinierten Veröffentlichung mit den Server Files entspricht.
+
+3. **Erlaubte Formen der Verbreitung**
+   Erlaubt ist ausschließlich:
+
+   * die Verbreitung des Resource Packs **als Teil** eines Bundles mit den Server Files (z. B. in einem Release-Archiv, in einem Installer, oder als Download-Bundle), oder
+   * das Bereitstellen des Resource Packs über einen offiziellen Server-Downloadlink (z. B. im Server-Spawn oder der Server-Website), wobei bei einer digitalen Veröffentlichung die Quelle (`https://github.com/TBu789/FarmingSimulatorRealm`) eindeutig anzugeben ist.
+     Jede andere Verbreitung ist untersagt.
+
+4. **Copyright und Hinweise**
+   Das Resource Pack bleibt geistiges Eigentum des Rechteinhabers. Alle Urheber- und Kennzeichnungsrechte sind zu wahren. In allen Kopien des Resource Packs (bei erlaubter kombinierter Verbreitung) ist dieser Copyright-Hinweis sowie ein Verweis auf diese Lizenz beizufügen.
+
+5. **Beendigung**
+   Bei Verstoß gegen §2/§3 endet die Lizenzberechtigung automatisch mit dem Verstoß. Nach Beendigung ist jede weitere Nutzung oder Verbreitung des Resource Packs untersagt und die betroffenen Kopien sind zu löschen. Der Rechteinhaber behält sich alle sonstigen rechtlichen Schritte vor.
+
+6. **Datenschutz**
+   Diese Lizenz berechtigt nicht zur Sammlung, Verarbeitung oder Veröffentlichung personenbezogener Daten Dritter. Jede Datennutzung hat im Einklang mit geltendem Datenschutzrecht (z. B. DSGVO) zu erfolgen.
+
+7. **Haftungsausschluss**
+   DAS RESOURCE PACK WIRD OHNE GEWÄHRLEISTUNG JEDWEDER ART BEREITGESTELLT. SOWEIT ERLAUBT, LEHNT DER RECHTEINHABER JEGLICHE HAFTUNG FÜR DIREKTE ODER INDIREKTE SCHÄDEN AB, DIE AUS DER BENUTZUNG ODER UNMÖGLICHKEIT DER BENUTZUNG DES RESOURCE PACKS RESULTIEREN.
+
+8. **Sonstiges**
+
+* Diese Lizenz regelt ausschließlich die Rechte am Resource Pack; sie überträgt keine Rechte an Drittinhalten, die evtl. anderer Lizenz unterliegen.
+* Kontakt für Genehmigungen oder Fragen: `Mein Discord Server -> https://discord.gg/bcTQH4TUcS`.
