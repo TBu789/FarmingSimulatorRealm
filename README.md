@@ -2,7 +2,7 @@
 ##### The official Farming Simulator Realm Source Code for self hosting
 
 > **WICHTIG:**
->Dieses Projekt steht unter der Tillo Visible Attribution License (TVAL) v1.0 — siehe LICENSE. Als Quelle anzugeben: <https://github.com/TBu789/FarmingSimulatorRealm>. Zusätzlich ist bei öffentlichem Betrieb eine sichtbare In-Game-Attribution (Tablist/Scoreboard) erforderlich. Das **RessourcePack** ist unter einer anderen Lizenz lizenziert. Dieses befindet sich in `/RessourcePack/LISCENSE.md`!
+>Dieses Projekt steht unter der Tillo Visible Attribution License (TVAL) v1.0 — siehe LICENSE. Als Quelle anzugeben: <https://github.com/TBu789/FarmingSimulatorRealm>. Zusätzlich ist bei öffentlichem Betrieb eine sichtbare In-Game-Attribution (Tablist/Scoreboard) erforderlich. Das **RessourcePack** ist unter einer anderen Lizenz lizenziert. Diese befindet sich in `/RessourcePack/LISCENSE.md`!
 
 ---
 Dies ist der offizielle Source-Code, inklusive aller Quelldateien, wie Welten und Plugins, des **Farming Simulator Realms** auf **Cytooxien**, entwickelt von TBu789/Tillo789 und vielen andern tollen Leuten.
@@ -21,6 +21,9 @@ Vor dem Hochladen auf Github wurden alle Datein die Spielerdaten beinhalten entf
 In den Dateien in `/FarmSim/world/datapacks` ist  Datapack enthalten, dass nicht von mir geschaffen wurde. Es unterliegt seiner eigenen Lizenz:
 - LeaderBoards Datapack: https://modrinth.com/datapack/leaderboards-datapack
 
+## RessourcePack
+Es wird empfohlen das dazugehörige RessourcePack zu verwenden, welches in `/RessourcePack/` vorzufinden ist.
+
 ## Mitwirkende
 Programmierung:
 - TBu789
@@ -35,7 +38,7 @@ Art / RessourcePack
 - WorldCrafter66
 
 ## Lizenz
-Die Lizenz regelt die Nutzung und weitere Veröffentlichung dieses Realms/Projektes. Sie befindet sich in der `LICENSE.md`-Datei und sollte gründlich durch gelesen werden.
+Die Lizenz regelt die Nutzung und weitere Veröffentlichung dieses Realms/Projektes. Sie befindet sich in der `LICENSE.md`-Datei und sollte gründlich durch gelesen werden. Das dazugehörige RessourcePack unterliegt der Lizenz in `/RessourcePack/LICENSE.md`
 
 ## Danksagung
 Danke an alle die bei dem Erstellen dieses Realm mit geholfen haben. Ohne euch wäre dies alles nicht möglich gewesen. Auch ein großen Dankeschön an alle Supporter und Booster, die geholfen haben diese Realm am laufen zu halten. Natürlich darf auch nicht die Spieler vergessen, die dieses Realm/Projekt erst zu etwas ganz besonderem gemacht haben.
