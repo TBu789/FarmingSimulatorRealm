@@ -2,7 +2,7 @@
 ##### The official Farming Simulator Realm Source Code for self hosting
 
 > **WICHTIG:**
->Dieses Projekt steht unter der Tillo Visible Attribution License (TVAL) v1.0 — siehe LICENSE. Als Quelle anzugeben: <https://github.com/TBu789/FarmingSimulatorRealm>. Zusätzlich ist bei öffentlichem Betrieb eine sichtbare In-Game-Attribution (Tablist/Scoreboard) erforderlich.
+>Dieses Projekt steht unter der Tillo Visible Attribution License (TVAL) v1.0 — siehe LICENSE. Als Quelle anzugeben: <https://github.com/TBu789/FarmingSimulatorRealm>. Zusätzlich ist bei öffentlichem Betrieb eine sichtbare In-Game-Attribution (Tablist/Scoreboard) erforderlich. Das **RessourcePack** ist unter einer anderen Lizenz lizenziert. Dieses befindet sich in `/RessourcePack/LISCENSE.md`!
 
 ---
 Dies ist der offizielle Source-Code, inklusive aller Quelldateien, wie Welten und Plugins, des **Farming Simulator Realms** auf **Cytooxien**, entwickelt von TBu789/Tillo789 und vielen andern tollen Leuten.
