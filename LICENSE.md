@@ -1,8 +1,3 @@
-Gern — ich habe die Lizenz jetzt angepasst und eine klare **Pflicht zur Quellenangabe mit Link** ergänzt. Ich habe die Version auf **CVAL v1.1** erhöht.
-(Unten: vollständiger Lizenztext — ersetze bitte `<DEIN NAME ODER ORGANISATION>` und `<REPOSITORY-URL>` durch deine Angaben. Ich bin keine Rechtsberatung; wenn du Rechtssicherheit brauchst, lass die finale Fassung von einem Anwalt prüfen.)
-
----
-
 # Tillo Visible Attribution License (TVAL) — Version 1.0
 
 Copyright © 2025 `TBu789`
