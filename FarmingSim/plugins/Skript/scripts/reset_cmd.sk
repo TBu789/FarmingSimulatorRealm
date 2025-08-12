@@ -1,0 +1,4 @@
+command /resetfields:
+  permission: op
+  trigger:
+    execute console command "setblock 4 -62 360 minecraft:redstone_block"

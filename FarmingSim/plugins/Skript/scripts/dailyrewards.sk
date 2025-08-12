@@ -1,0 +1,30 @@
+options:
+  reward-cooldown: 12 hours
+  reward-permission: "dailyreward.use"
+  reset-permission: "dailyreward.reset"
+
+command /dailyreward:
+  permission: none
+  permission message: &cYou are missing permission!
+  trigger:
+    if {dailyreward::%uuid of player%} is not set:
+      set {dailyreward::%uuid of player%} to now - {@reward-cooldown}
+    set {_lastClaim} to {dailyreward::%uuid of player%}
+    if difference between now and {_lastClaim} >= {@reward-cooldown}:
+      # Belohnung ausführen
+      execute console command "crate_special keygive %player% 1"
+      send "&aYou have received your daily reward! Come back tomorrow!"
+      set {dailyreward::%uuid of player%} to now
+    else:
+      set {_remaining} to {@reward-cooldown} - (difference between now and {_lastClaim})
+      send "&cYou have already recieved your daily reward! Next daily reward in %{_remaining}%"
+
+command /resetdailyreward [<offline player>]:
+  permission: {@reset-permission}
+  permission message: &cYou are missing permission!
+  trigger:
+    if arg is not set:
+      send "&cUsage: /resetdailyreward <player>"
+      stop
+    delete {dailyreward::%uuid of arg%}
+    send "&aThe cooldown for %arg% has been reset!"

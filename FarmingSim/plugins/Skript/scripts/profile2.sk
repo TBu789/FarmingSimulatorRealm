@@ -1,0 +1,26 @@
+command /profile:
+  trigger:
+    open chest inventory with 4 rows named "&b&lMy Profile" to player
+    
+    set slot 0 of player's current inventory to skull of player named "&bMy Profile"
+    set slot 1 of player's current inventory to gray stained glass pane named " "
+    set slot 2 of player's current inventory to gray stained glass pane named " "
+    set slot 3 of player's current inventory to gray stained glass pane named " "
+    set slot 4 of player's current inventory to gray stained glass pane named " "
+    set slot 5 of player's current inventory to gray stained glass pane named " "
+    set slot 6 of player's current inventory to gray stained glass pane named " "
+    set slot 7 of player's current inventory to gray stained glass pane named " "
+    set slot 8 of player's current inventory to barrier named "&cClose" with lore "&7Click to close"
+    
+    set slot 21 of player's current inventory to paper named "&aMy Stats" with lore "&7Click to view your statistics"
+    set slot 23 of player's current inventory to compass named "&eSettings" with lore "&7Click to configure your settings"
+ 
+on inventory click:
+  if name of event-inventory is "&b&lMy Profile":
+    cancel event
+    if index of event-slot is 8:
+      close player's inventory
+    if index of event-slot is 21:
+      make player execute command "statistics %player% general 0 false true"
+    if index of event-slot is 23:
+      make player execute command "settings"

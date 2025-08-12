@@ -1,0 +1,15 @@
+{
+  "enabled": true,
+  "item": {
+    "material": "PLAYER_HEAD",
+    "lore": [
+      "&#D1C9C9Click Here to remove this pet",
+      "&#D1C9C9... or all pets if you have the selector screen open.",
+      "&#D1C9C9Shift+Click to select a pet"
+    ],
+    "meta": {
+      "texture": "http://textures.minecraft.net/texture/beb588b21a6f98ad1ff4e085c552dcb050efc9cab427f46048f18fc803475f7"
+    },
+    "name": "&#B35349&lRemove Pets"
+  }
+}

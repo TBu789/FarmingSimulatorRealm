@@ -1,0 +1,43 @@
+options:
+  Prefix: "&x&5&D&F&4&5&4&lR&x&6&1&F&3&5&9&le&x&6&6&F&3&5&D&ls&x&6&A&F&2&6&2&le&x&6&E&F&2&6&7&la&x&7&3&F&1&6&B&lr&x&7&7&F&1&7&0&lc&x&7&C&F&0&7&4&lh&x&8&0&F&0&7&9&le&x&8&4&E&F&7&E&lr&x&8&9&E&F&8&2&l: "
+
+command /research:
+  permission: op
+  trigger:
+    #--Open inventory---
+    open chest inventory with 6 rows named "&x&5&D&F&4&5&4&lR&x&6&4&F&3&5&B&le&x&6&B&F&2&6&3&ls&x&7&2&F&1&6&A&le&x&7&8&F&1&7&1&la&x&7&F&F&0&7&8&lr&x&8&6&E&F&8&0&lc&x&8&D&E&E&8&7&lh" to player
+    
+    #---Top Bar---
+    set slot 8 of player's current inventory to barrier named "&cClose" #<--- Close Button
+    
+    set slot 0 of player's current inventory to gray stained glass pane named " "
+    set slot 1 of player's current inventory to gray stained glass pane named " "
+    set slot 2 of player's current inventory to gray stained glass pane named " "
+    set slot 3 of player's current inventory to gray stained glass pane named " "
+    set slot 4 of player's current inventory to gray stained glass pane named " "
+    set slot 5 of player's current inventory to gray stained glass pane named " "
+    set slot 6 of player's current inventory to gray stained glass pane named " "
+    set slot 7 of player's current inventory to gray stained glass pane named " "
+
+    #---Warps---
+    set {_rsWarp} to the placeholder "objective_scorep_{rs_warp}" for player parsed as number
+    if {_rsWarp} is 0:
+      set slot 31 of player's current inventory to compass named "&aWarps" with lore "&7Gives you access to the &a/warp&7 command!%nl% %nl%&7Cost: &a50 Level%nl%&7Time: &a1 second"
+    else:
+      set slot 31 of player's current inventory to compass named "&aWarps" with lore "&7Gives you access to the &a/warp&7 command!%nl% %nl%&cResearched!" 
+
+on inventory click:
+  if name of event-inventory is "&x&5&D&F&4&5&4&lR&x&6&4&F&3&5&B&le&x&6&B&F&2&6&3&ls&x&7&2&F&1&6&A&le&x&7&8&F&1&7&1&la&x&7&F&F&0&7&8&lr&x&8&6&E&F&8&0&lc&x&8&D&E&E&8&7&lh":
+    cancel event
+    if index of event-slot is 8:
+      close player's inventory
+    if index of event-slot is 31:
+      set {_rsWarp} to the placeholder "objective_scorep_{rs_warp}" for player parsed as number
+      if {_rsWarp} is 1:
+        stop
+      else:
+        close player's inventory
+        execute console command "xp add %player% -50 levels"
+        wait 1 seconds
+        send "%{@Prefix}%&7A Research has finished!"
+        execute console command "scoreboard players set %player% rs_warp 1"

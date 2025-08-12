@@ -1,0 +1,396 @@
+{
+  "premium_purchase": true,
+  "reloaded": false,
+  "server": {
+    "java": "21",
+    "server-information": {
+      "server-type": "Paper",
+      "minecraft-version": "1.21.4",
+      "server-build": "232",
+      "bukkit-version": "1.21.4-R0.1-SNAPSHOT",
+      "raw-version": "1.21.4-232-12d8fe0 (MC: 1.21.4)"
+    },
+    "bslib-server-version": {
+      "nms": "v1_21_R3",
+      "name": "v1_21_4"
+    },
+    "simplepets": {
+      "version": "5.0-BUILD-282",
+      "legacy-pathfinding": false
+    }
+  },
+  "plugins": [
+    "AdvancedServerList (5.6.0)",
+    "FancyNpcs (2.5.2)",
+    "FastAsyncWorldEdit (2.13.1)",
+    "InvSeePlusPlus (0.30.1)",
+    "JoinLeaveMessages (4.1)",
+    "LuckPerms (5.5.0)",
+    "Maintenance (4.3.0)",
+    "PlaceholderAPI (2.11.6)",
+    "Shopkeepers (2.23.10)",
+    "SkBee (3.11.2)",
+    "Skonic (1.2.3)",
+    "Skript (2.12.0)",
+    "TAB (5.2.5)",
+    "ViaBackwards (5.4.2)",
+    "ViaVersion (5.4.2)",
+    "skript-placeholders (1.7.0)"
+  ],
+  "loaded_addons": [
+    {
+      "addon-name": "ItemEconomy(v0.1) by: brainsynder",
+      "addon-file-name": "ItemEconomyAddon.jar",
+      "addon-modules": [
+        "Module: 'ItemEconomy' | Loaded: true | Enabled: true"
+      ]
+    }
+  ],
+  "debug_log": [
+    {
+      "time/date": "2025/08/01 | 17:47:52:392",
+      "level": "Debug",
+      "message": [
+        "Plugin is on a server that is using Mojang Mappings"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 109)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:52:396",
+      "level": "Warning",
+      "message": [
+        " *** This version is still under development any issues found please report",
+        " *** On the Github: https://tiny.bsdevelopment.org/pet-issues"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 112)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:52:424",
+      "level": "Debug",
+      "message": [
+        "Found support for version(s): [1.21.3, 1.21.4, 1.21.5]"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 126)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:52:424",
+      "level": "Debug",
+      "message": [
+        "Targeting version: 1.21.4"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 126)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:52:424",
+      "level": "Debug",
+      "message": [
+        "Setting API instance"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 141)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:52:426",
+      "level": "Debug",
+      "message": [
+        "Initializing Messages file"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 146)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:52:437",
+      "level": "Debug",
+      "message": [
+        "Initializing Config file"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 148)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:52:470",
+      "level": "Debug",
+      "message": [
+        "Plugin reloaded: false"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 154)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:52:732",
+      "level": "Debug",
+      "message": [
+        "Successfully Linked to v1_21_4 SpawnUtil Class"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 170)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:52:732",
+      "level": "Debug",
+      "message": [
+        "Initializing plugin managers"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 172)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:53:043",
+      "level": "Debug",
+      "message": [
+        "Initializing Menu Items..."
+      ],
+      "caller": "ItemManager(method: initiate() | line: 33)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:53:044",
+      "level": "Debug",
+      "message": [
+        "Loading Customizable Item Files..."
+      ],
+      "caller": "ItemManager(method: initiate() | line: 37)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:53:053",
+      "level": "Debug",
+      "message": [
+        "Files have been loaded."
+      ],
+      "caller": "ItemManager(method: initiate() | line: 66)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:53:056",
+      "level": "Debug",
+      "message": [
+        "Initializing Inventories..."
+      ],
+      "caller": "PetCore(method: onEnable() | line: 172)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:53:056",
+      "level": "Debug",
+      "message": [
+        "Loading Customizable Inventories Files..."
+      ],
+      "caller": "PetCore(method: onEnable() | line: 172)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:53:073",
+      "level": "Debug",
+      "message": [
+        "Files have been loaded."
+      ],
+      "caller": "PetCore(method: onEnable() | line: 172)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:53:074",
+      "level": "Debug",
+      "message": [
+        "Initializing SQL Handler"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 174)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:53:163",
+      "level": "Debug",
+      "message": [
+        "Registering commands"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 183)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:53:180",
+      "level": "Debug",
+      "message": [
+        "- Registering sub-command: help"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 184)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:53:181",
+      "level": "Debug",
+      "message": [
+        "- Registering sub-command: summon"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 184)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:53:181",
+      "level": "Debug",
+      "message": [
+        "- Registering sub-command: modify"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 184)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:53:181",
+      "level": "Debug",
+      "message": [
+        "- Registering sub-command: remove"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 184)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:53:181",
+      "level": "Debug",
+      "message": [
+        "- Registering sub-command: list"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 184)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:53:181",
+      "level": "Debug",
+      "message": [
+        "- Registering sub-command: gui"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 184)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:53:181",
+      "level": "Debug",
+      "message": [
+        "- Registering sub-command: data"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 184)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:53:181",
+      "level": "Debug",
+      "message": [
+        "- Registering sub-command: rename"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 184)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:53:182",
+      "level": "Debug",
+      "message": [
+        "- Registering sub-command: purchased"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 184)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:53:182",
+      "level": "Debug",
+      "message": [
+        "- Registering sub-command: permissions"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 184)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:53:182",
+      "level": "Debug",
+      "message": [
+        "- Registering sub-command: regenerate"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 184)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:53:183",
+      "level": "Debug",
+      "message": [
+        "- Registering sub-command: debug"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 184)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:53:183",
+      "level": "Debug",
+      "message": [
+        "- Registering sub-command: addon"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 184)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:53:183",
+      "level": "Debug",
+      "message": [
+        "- Registering sub-command: database"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 184)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:53:183",
+      "level": "Debug",
+      "message": [
+        "- Registering sub-command: reload"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 184)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:53:183",
+      "level": "Debug",
+      "message": [
+        "- Registering sub-command: petconfig"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 184)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:53:185",
+      "level": "Debug",
+      "message": [
+        "- Registering sub-command: premium"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 184)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:53:186",
+      "level": "Debug",
+      "message": [
+        "- Registering sub-command: report"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 184)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:53:186",
+      "level": "Debug",
+      "message": [
+        "Registering plugin listeners"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 189)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:53:201",
+      "level": "Debug",
+      "message": [
+        "Initializing update checker"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 190)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:47:53:205",
+      "level": "ADDON",
+      "message": [
+        "Loading addons in '5 SECONDS'"
+      ],
+      "caller": "PetCore(method: onEnable() | line: 203)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:48:03:977",
+      "level": "ADDON",
+      "message": [
+        "Loading modules for the ItemEconomy addon"
+      ],
+      "caller": "PetCore(method: run() | line: 209)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:48:04:011",
+      "level": "Permissions",
+      "message": [
+        "Registering 'pet.itemeconomy.bypass' permission and its children permissions for the 'ItemEconomy' addon"
+      ],
+      "caller": "PetCore(method: run() | line: 209)"
+    },
+    {
+      "time/date": "2025/08/01 | 17:48:04:013",
+      "level": "Debug",
+      "message": [
+        "Loading Metrics"
+      ],
+      "caller": "PetCore(method: run() | line: 212)"
+    },
+    {
+      "time/date": "2025/08/02 | 17:41:53:922",
+      "level": "Debug",
+      "message": [
+        "Saving player pets (if there are any)"
+      ],
+      "caller": "PetCore(method: onDisable() | line: 248)"
+    }
+  ]
+}

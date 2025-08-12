@@ -1,0 +1,4281 @@
+# This file is not intended to be manually modified! If you want to manually edit this file anyway, ensure that the server is not running currently and that you have prepared a backup of this file.
+
+data-version: 4|2|4189
+'1':
+  uniqueId: bf7b7cb0-1bf2-415e-81a9-40a414a5ed52
+  world: world
+  x: 35
+  y: -2
+  z: 1185
+  yaw: 55.49102
+  type: admin
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: minecraft:farmer
+    villagerType: minecraft:plains
+    villagerLevel: 4
+  recipes:
+    '1':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:wheat
+        count: 2
+    '2':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:hay_block
+        count: 1
+    '3':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:carrot
+        count: 1
+    '4':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:potato
+        count: 1
+    '5':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:porkchop
+        count: 1
+    '6':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 2
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:leather
+        count: 1
+    '7':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald
+        count: 32
+      item1:
+        DataVersion: 4189
+        id: minecraft:potion
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:potion_contents: '{custom_effects:[{amplifier:1b,duration:2400,id:"minecraft:speed",show_icon:1b}]}'
+          minecraft:custom_name: '''{"color":"aqua","italic":false,"text":"Speed Potion"}'''
+    '8':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald
+        count: 32
+      item1:
+        DataVersion: 4189
+        id: minecraft:potion
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:potion_contents: '{custom_effects:[{duration:2400,id:"minecraft:haste",show_icon:1b}]}'
+          minecraft:custom_name: '''{"color":"yellow","italic":false,"text":"Haste
+            Potion"}'''
+  snapshots: []
+'5':
+  uniqueId: 98d19af8-4395-4fb6-91fd-1f0f9c3e8422
+  world: world
+  x: 30
+  y: -2
+  z: 1188
+  yaw: 264.52487
+  type: admin
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: minecraft:mason
+    villagerType: minecraft:snow
+    villagerLevel: 4
+  recipes:
+    '1':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:wooden_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:2.5d,id:"minecraft:block_interaction_range",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"2"}],"italic":false,"text":"Range:
+            "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:enchantments: '{levels:{"minecraft:fortune":1}}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe II"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item2:
+        DataVersion: 4189
+        id: minecraft:wooden_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:2.0d,id:"minecraft:block_interaction_range",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"2"}],"italic":false,"text":"Range:
+            "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe I"}'''
+    '2':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:stone_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:2.5d,id:"minecraft:block_interaction_range",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"2.5"}],"italic":false,"text":"Range:
+            "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:enchantments: '{levels:{"minecraft:fortune":1}}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe III"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item2:
+        DataVersion: 4189
+        id: minecraft:wooden_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:2.5d,id:"minecraft:block_interaction_range",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"2"}],"italic":false,"text":"Range:
+            "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:enchantments: '{levels:{"minecraft:fortune":1}}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe II"}'''
+    '3':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:stone_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:3.0d,id:"minecraft:block_interaction_range",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"3"}],"italic":false,"text":"Range:
+            "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe IV"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":1,"minecraft:fortune":1}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+      item2:
+        DataVersion: 4189
+        id: minecraft:stone_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:2.5d,id:"minecraft:block_interaction_range",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"2.5"}],"italic":false,"text":"Range:
+            "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:enchantments: '{levels:{"minecraft:fortune":1}}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe III"}'''
+    '4':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:golden_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:3.5d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.1d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"3.5"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.1"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe V"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":1,"minecraft:fortune":2}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 16
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+      item2:
+        DataVersion: 4189
+        id: minecraft:stone_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:3.0d,id:"minecraft:block_interaction_range",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"3"}],"italic":false,"text":"Range:
+            "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe IV"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":1,"minecraft:fortune":1}}'
+    '5':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:golden_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:4.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.1d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"4"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.1"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe VI"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":1,"minecraft:fortune":2}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+      item2:
+        DataVersion: 4189
+        id: minecraft:golden_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:3.5d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.1d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"3.5"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.1"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe V"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":1,"minecraft:fortune":2}}'
+    '6':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:iron_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"},{blocks:"minecraft:potatoes"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:4.5d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.2d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"4.5"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.2"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe VII"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":1,"minecraft:fortune":2}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+      item2:
+        DataVersion: 4189
+        id: minecraft:golden_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:4.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.1d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"4"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.1"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe VI"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":1,"minecraft:fortune":2}}'
+    '7':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:iron_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"},{blocks:"minecraft:potatoes"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:5.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.2d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"5"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.2"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe VIII"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":1,"minecraft:fortune":2}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 16
+      item2:
+        DataVersion: 4189
+        id: minecraft:iron_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"},{blocks:"minecraft:potatoes"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:4.5d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.2d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"4.5"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.2"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe VII"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":1,"minecraft:fortune":2}}'
+    '8':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:diamond_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"},{blocks:"minecraft:potatoes"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:6.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.2d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"6"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.2"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe IX"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":2,"minecraft:fortune":2}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 64
+      item2:
+        DataVersion: 4189
+        id: minecraft:iron_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"},{blocks:"minecraft:potatoes"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:5.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.2d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"5"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.2"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe VIII"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":1,"minecraft:fortune":2}}'
+    '9':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:diamond_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"},{blocks:"minecraft:potatoes"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:7.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.2d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"7"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.2"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe X"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":2,"minecraft:fortune":3}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressed
+            Block of Emerald"}'''
+      item2:
+        DataVersion: 4189
+        id: minecraft:diamond_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"},{blocks:"minecraft:potatoes"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:6.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.2d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"6"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.2"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe IX"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":2,"minecraft:fortune":2}}'
+    '10':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:diamond_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"},{blocks:"minecraft:potatoes"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:7.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.25d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:unbreakable: '{}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"7.5"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.25"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":3,"minecraft:fortune":3}}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe XI"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 6
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressed
+            Block of Emerald"}'''
+      item2:
+        DataVersion: 4189
+        id: minecraft:diamond_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"},{blocks:"minecraft:potatoes"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:7.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.2d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"7"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.2"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe X"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":2,"minecraft:fortune":3}}'
+  snapshots: []
+'6':
+  uniqueId: 32ff4bd3-f382-4ee1-bc2c-43fc51ced6d3
+  world: world
+  x: 35
+  y: -2
+  z: 1193
+  yaw: 158.30981
+  type: admin
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: minecraft:fletcher
+    villagerType: minecraft:plains
+    villagerLevel: 4
+  recipes:
+    '1':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:potion
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:potion_contents: '{custom_effects:[{amplifier:1b,duration:2400,id:"minecraft:speed",show_icon:1b}]}'
+          minecraft:custom_name: '''{"color":"aqua","italic":false,"text":"Speed Potion"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald
+        count: 64
+    '2':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:potion
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:potion_contents: '{custom_effects:[{duration:2400,id:"minecraft:haste",show_icon:1b}]}'
+          minecraft:custom_name: '''{"color":"yellow","italic":false,"text":"Haste
+            Potion"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald
+        count: 64
+    '3':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:potion
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:potion_contents: '{custom_color:65297,custom_effects:[{duration:2400,id:"minecraft:strength",show_icon:1b}]}'
+          minecraft:custom_name: '''{"color":"green","italic":false,"text":"Strength
+            Potion"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald
+        count: 64
+    '4':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:turtle_scute
+        count: 1
+        components:
+          minecraft:lore: '[''"Collects items in a 4 block range"'']'
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"aqua","italic":false,"text":"Magnet"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 32
+    '5':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:armadillo_scute
+        count: 1
+        components:
+          minecraft:lore: '[''"Collects items in a 6 block range"'']'
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"aqua","italic":false,"text":"Advanced
+            Magnet"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 16
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+      item2:
+        DataVersion: 4189
+        id: minecraft:turtle_scute
+        count: 1
+        components:
+          minecraft:lore: '[''"Collects items in a 4 block range"'']'
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"aqua","italic":false,"text":"Magnet"}'''
+    '6':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:prismarine_shard
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"dark_purple","italic":false,"text":"Ultra
+            Magnet"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 4
+      item2:
+        DataVersion: 4189
+        id: minecraft:armadillo_scute
+        count: 1
+        components:
+          minecraft:lore: '[''"Collects items in a 6 block range"'']'
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"aqua","italic":false,"text":"Advanced
+            Magnet"}'''
+    '7':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:totem_of_undying
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+    '8':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:paper
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"dark_green","italic":false,"text":"+1min
+            AutoSell"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 4
+    '9':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:name_tag
+        count: 1
+        components:
+          minecraft:lore: '[''"Doesn\''t stack with booster rank!"'']'
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"dark_green","italic":false,"text":"+1min
+            Double Xp"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 16
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+    '10':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:book
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"dark_green","italic":false,"text":"+1min
+            AutoCompress"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 4
+  snapshots: []
+'7':
+  uniqueId: b589a594-0a05-4f81-93e1-fa05ce530ffe
+  world: world
+  x: 24
+  y: -1
+  z: 1190
+  yaw: 156.92438
+  type: admin
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: minecraft:weaponsmith
+    villagerType: minecraft:plains
+    villagerLevel: 1
+  recipes:
+    '1':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:wooden_sword
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald
+        count: 32
+    '2':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:leather_chestplate
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald
+        count: 64
+    '3':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:leather_leggings
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald
+        count: 64
+    '4':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:leather_boots
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald
+        count: 64
+    '5':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:stone_sword
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 8
+      item2:
+        DataVersion: 4189
+        id: minecraft:wooden_sword
+        count: 1
+    '6':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:chainmail_chestplate
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 16
+      item2:
+        DataVersion: 4189
+        id: minecraft:leather_chestplate
+        count: 1
+    '7':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:chainmail_leggings
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 16
+      item2:
+        DataVersion: 4189
+        id: minecraft:leather_leggings
+        count: 1
+    '8':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:chainmail_boots
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 16
+      item2:
+        DataVersion: 4189
+        id: minecraft:leather_boots
+        count: 1
+    '9':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:iron_sword
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+      item2:
+        DataVersion: 4189
+        id: minecraft:stone_sword
+        count: 1
+    '10':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:iron_chestplate
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 8
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+      item2:
+        DataVersion: 4189
+        id: minecraft:chainmail_chestplate
+        count: 1
+    '11':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:iron_leggings
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 8
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+      item2:
+        DataVersion: 4189
+        id: minecraft:chainmail_leggings
+        count: 1
+    '12':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:iron_boots
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 8
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+      item2:
+        DataVersion: 4189
+        id: minecraft:chainmail_boots
+        count: 1
+    '13':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:diamond_sword
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 4
+      item2:
+        DataVersion: 4189
+        id: minecraft:iron_sword
+        count: 1
+    '14':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:diamond_chestplate
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 8
+      item2:
+        DataVersion: 4189
+        id: minecraft:iron_chestplate
+        count: 1
+    '15':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:diamond_leggings
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 8
+      item2:
+        DataVersion: 4189
+        id: minecraft:iron_leggings
+        count: 1
+    '16':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:diamond_boots
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 8
+      item2:
+        DataVersion: 4189
+        id: minecraft:iron_boots
+        count: 1
+    '17':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:netherite_sword
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 16
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressed
+            Block of Emerald"}'''
+      item2:
+        DataVersion: 4189
+        id: minecraft:diamond_sword
+        count: 1
+    '18':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:netherite_chestplate
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressed
+            Block of Emerald"}'''
+      item2:
+        DataVersion: 4189
+        id: minecraft:diamond_chestplate
+        count: 1
+    '19':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:netherite_leggings
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressed
+            Block of Emerald"}'''
+      item2:
+        DataVersion: 4189
+        id: minecraft:diamond_leggings
+        count: 1
+    '20':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:netherite_boots
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressed
+            Block of Emerald"}'''
+      item2:
+        DataVersion: 4189
+        id: minecraft:diamond_boots
+        count: 1
+    '21':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:shield
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 8
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+    '22':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:spectral_arrow
+        count: 64
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 16
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+    '23':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:bow
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+    '24':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:trident
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 16
+    '25':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:mace
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 16
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressed
+            Block of Emerald"}'''
+  snapshots: []
+'8':
+  uniqueId: 65c7b539-0f78-4d8b-9948-43d66d90d6cf
+  world: world
+  x: 31
+  y: -2
+  z: 1192
+  yaw: 237.43353
+  type: admin
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: minecraft:none
+    villagerType: minecraft:plains
+    villagerLevel: 2
+  recipes:
+    '1':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald
+        count: 9
+    '2':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald
+        count: 9
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '3':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '4':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+    '5':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+    '6':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '7':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressed
+            Block of Emerald"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '8':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressed
+            Block of Emerald"}'''
+  snapshots: []
+'9':
+  uniqueId: 94dd2255-2159-44d8-b83e-880d47e26479
+  world: world
+  x: 30
+  y: -2
+  z: 1191
+  yaw: 242.97093
+  type: admin
+  name: Compressor Trade Fixer
+  object:
+    type: villager
+    baby: false
+    profession: minecraft:none
+    villagerType: minecraft:plains
+    villagerLevel: 1
+  recipes:
+    '1':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 1
+    '2':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 1
+  snapshots: []
+'10':
+  uniqueId: 5273b817-7ade-4f70-8141-68f29a580f92
+  world: world
+  x: 96
+  y: 3
+  z: 1067
+  yaw: 239.7065
+  type: admin
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: minecraft:librarian
+    villagerType: minecraft:taiga
+    villagerLevel: 1
+  recipes:
+    '1':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:sharpness":1}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald
+        count: 64
+    '2':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:sharpness":2}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 64
+    '3':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:sharpness":3}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+    '4':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:sharpness":4}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 64
+    '5':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:sharpness":5}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressed
+            Block of Emerald"}'''
+    '6':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:mending":1}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald
+        count: 64
+    '7':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:unbreaking":1}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald
+        count: 64
+    '8':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:unbreaking":2}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 64
+    '9':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:unbreaking":3}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+    '10':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:protection":1}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald
+        count: 64
+    '11':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:protection":2}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 64
+    '12':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:protection":3}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+    '13':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:protection":4}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 64
+    '14':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:loyalty":1}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald
+        count: 64
+    '15':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:loyalty":2}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 64
+    '16':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:loyalty":3}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+    '17':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:looting":1}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald
+        count: 64
+    '18':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:looting":2}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 64
+    '19':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:looting":3}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+    '20':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:power":1}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald
+        count: 64
+    '21':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:power":2}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 64
+    '22':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:power":3}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+    '23':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:power":4}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 64
+    '24':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:power":5}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressed
+            Block of Emerald"}'''
+    '25':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:density":1}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald
+        count: 64
+    '26':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:density":2}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 64
+    '27':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:density":3}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+    '28':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:density":4}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 64
+    '29':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:density":5}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressed
+            Block of Emerald"}'''
+    '30':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:wind_burst":1}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressed
+            Block of Emerald"}'''
+    '31':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:swift_sneak":1}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald
+        count: 64
+    '32':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:swift_sneak":2}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 64
+    '33':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:swift_sneak":3}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+  snapshots: []
+'11':
+  uniqueId: 1cb02f0e-d9f1-4047-bd1b-d19bc1b9cb3e
+  world: world
+  x: 6
+  y: -2
+  z: 1260
+  yaw: 95.10061
+  type: admin
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: minecraft:farmer
+    villagerType: minecraft:plains
+    villagerLevel: 4
+  recipes:
+    '1':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:potato
+        count: 1
+    '2':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:beetroot
+        count: 1
+    '3':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 8
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:rotten_flesh
+        count: 1
+    '4':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:pitcher_plant
+        count: 1
+  snapshots: []
+'12':
+  uniqueId: 047537a4-48cc-4a60-abe7-b9978d23ab0e
+  world: world
+  x: 7
+  y: -2
+  z: 1263
+  yaw: 88.34332
+  type: admin
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: minecraft:mason
+    villagerType: minecraft:jungle
+    villagerLevel: 4
+  recipes:
+    '1':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:diamond_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"},{blocks:"minecraft:potatoes"},{blocks:"minecraft:beetroots"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:10.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.3d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"10"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.3"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe XII"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":3,"minecraft:fortune":4}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 8
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressed
+            Block of Emerald"}'''
+      item2:
+        DataVersion: 4189
+        id: minecraft:diamond_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"},{blocks:"minecraft:potatoes"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:7.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.25d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:unbreakable: '{}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"7.5"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.25"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":3,"minecraft:fortune":3}}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe XI"}'''
+    '2':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:diamond_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"},{blocks:"minecraft:potatoes"},{blocks:"minecraft:beetroots"},{blocks:"minecraft:pitcher_crop"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:11.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.3d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"11"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.3"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe XIII"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":3,"minecraft:fortune":4}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 16
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressed
+            Block of Emerald"}'''
+      item2:
+        DataVersion: 4189
+        id: minecraft:diamond_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"},{blocks:"minecraft:potatoes"},{blocks:"minecraft:beetroots"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:10.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.3d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"10"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.3"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe XII"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":3,"minecraft:fortune":4}}'
+    '3':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:diamond_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"},{blocks:"minecraft:potatoes"},{blocks:"minecraft:beetroots"},{blocks:"minecraft:pitcher_crop"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:12.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.35d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"12"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.35"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe XIV"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":3,"minecraft:fortune":5}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressed
+            Block of Emerald"}'''
+      item2:
+        DataVersion: 4189
+        id: minecraft:diamond_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"},{blocks:"minecraft:potatoes"},{blocks:"minecraft:beetroots"},{blocks:"minecraft:pitcher_crop"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:11.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.3d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"11"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.3"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe XIII"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":3,"minecraft:fortune":4}}'
+    '4':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:netherite_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"},{blocks:"minecraft:potatoes"},{blocks:"minecraft:beetroots"},{blocks:"minecraft:pitcher_crop"},{blocks:"minecraft:brown_mushroom"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:12.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.4d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:unbreakable: '{}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"12"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.4"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":3,"minecraft:fortune":5}}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe XV"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 48
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressed
+            Block of Emerald"}'''
+      item2:
+        DataVersion: 4189
+        id: minecraft:diamond_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"},{blocks:"minecraft:potatoes"},{blocks:"minecraft:beetroots"},{blocks:"minecraft:pitcher_crop"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:12.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.35d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"12"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.35"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe XIV"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":3,"minecraft:fortune":5}}'
+  snapshots: []
+'13':
+  uniqueId: 9d9523dc-6c33-4978-9364-48bd7a807d26
+  world: world
+  x: 2
+  y: -2
+  z: 1267
+  yaw: 222.13293
+  type: admin
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: minecraft:none
+    villagerType: minecraft:plains
+    villagerLevel: 4
+  recipes:
+    '1':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald
+        count: 9
+    '2':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald
+        count: 9
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '3':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '4':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+    '5':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+    '6':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '7':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressed
+            Block of Emerald"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '8':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressed
+            Block of Emerald"}'''
+  snapshots: []
+'14':
+  uniqueId: 82cd7cfb-a27a-44a4-b8c1-26578d4a8537
+  world: world
+  x: 6
+  y: -2
+  z: 1267
+  yaw: 131.02187
+  type: admin
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: minecraft:fletcher
+    villagerType: minecraft:plains
+    villagerLevel: 4
+  recipes:
+    '1':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:potion
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:potion_contents: '{custom_effects:[{amplifier:1b,duration:2400,id:"minecraft:speed",show_icon:1b}]}'
+          minecraft:custom_name: '''{"color":"aqua","italic":false,"text":"Speed Potion"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald
+        count: 64
+    '2':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:prismarine_shard
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"dark_purple","italic":false,"text":"Ultra
+            Magnet"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '3':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:totem_of_undying
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+  snapshots: []
+'15':
+  uniqueId: ca3f274f-a60d-418c-85c6-def178324564
+  world: world
+  x: -55
+  y: -2
+  z: 1073
+  yaw: 259.61407
+  type: admin
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: minecraft:farmer
+    villagerType: minecraft:plains
+    villagerLevel: 1
+  recipes:
+    '1':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:diamond
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:brown_mushroom
+        count: 1
+    '2':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:diamond
+        count: 2
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:red_mushroom
+        count: 1
+  snapshots: []
+'16':
+  uniqueId: 90c24072-dd51-4551-8199-353a85c75523
+  world: world
+  x: -55
+  y: -2
+  z: 1066
+  yaw: 313.7044
+  type: admin
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: minecraft:fletcher
+    villagerType: minecraft:plains
+    villagerLevel: 1
+  recipes:
+    '1':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:potion
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:potion_contents: '{custom_effects:[{amplifier:1b,duration:2400,id:"minecraft:slowness",show_icon:1b}]}'
+          minecraft:custom_name: '''{"color":"gray","italic":false,"text":"Slowness
+            Potion"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond_block
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '2':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:milk_bucket
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond_block
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+  snapshots: []
+'17':
+  uniqueId: a6071afb-3cd6-4599-b78d-ad79bacc0ef9
+  world: world
+  x: -51
+  y: -2
+  z: 1066
+  yaw: 56.118805
+  type: admin
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: minecraft:none
+    villagerType: minecraft:plains
+    villagerLevel: 1
+  recipes:
+    '1':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald
+        count: 9
+    '2':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald
+        count: 9
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '3':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '4':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+    '5':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+    '6':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald_ore
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressend
+            Emerald Ore"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '7':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressed
+            Block of Emerald"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '8':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressed
+            Block of Emerald"}'''
+    '9':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:diamond_block
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '10':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:diamond
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond_block
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+  snapshots: []
+'18':
+  uniqueId: 5248c2f3-e760-4446-86bb-7981300cf4aa
+  world: world
+  x: -50
+  y: -2
+  z: 1070
+  yaw: 99.94092
+  type: admin
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: minecraft:leatherworker
+    villagerType: minecraft:plains
+    villagerLevel: 1
+  recipes:
+    '1':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:stone_axe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:mushroom_stem"},{blocks:"minecraft:brown_mushroom_block"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:12.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.4d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:unbreakable: '{}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"12"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.4"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Axe I"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond_block
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '2':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:stone_axe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:mushroom_stem"},{blocks:"minecraft:brown_mushroom_block"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:12.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.4d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:unbreakable: '{}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"12"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.4"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":1}}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Axe II"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond_block
+        count: 16
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item2:
+        DataVersion: 4189
+        id: minecraft:stone_axe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:mushroom_stem"},{blocks:"minecraft:brown_mushroom_block"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:12.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.4d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:unbreakable: '{}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"12"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.4"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Axe I"}'''
+    '3':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:stone_axe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:mushroom_stem"},{blocks:"minecraft:brown_mushroom_block"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:12.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.4d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:unbreakable: '{}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"12"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.4"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":2}}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Axe III"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond_block
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item2:
+        DataVersion: 4189
+        id: minecraft:stone_axe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:mushroom_stem"},{blocks:"minecraft:brown_mushroom_block"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:12.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.4d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:unbreakable: '{}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"12"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.4"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":1}}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Axe II"}'''
+    '4':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:iron_axe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:mushroom_stem"},{blocks:"minecraft:brown_mushroom_block"},{blocks:"minecraft:red_mushroom_block"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:12.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.4d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:unbreakable: '{}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"12"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.4"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":3}}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Axe IV"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond_block
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item2:
+        DataVersion: 4189
+        id: minecraft:stone_axe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:mushroom_stem"},{blocks:"minecraft:brown_mushroom_block"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:12.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.4d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:unbreakable: '{}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"12"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.4"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":2}}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Axe III"}'''
+  snapshots: []
+'19':
+  uniqueId: 46e56f8f-057b-4115-9794-810178248da1
+  world: world
+  x: 96
+  y: 11
+  z: 1063
+  yaw: 4.5476856
+  type: admin
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: minecraft:none
+    villagerType: minecraft:plains
+    villagerLevel: 1
+  recipes:
+    '1':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:redstone
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '2':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:iron_ingot
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '3':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:copper_ingot
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '4':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:amethyst_shard
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '5':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:lapis_lazuli
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '6':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:gold_ingot
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '7':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:resin_brick
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '8':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:netherite_ingot
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '9':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:quartz
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '10':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:shaper_armor_trim_smithing_template
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond_block
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '11':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:eye_armor_trim_smithing_template
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond_block
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '12':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:flow_armor_trim_smithing_template
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond_block
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '13':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:dune_armor_trim_smithing_template
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond_block
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '14':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:wild_armor_trim_smithing_template
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond_block
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '15':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:vex_armor_trim_smithing_template
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond_block
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '16':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:sentry_armor_trim_smithing_template
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond_block
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '17':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:coast_armor_trim_smithing_template
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond_block
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '18':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:wayfinder_armor_trim_smithing_template
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond_block
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '19':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:raiser_armor_trim_smithing_template
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond_block
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '20':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:host_armor_trim_smithing_template
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond_block
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '21':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:silence_armor_trim_smithing_template
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond_block
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '22':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:ward_armor_trim_smithing_template
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond_block
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '23':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:snout_armor_trim_smithing_template
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond_block
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '24':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:tide_armor_trim_smithing_template
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond_block
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '25':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:spire_armor_trim_smithing_template
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond_block
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '26':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:bolt_armor_trim_smithing_template
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond_block
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '27':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:rib_armor_trim_smithing_template
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond_block
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 0b
+  snapshots: []
+'20':
+  uniqueId: e0fe9c3f-44ef-4f99-837f-3173b1b329e1
+  world: world
+  x: -50
+  y: -2
+  z: 1072
+  yaw: 94.30898
+  type: admin
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: minecraft:weaponsmith
+    villagerType: minecraft:plains
+    villagerLevel: 1
+  recipes:
+    '1':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:netherite_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"},{blocks:"minecraft:potatoes"},{blocks:"minecraft:beetroots"},{blocks:"minecraft:pitcher_crop"},{blocks:"minecraft:brown_mushroom"},{blocks:"minecraft:red_mushroom"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:13.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.4d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"13"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.4"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe XVI"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":3,"minecraft:fortune":5}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond_block
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item2:
+        DataVersion: 4189
+        id: minecraft:netherite_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"},{blocks:"minecraft:potatoes"},{blocks:"minecraft:beetroots"},{blocks:"minecraft:pitcher_crop"},{blocks:"minecraft:brown_mushroom"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:12.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.4d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:unbreakable: '{}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"12"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.4"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":3,"minecraft:fortune":5}}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe XV"}'''
+  snapshots: []
+'21':
+  uniqueId: 00ebe907-5db3-43a6-9863-1bdbf6659dfd
+  world: world
+  x: -77
+  y: -40
+  z: 273
+  yaw: 275.62067
+  type: admin
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: minecraft:armorer
+    villagerType: minecraft:taiga
+    villagerLevel: 3
+  recipes:
+    '1':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:wooden_pickaxe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:coal_ore"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:5.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.0d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:unbreakable: '{}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"5"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.0"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Pickaxe
+            I"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond_block
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item2:
+        DataVersion: 4189
+        id: minecraft:diamond_block
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '2':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:wooden_pickaxe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:coal_ore"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:5.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.0d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:unbreakable: '{}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"5"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.0"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Pickaxe
+            II"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":1}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:gold_ingot
+        count: 8
+      item2:
+        DataVersion: 4189
+        id: minecraft:wooden_pickaxe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:coal_ore"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:5.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.0d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:unbreakable: '{}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"5"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.0"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Pickaxe
+            I"}'''
+    '3':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:stone_pickaxe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:coal_ore"},{blocks:"minecraft:copper_ore"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:5.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.0d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:unbreakable: '{}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"5"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.0"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Pickaxe
+            III"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":2}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:gold_ingot
+        count: 16
+      item2:
+        DataVersion: 4189
+        id: minecraft:wooden_pickaxe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:coal_ore"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:5.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.0d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:unbreakable: '{}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"5"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.0"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Pickaxe
+            II"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":1}}'
+    '4':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:stone_pickaxe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:coal_ore"},{blocks:"minecraft:copper_ore"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:5.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.0d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:unbreakable: '{}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"5"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.0"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":2,"minecraft:fortune":1}}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Pickaxe
+            IV"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:gold_ingot
+        count: 32
+      item2:
+        DataVersion: 4189
+        id: minecraft:stone_pickaxe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:coal_ore"},{blocks:"minecraft:copper_ore"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:5.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.0d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:unbreakable: '{}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"5"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.0"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Pickaxe
+            III"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":2}}'
+    '5':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:iron_pickaxe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:coal_ore"},{blocks:"minecraft:copper_ore"},{blocks:"minecraft:iron_ore"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:5.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.1d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:unbreakable: '{}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"5"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.1"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Pickaxe
+            V"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":2,"minecraft:fortune":1}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:gold_ingot
+        count: 64
+      item2:
+        DataVersion: 4189
+        id: minecraft:stone_pickaxe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:coal_ore"},{blocks:"minecraft:copper_ore"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:5.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.0d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:unbreakable: '{}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"5"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.0"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":2,"minecraft:fortune":1}}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Pickaxe
+            IV"}'''
+    '6':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:iron_pickaxe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:coal_ore"},{blocks:"minecraft:copper_ore"},{blocks:"minecraft:iron_ore"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:5.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.1d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:unbreakable: '{}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"5"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.1"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":3,"minecraft:fortune":1}}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Pickaxe
+            VI"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:gold_block
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item2:
+        DataVersion: 4189
+        id: minecraft:iron_pickaxe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:coal_ore"},{blocks:"minecraft:copper_ore"},{blocks:"minecraft:iron_ore"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:5.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.1d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:unbreakable: '{}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"5"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.1"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Pickaxe
+            V"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":2,"minecraft:fortune":1}}'
+    '7':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:diamond_pickaxe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:coal_ore"},{blocks:"minecraft:copper_ore"},{blocks:"minecraft:iron_ore"},{blocks:"minecraft:deepslate_lapis_ore"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:5.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.2d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"5"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.2"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Pickaxe
+            VII"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":3,"minecraft:fortune":2}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:gold_block
+        count: 8
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item2:
+        DataVersion: 4189
+        id: minecraft:iron_pickaxe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:coal_ore"},{blocks:"minecraft:copper_ore"},{blocks:"minecraft:iron_ore"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:5.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.1d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:unbreakable: '{}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"5"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.1"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":3,"minecraft:fortune":1}}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Pickaxe
+            VI"}'''
+    '8':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:diamond_pickaxe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:coal_ore"},{blocks:"minecraft:copper_ore"},{blocks:"minecraft:iron_ore"},{blocks:"minecraft:deepslate_lapis_ore"},{blocks:"minecraft:deepslate_redstone_ore"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:5.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.2d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:unbreakable: '{}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"5"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.2"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":4,"minecraft:fortune":2}}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Pickaxe
+            VIII"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:gold_block
+        count: 16
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item2:
+        DataVersion: 4189
+        id: minecraft:diamond_pickaxe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:coal_ore"},{blocks:"minecraft:copper_ore"},{blocks:"minecraft:iron_ore"},{blocks:"minecraft:deepslate_lapis_ore"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:5.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.2d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"5"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.2"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Pickaxe
+            VII"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":3,"minecraft:fortune":2}}'
+    '9':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:netherite_pickaxe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:coal_ore"},{blocks:"minecraft:copper_ore"},{blocks:"minecraft:iron_ore"},{blocks:"minecraft:deepslate_lapis_ore"},{blocks:"minecraft:deepslate_redstone_ore"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:5.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.2d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:unbreakable: '{}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"5"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.2"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":4,"minecraft:fortune":3}}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Pickaxe
+            IX"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:gold_block
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item2:
+        DataVersion: 4189
+        id: minecraft:diamond_pickaxe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:coal_ore"},{blocks:"minecraft:copper_ore"},{blocks:"minecraft:iron_ore"},{blocks:"minecraft:deepslate_lapis_ore"},{blocks:"minecraft:deepslate_redstone_ore"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:5.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.2d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:unbreakable: '{}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"5"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.2"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":4,"minecraft:fortune":2}}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Pickaxe
+            VIII"}'''
+    '10':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:netherite_pickaxe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:coal_ore"},{blocks:"minecraft:copper_ore"},{blocks:"minecraft:iron_ore"},{blocks:"minecraft:deepslate_lapis_ore"},{blocks:"minecraft:deepslate_redstone_ore"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:6.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.2d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"6"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.2"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Pickaxe
+            X"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":5,"minecraft:fortune":3}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:gold_block
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item2:
+        DataVersion: 4189
+        id: minecraft:netherite_pickaxe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:coal_ore"},{blocks:"minecraft:copper_ore"},{blocks:"minecraft:iron_ore"},{blocks:"minecraft:deepslate_lapis_ore"},{blocks:"minecraft:deepslate_redstone_ore"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:5.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.2d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:unbreakable: '{}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"5"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.2"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":4,"minecraft:fortune":3}}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Pickaxe
+            IX"}'''
+    '11':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:netherite_pickaxe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:coal_ore"},{blocks:"minecraft:copper_ore"},{blocks:"minecraft:iron_ore"},{blocks:"minecraft:deepslate_lapis_ore"},{blocks:"minecraft:deepslate_redstone_ore"},{blocks:"minecraft:deepslate_gold_ore"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:9.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.2d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"7"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.2"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Pickaxe
+            XI"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":5,"minecraft:fortune":4}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:gold_block
+        count: 16
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"yellow","italic":false,"text":"Compressed
+            Block of Gold"}'''
+      item2:
+        DataVersion: 4189
+        id: minecraft:netherite_pickaxe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:coal_ore"},{blocks:"minecraft:copper_ore"},{blocks:"minecraft:iron_ore"},{blocks:"minecraft:deepslate_lapis_ore"},{blocks:"minecraft:deepslate_redstone_ore"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:6.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.2d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"6"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.2"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Pickaxe
+            X"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":5,"minecraft:fortune":3}}'
+    '12':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:netherite_pickaxe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:coal_ore"},{blocks:"minecraft:copper_ore"},{blocks:"minecraft:iron_ore"},{blocks:"minecraft:deepslate_lapis_ore"},{blocks:"minecraft:deepslate_redstone_ore"},{blocks:"minecraft:deepslate_gold_ore"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:8.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.2d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"8"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.2"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Pickaxe
+            XII"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":6,"minecraft:fortune":5}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:gold_block
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"yellow","italic":false,"text":"Compressed
+            Block of Gold"}'''
+      item2:
+        DataVersion: 4189
+        id: minecraft:netherite_pickaxe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:coal_ore"},{blocks:"minecraft:copper_ore"},{blocks:"minecraft:iron_ore"},{blocks:"minecraft:deepslate_lapis_ore"},{blocks:"minecraft:deepslate_redstone_ore"},{blocks:"minecraft:deepslate_gold_ore"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:9.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.2d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"7"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.2"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Pickaxe
+            XI"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":5,"minecraft:fortune":4}}'
+    '13':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:netherite_pickaxe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:coal_ore"},{blocks:"minecraft:copper_ore"},{blocks:"minecraft:iron_ore"},{blocks:"minecraft:deepslate_lapis_ore"},{blocks:"minecraft:deepslate_redstone_ore"},{blocks:"minecraft:deepslate_gold_ore"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:9.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.2d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"9"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.2"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Pickaxe
+            XIII"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":7,"minecraft:fortune":8}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:gold_block
+        count: 48
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"yellow","italic":false,"text":"Compressed
+            Block of Gold"}'''
+      item2:
+        DataVersion: 4189
+        id: minecraft:netherite_pickaxe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:coal_ore"},{blocks:"minecraft:copper_ore"},{blocks:"minecraft:iron_ore"},{blocks:"minecraft:deepslate_lapis_ore"},{blocks:"minecraft:deepslate_redstone_ore"},{blocks:"minecraft:deepslate_gold_ore"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:8.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.2d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"8"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.2"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Pickaxe
+            XII"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":6,"minecraft:fortune":5}}'
+    '14':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:netherite_pickaxe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:coal_ore"},{blocks:"minecraft:copper_ore"},{blocks:"minecraft:iron_ore"},{blocks:"minecraft:deepslate_lapis_ore"},{blocks:"minecraft:deepslate_redstone_ore"},{blocks:"minecraft:deepslate_gold_ore"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:9.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.2d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:unbreakable: '{}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"9"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.2"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":8,"minecraft:fortune":10}}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Pickaxe
+            XIV"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:gold_block
+        count: 64
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"yellow","italic":false,"text":"Compressed
+            Block of Gold"}'''
+      item2:
+        DataVersion: 4189
+        id: minecraft:netherite_pickaxe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:coal_ore"},{blocks:"minecraft:copper_ore"},{blocks:"minecraft:iron_ore"},{blocks:"minecraft:deepslate_lapis_ore"},{blocks:"minecraft:deepslate_redstone_ore"},{blocks:"minecraft:deepslate_gold_ore"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:9.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.2d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"9"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.2"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Pickaxe
+            XIII"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":7,"minecraft:fortune":8}}'
+  snapshots: []
+'22':
+  uniqueId: a8a5f4cb-5a9a-40bf-b938-fcc5f2a0f170
+  world: world
+  x: -77
+  y: -40
+  z: 275
+  yaw: 255.28194
+  type: admin
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: minecraft:leatherworker
+    villagerType: minecraft:taiga
+    villagerLevel: 3
+  recipes:
+    '1':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:gold_nugget
+        count: 2
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:coal
+        count: 1
+    '2':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:gold_nugget
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:raw_copper
+        count: 1
+    '3':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:gold_nugget
+        count: 12
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:raw_iron
+        count: 1
+    '4':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:gold_ingot
+        count: 2
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:iron_ingot
+        count: 1
+    '5':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:gold_nugget
+        count: 16
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:lapis_lazuli
+        count: 1
+    '6':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:gold_nugget
+        count: 20
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:redstone
+        count: 1
+    '7':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:gold_ingot
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:raw_gold
+        count: 1
+    '8':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:gold_nugget
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:bone
+        count: 1
+    '9':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:gold_nugget
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:arrow
+        count: 1
+    '10':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:gold_nugget
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:rotten_flesh
+        count: 1
+    '11':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:gold_ingot
+        count: 5
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:golden_apple
+        count: 1
+  snapshots: []
+'23':
+  uniqueId: ad8b7143-beb8-4a87-aeed-8efd1aaa63a5
+  world: world
+  x: -77
+  y: -40
+  z: 271
+  yaw: 292.8601
+  type: admin
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: minecraft:fletcher
+    villagerType: minecraft:taiga
+    villagerLevel: 3
+  recipes:
+    '1':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:experience_bottle
+        count: 64
+      item1:
+        DataVersion: 4189
+        id: minecraft:gold_ingot
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '2':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:potion
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:potion_contents: '{custom_effects:[{duration:2400,id:"minecraft:haste",show_icon:1b}]}'
+          minecraft:custom_name: '''{"color":"yellow","italic":false,"text":"Haste
+            Potion"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:gold_ingot
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '3':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:potion
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:potion_contents: '{custom_effects:[{amplifier:1b,duration:2400,id:"minecraft:haste",show_icon:1b}]}'
+          minecraft:custom_name: '''{"color":"yellow","italic":false,"text":"Advanced
+            Haste Potion"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:gold_block
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '4':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:splash_potion
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:potion_contents: '{custom_effects:[{amplifier:2b,duration:2400,id:"minecraft:speed",show_icon:1b}]}'
+          minecraft:custom_name: '''{"color":"aqua","italic":false,"text":"Advanced
+            Speed Potion"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:gold_block
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+  snapshots: []
+'24':
+  uniqueId: e45bac04-9e27-4a93-a721-34ae6c08d6fe
+  world: world
+  x: -77
+  y: -40
+  z: 277
+  yaw: 161.24936
+  type: admin
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: minecraft:none
+    villagerType: minecraft:plains
+    villagerLevel: 1
+  recipes:
+    '1':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:gold_ingot
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:gold_nugget
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '2':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:gold_nugget
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:gold_ingot
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '3':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:gold_block
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:gold_ingot
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '4':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:gold_ingot
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:gold_block
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '5':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:gold_block
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"yellow","italic":false,"text":"Compressed
+            Block of Gold"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:gold_block
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '6':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:gold_block
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:gold_block
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"yellow","italic":false,"text":"Compressed
+            Block of Gold"}'''
+  snapshots: []
+'25':
+  uniqueId: 900d2bed-3213-48df-853d-d7775558ae2a
+  world: world
+  x: 20
+  y: -2
+  z: 1185
+  yaw: 227.61398
+  type: admin
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: minecraft:nitwit
+    villagerType: minecraft:plains
+    villagerLevel: 4
+  recipes:
+    '1':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:tripwire_hook
+        count: 1
+        components:
+          minecraft:lore: '[''{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"Right
+            click a emerald crate to use","underlined":false}],"text":""}'']'
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"extra":[{"bold":true,"color":"#65E751","italic":false,"obfuscated":false,"strikethrough":false,"text":"E","underlined":false},{"bold":true,"color":"#66E954","italic":false,"obfuscated":false,"strikethrough":false,"text":"m","underlined":false},{"bold":true,"color":"#66EA57","italic":false,"obfuscated":false,"strikethrough":false,"text":"e","underlined":false},{"bold":true,"color":"#67EC5A","italic":false,"obfuscated":false,"strikethrough":false,"text":"r","underlined":false},{"bold":true,"color":"#68ED5D","italic":false,"obfuscated":false,"strikethrough":false,"text":"a","underlined":false},{"bold":true,"color":"#68EF5F","italic":false,"obfuscated":false,"strikethrough":false,"text":"l","underlined":false},{"bold":true,"color":"#69F062","italic":false,"obfuscated":false,"strikethrough":false,"text":"d
+            ","underlined":false},{"bold":true,"color":"#6BF368","italic":false,"obfuscated":false,"strikethrough":false,"text":"C","underlined":false},{"bold":true,"color":"#6BF56B","italic":false,"obfuscated":false,"strikethrough":false,"text":"r","underlined":false},{"bold":true,"color":"#6CF66E","italic":false,"obfuscated":false,"strikethrough":false,"text":"a","underlined":false},{"bold":true,"color":"#6DF871","italic":false,"obfuscated":false,"strikethrough":false,"text":"t","underlined":false},{"bold":true,"color":"#6DF974","italic":false,"obfuscated":false,"strikethrough":false,"text":"e
+            ","underlined":false},{"bold":true,"color":"#6FFC79","italic":false,"obfuscated":false,"strikethrough":false,"text":"K","underlined":false},{"bold":true,"color":"#6FFE7C","italic":false,"obfuscated":false,"strikethrough":false,"text":"e","underlined":false},{"bold":true,"color":"#70FF7F","italic":false,"obfuscated":false,"strikethrough":false,"text":"y","underlined":false}],"text":""}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:emerald_block
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"green","italic":false,"text":"Compressed
+            Block of Emerald"}'''
+    '2':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:tripwire_hook
+        count: 1
+        components:
+          minecraft:lore: '[''{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"Right
+            click a emerald crate to use","underlined":false}],"text":""}'']'
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"extra":[{"bold":true,"color":"#51CFE7","italic":false,"obfuscated":false,"strikethrough":false,"text":"D","underlined":false},{"bold":true,"color":"#52D1E8","italic":false,"obfuscated":false,"strikethrough":false,"text":"i","underlined":false},{"bold":true,"color":"#52D4EA","italic":false,"obfuscated":false,"strikethrough":false,"text":"a","underlined":false},{"bold":true,"color":"#53D6EB","italic":false,"obfuscated":false,"strikethrough":false,"text":"m","underlined":false},{"bold":true,"color":"#54D9EC","italic":false,"obfuscated":false,"strikethrough":false,"text":"o","underlined":false},{"bold":true,"color":"#54DBEE","italic":false,"obfuscated":false,"strikethrough":false,"text":"n","underlined":false},{"bold":true,"color":"#55DEEF","italic":false,"obfuscated":false,"strikethrough":false,"text":"d
+            ","underlined":false},{"bold":true,"color":"#57E3F2","italic":false,"obfuscated":false,"strikethrough":false,"text":"C","underlined":false},{"bold":true,"color":"#57E5F3","italic":false,"obfuscated":false,"strikethrough":false,"text":"r","underlined":false},{"bold":true,"color":"#58E7F4","italic":false,"obfuscated":false,"strikethrough":false,"text":"a","underlined":false},{"bold":true,"color":"#59EAF5","italic":false,"obfuscated":false,"strikethrough":false,"text":"t","underlined":false},{"bold":true,"color":"#59ECF7","italic":false,"obfuscated":false,"strikethrough":false,"text":"e
+            ","underlined":false},{"bold":true,"color":"#5BF1F9","italic":false,"obfuscated":false,"strikethrough":false,"text":"K","underlined":false},{"bold":true,"color":"#5BF4FB","italic":false,"obfuscated":false,"strikethrough":false,"text":"e","underlined":false},{"bold":true,"color":"#5CF6FC","italic":false,"obfuscated":false,"strikethrough":false,"text":"y","underlined":false}],"text":""}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond_block
+        count: 12
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '3':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:tripwire_hook
+        count: 1
+        components:
+          minecraft:lore: '[''{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"Right
+            click a emerald crate to use","underlined":false}],"text":""}'']'
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"extra":[{"bold":true,"color":"#E7CB51","italic":false,"obfuscated":false,"strikethrough":false,"text":"G","underlined":false},{"bold":true,"color":"#E8CF52","italic":false,"obfuscated":false,"strikethrough":false,"text":"o","underlined":false},{"bold":true,"color":"#EAD353","italic":false,"obfuscated":false,"strikethrough":false,"text":"l","underlined":false},{"bold":true,"color":"#EBD654","italic":false,"obfuscated":false,"strikethrough":false,"text":"d
+            ","underlined":false},{"bold":true,"color":"#EEDE55","italic":false,"obfuscated":false,"strikethrough":false,"text":"C","underlined":false},{"bold":true,"color":"#F0E256","italic":false,"obfuscated":false,"strikethrough":false,"text":"r","underlined":false},{"bold":true,"color":"#F1E557","italic":false,"obfuscated":false,"strikethrough":false,"text":"a","underlined":false},{"bold":true,"color":"#F3E958","italic":false,"obfuscated":false,"strikethrough":false,"text":"t","underlined":false},{"bold":true,"color":"#F4ED59","italic":false,"obfuscated":false,"strikethrough":false,"text":"e
+            ","underlined":false},{"bold":true,"color":"#F7F45A","italic":false,"obfuscated":false,"strikethrough":false,"text":"K","underlined":false},{"bold":true,"color":"#F9F85B","italic":false,"obfuscated":false,"strikethrough":false,"text":"e","underlined":false},{"bold":true,"color":"#FAFC5C","italic":false,"obfuscated":false,"strikethrough":false,"text":"y","underlined":false}],"text":""}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:gold_block
+        count: 8
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '4':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:barrier
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:barrier
+        count: 1
+      item2:
+        DataVersion: 4189
+        id: minecraft:barrier
+        count: 1
+    '5':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:tripwire_hook
+        count: 1
+        components:
+          minecraft:lore: '[''{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"Right
+            click a emerald crate to use","underlined":false}],"text":""}'']'
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"extra":[{"bold":true,"color":"#65E751","italic":false,"obfuscated":false,"strikethrough":false,"text":"E","underlined":false},{"bold":true,"color":"#66E954","italic":false,"obfuscated":false,"strikethrough":false,"text":"m","underlined":false},{"bold":true,"color":"#66EA57","italic":false,"obfuscated":false,"strikethrough":false,"text":"e","underlined":false},{"bold":true,"color":"#67EC5A","italic":false,"obfuscated":false,"strikethrough":false,"text":"r","underlined":false},{"bold":true,"color":"#68ED5D","italic":false,"obfuscated":false,"strikethrough":false,"text":"a","underlined":false},{"bold":true,"color":"#68EF5F","italic":false,"obfuscated":false,"strikethrough":false,"text":"l","underlined":false},{"bold":true,"color":"#69F062","italic":false,"obfuscated":false,"strikethrough":false,"text":"d
+            ","underlined":false},{"bold":true,"color":"#6BF368","italic":false,"obfuscated":false,"strikethrough":false,"text":"C","underlined":false},{"bold":true,"color":"#6BF56B","italic":false,"obfuscated":false,"strikethrough":false,"text":"r","underlined":false},{"bold":true,"color":"#6CF66E","italic":false,"obfuscated":false,"strikethrough":false,"text":"a","underlined":false},{"bold":true,"color":"#6DF871","italic":false,"obfuscated":false,"strikethrough":false,"text":"t","underlined":false},{"bold":true,"color":"#6DF974","italic":false,"obfuscated":false,"strikethrough":false,"text":"e
+            ","underlined":false},{"bold":true,"color":"#6FFC79","italic":false,"obfuscated":false,"strikethrough":false,"text":"K","underlined":false},{"bold":true,"color":"#6FFE7C","italic":false,"obfuscated":false,"strikethrough":false,"text":"e","underlined":false},{"bold":true,"color":"#70FF7F","italic":false,"obfuscated":false,"strikethrough":false,"text":"y","underlined":false}],"text":""}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:tripwire_hook
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"extra":[{"bold":true,"color":"#74EA31","italic":false,"obfuscated":false,"strikethrough":false,"text":"Emerald
+            Key","underlined":false}],"text":""}'''
+          minecraft:custom_data: '{PublicBukkitValues:{"excellentcrates:crate_key.id":"emerald"}}'
+    '6':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:tripwire_hook
+        count: 1
+        components:
+          minecraft:lore: '[''{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"Right
+            click a emerald crate to use","underlined":false}],"text":""}'']'
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"extra":[{"bold":true,"color":"#51CFE7","italic":false,"obfuscated":false,"strikethrough":false,"text":"D","underlined":false},{"bold":true,"color":"#52D1E8","italic":false,"obfuscated":false,"strikethrough":false,"text":"i","underlined":false},{"bold":true,"color":"#52D4EA","italic":false,"obfuscated":false,"strikethrough":false,"text":"a","underlined":false},{"bold":true,"color":"#53D6EB","italic":false,"obfuscated":false,"strikethrough":false,"text":"m","underlined":false},{"bold":true,"color":"#54D9EC","italic":false,"obfuscated":false,"strikethrough":false,"text":"o","underlined":false},{"bold":true,"color":"#54DBEE","italic":false,"obfuscated":false,"strikethrough":false,"text":"n","underlined":false},{"bold":true,"color":"#55DEEF","italic":false,"obfuscated":false,"strikethrough":false,"text":"d
+            ","underlined":false},{"bold":true,"color":"#57E3F2","italic":false,"obfuscated":false,"strikethrough":false,"text":"C","underlined":false},{"bold":true,"color":"#57E5F3","italic":false,"obfuscated":false,"strikethrough":false,"text":"r","underlined":false},{"bold":true,"color":"#58E7F4","italic":false,"obfuscated":false,"strikethrough":false,"text":"a","underlined":false},{"bold":true,"color":"#59EAF5","italic":false,"obfuscated":false,"strikethrough":false,"text":"t","underlined":false},{"bold":true,"color":"#59ECF7","italic":false,"obfuscated":false,"strikethrough":false,"text":"e
+            ","underlined":false},{"bold":true,"color":"#5BF1F9","italic":false,"obfuscated":false,"strikethrough":false,"text":"K","underlined":false},{"bold":true,"color":"#5BF4FB","italic":false,"obfuscated":false,"strikethrough":false,"text":"e","underlined":false},{"bold":true,"color":"#5CF6FC","italic":false,"obfuscated":false,"strikethrough":false,"text":"y","underlined":false}],"text":""}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:tripwire_hook
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"extra":[{"bold":true,"color":"aqua","italic":false,"obfuscated":false,"strikethrough":false,"text":"Diamond
+            Key","underlined":false}],"text":""}'''
+          minecraft:custom_data: '{PublicBukkitValues:{"excellentcrates:crate_key.id":"diamond"}}'
+    '7':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:tripwire_hook
+        count: 1
+        components:
+          minecraft:lore: '[''{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"Right
+            click a emerald crate to use","underlined":false}],"text":""}'']'
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"extra":[{"bold":true,"color":"#E7CB51","italic":false,"obfuscated":false,"strikethrough":false,"text":"G","underlined":false},{"bold":true,"color":"#E8CF52","italic":false,"obfuscated":false,"strikethrough":false,"text":"o","underlined":false},{"bold":true,"color":"#EAD353","italic":false,"obfuscated":false,"strikethrough":false,"text":"l","underlined":false},{"bold":true,"color":"#EBD654","italic":false,"obfuscated":false,"strikethrough":false,"text":"d
+            ","underlined":false},{"bold":true,"color":"#EEDE55","italic":false,"obfuscated":false,"strikethrough":false,"text":"C","underlined":false},{"bold":true,"color":"#F0E256","italic":false,"obfuscated":false,"strikethrough":false,"text":"r","underlined":false},{"bold":true,"color":"#F1E557","italic":false,"obfuscated":false,"strikethrough":false,"text":"a","underlined":false},{"bold":true,"color":"#F3E958","italic":false,"obfuscated":false,"strikethrough":false,"text":"t","underlined":false},{"bold":true,"color":"#F4ED59","italic":false,"obfuscated":false,"strikethrough":false,"text":"e
+            ","underlined":false},{"bold":true,"color":"#F7F45A","italic":false,"obfuscated":false,"strikethrough":false,"text":"K","underlined":false},{"bold":true,"color":"#F9F85B","italic":false,"obfuscated":false,"strikethrough":false,"text":"e","underlined":false},{"bold":true,"color":"#FAFC5C","italic":false,"obfuscated":false,"strikethrough":false,"text":"y","underlined":false}],"text":""}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:tripwire_hook
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"extra":[{"bold":true,"color":"#EAD931","italic":false,"obfuscated":false,"strikethrough":false,"text":"Gold
+            Key","underlined":false}],"text":""}'''
+          minecraft:custom_data: '{PublicBukkitValues:{"excellentcrates:crate_key.id":"gold"}}'
+    '8':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:tripwire_hook
+        count: 1
+        components:
+          minecraft:lore: '[''{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"Right
+            click a emerald crate to use","underlined":false}],"text":""}'']'
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"extra":[{"bold":true,"color":"#E551E7","italic":false,"obfuscated":false,"strikethrough":false,"text":"S","underlined":false},{"bold":true,"color":"#E652E8","italic":false,"obfuscated":false,"strikethrough":false,"text":"p","underlined":false},{"bold":true,"color":"#E852E9","italic":false,"obfuscated":false,"strikethrough":false,"text":"e","underlined":false},{"bold":true,"color":"#E953EA","italic":false,"obfuscated":false,"strikethrough":false,"text":"c","underlined":false},{"bold":true,"color":"#EB54EB","italic":false,"obfuscated":false,"strikethrough":false,"text":"i","underlined":false},{"bold":true,"color":"#EC54EC","italic":false,"obfuscated":false,"strikethrough":false,"text":"a","underlined":false},{"bold":true,"color":"#EE55ED","italic":false,"obfuscated":false,"strikethrough":false,"text":"l
+            ","underlined":false},{"bold":true,"color":"#F157F0","italic":false,"obfuscated":false,"strikethrough":false,"text":"C","underlined":false},{"bold":true,"color":"#F257F1","italic":false,"obfuscated":false,"strikethrough":false,"text":"r","underlined":false},{"bold":true,"color":"#F358F2","italic":false,"obfuscated":false,"strikethrough":false,"text":"a","underlined":false},{"bold":true,"color":"#F559F3","italic":false,"obfuscated":false,"strikethrough":false,"text":"t","underlined":false},{"bold":true,"color":"#F659F4","italic":false,"obfuscated":false,"strikethrough":false,"text":"e
+            ","underlined":false},{"bold":true,"color":"#F95BF6","italic":false,"obfuscated":false,"strikethrough":false,"text":"K","underlined":false},{"bold":true,"color":"#FB5BF7","italic":false,"obfuscated":false,"strikethrough":false,"text":"e","underlined":false},{"bold":true,"color":"#FC5CF8","italic":false,"obfuscated":false,"strikethrough":false,"text":"y","underlined":false}],"text":""}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:tripwire_hook
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"extra":[{"bold":true,"color":"#E39FFF","italic":false,"obfuscated":false,"strikethrough":false,"text":"Special
+            Key","underlined":false}],"text":""}'''
+          minecraft:custom_data: '{PublicBukkitValues:{"excellentcrates:crate_key.id":"booster"}}'
+    '9':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:tripwire_hook
+        count: 1
+        components:
+          minecraft:lore: '[''{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"Right
+            click a emerald crate to use","underlined":false}],"text":""}'']'
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"extra":[{"bold":true,"color":"#51B6E7","italic":false,"obfuscated":false,"strikethrough":false,"text":"A","underlined":false},{"bold":true,"color":"#52B8E8","italic":false,"obfuscated":false,"strikethrough":false,"text":"q","underlined":false},{"bold":true,"color":"#52BAEA","italic":false,"obfuscated":false,"strikethrough":false,"text":"u","underlined":false},{"bold":true,"color":"#53BCEB","italic":false,"obfuscated":false,"strikethrough":false,"text":"a","underlined":false},{"bold":true,"color":"#54BEEC","italic":false,"obfuscated":false,"strikethrough":false,"text":"t","underlined":false},{"bold":true,"color":"#54C0EE","italic":false,"obfuscated":false,"strikethrough":false,"text":"i","underlined":false},{"bold":true,"color":"#55C2EF","italic":false,"obfuscated":false,"strikethrough":false,"text":"c
+            ","underlined":false},{"bold":true,"color":"#57C6F2","italic":false,"obfuscated":false,"strikethrough":false,"text":"C","underlined":false},{"bold":true,"color":"#57C7F3","italic":false,"obfuscated":false,"strikethrough":false,"text":"r","underlined":false},{"bold":true,"color":"#58C9F4","italic":false,"obfuscated":false,"strikethrough":false,"text":"a","underlined":false},{"bold":true,"color":"#59CBF5","italic":false,"obfuscated":false,"strikethrough":false,"text":"t","underlined":false},{"bold":true,"color":"#59CDF7","italic":false,"obfuscated":false,"strikethrough":false,"text":"e
+            ","underlined":false},{"bold":true,"color":"#5BD1F9","italic":false,"obfuscated":false,"strikethrough":false,"text":"K","underlined":false},{"bold":true,"color":"#5BD3FB","italic":false,"obfuscated":false,"strikethrough":false,"text":"e","underlined":false},{"bold":true,"color":"#5CD5FC","italic":false,"obfuscated":false,"strikethrough":false,"text":"y","underlined":false}],"text":""}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:tripwire_hook
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"extra":[{"bold":true,"color":"dark_aqua","italic":false,"obfuscated":false,"strikethrough":false,"text":"Aquatic
+            Key","underlined":false}],"text":""}'''
+          minecraft:custom_data: '{PublicBukkitValues:{"excellentcrates:crate_key.id":"aquatic"}}'
+  snapshots: []
+'26':
+  uniqueId: f973bd77-a0d4-4900-a364-d48c7590fcc7
+  world: world
+  x: -106
+  y: 0
+  z: 1164
+  yaw: 60.960712
+  type: admin
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: minecraft:weaponsmith
+    villagerType: minecraft:swamp
+    villagerLevel: 1
+  recipes:
+    '1':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:netherite_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"},{blocks:"minecraft:potatoes"},{blocks:"minecraft:beetroots"},{blocks:"minecraft:pitcher_crop"},{blocks:"minecraft:brown_mushroom"},{blocks:"minecraft:red_mushroom"},{blocks:"minecraft:dead_bush"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:14.0d,id:"minecraft:block_interaction_range",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.4d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"14"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"0.4"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe XVII"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":3,"minecraft:fortune":5}}'
+          minecraft:custom_model_data: '{strings:["prism_hoe"]}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:diamond_block
+        count: 64
+      item2:
+        DataVersion: 4189
+        id: minecraft:netherite_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"},{blocks:"minecraft:potatoes"},{blocks:"minecraft:beetroots"},{blocks:"minecraft:pitcher_crop"},{blocks:"minecraft:brown_mushroom"},{blocks:"minecraft:red_mushroom"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:13.0d,id:"minecraft:9cd45bac-f5f1-46d3-860a-725e25e9047c",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.4d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"13"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"+0.4"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe XVI"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":3,"minecraft:fortune":5}}'
+    '2':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:netherite_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"},{blocks:"minecraft:potatoes"},{blocks:"minecraft:beetroots"},{blocks:"minecraft:pitcher_crop"},{blocks:"minecraft:brown_mushroom"},{blocks:"minecraft:red_mushroom"},{blocks:"minecraft:dead_bush"},{blocks:"minecraft:sea_pickle"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:15.0d,id:"minecraft:block_interaction_range",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.4d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"15"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"0.4"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe XVIII"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":4,"minecraft:fortune":5}}'
+          minecraft:custom_model_data: '{strings:["prism_hoe"]}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:prismarine
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item2:
+        DataVersion: 4189
+        id: minecraft:netherite_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"},{blocks:"minecraft:potatoes"},{blocks:"minecraft:beetroots"},{blocks:"minecraft:pitcher_crop"},{blocks:"minecraft:brown_mushroom"},{blocks:"minecraft:red_mushroom"},{blocks:"minecraft:dead_bush"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:14.0d,id:"minecraft:block_interaction_range",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.4d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"14"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"0.4"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe XVII"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":3,"minecraft:fortune":5}}'
+          minecraft:custom_model_data: '{strings:["prism_hoe"]}'
+    '3':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:netherite_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"},{blocks:"minecraft:potatoes"},{blocks:"minecraft:beetroots"},{blocks:"minecraft:pitcher_crop"},{blocks:"minecraft:brown_mushroom"},{blocks:"minecraft:red_mushroom"},{blocks:"minecraft:dead_bush"},{blocks:"minecraft:sea_pickle"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:16.0d,id:"minecraft:block_interaction_range",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.4d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"16"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"0.4"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe XIX"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":5,"minecraft:fortune":5}}'
+          minecraft:custom_model_data: '{strings:["prism_hoe"]}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:prismarine
+        count: 4
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"aqua","italic":false,"text":"Compressed
+            Prismarine"}'''
+      item2:
+        DataVersion: 4189
+        id: minecraft:netherite_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"},{blocks:"minecraft:potatoes"},{blocks:"minecraft:beetroots"},{blocks:"minecraft:pitcher_crop"},{blocks:"minecraft:brown_mushroom"},{blocks:"minecraft:red_mushroom"},{blocks:"minecraft:dead_bush"},{blocks:"minecraft:sea_pickle"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:15.0d,id:"minecraft:block_interaction_range",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.4d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"15"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"0.4"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe XVIII"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":4,"minecraft:fortune":5}}'
+          minecraft:custom_model_data: '{strings:["prism_hoe"]}'
+    '4':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:netherite_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"},{blocks:"minecraft:potatoes"},{blocks:"minecraft:beetroots"},{blocks:"minecraft:pitcher_crop"},{blocks:"minecraft:brown_mushroom"},{blocks:"minecraft:red_mushroom"},{blocks:"minecraft:dead_bush"},{blocks:"minecraft:sea_pickle"},{blocks:"minecraft:kelp"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:17.0d,id:"minecraft:block_interaction_range",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.42d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:unbreakable: '{}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"17"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"0.42"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe XX"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":5,"minecraft:fortune":5}}'
+          minecraft:custom_model_data: '{strings:["prism_hoe"]}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:prismarine_bricks
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item2:
+        DataVersion: 4189
+        id: minecraft:netherite_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"},{blocks:"minecraft:potatoes"},{blocks:"minecraft:beetroots"},{blocks:"minecraft:pitcher_crop"},{blocks:"minecraft:brown_mushroom"},{blocks:"minecraft:red_mushroom"},{blocks:"minecraft:dead_bush"},{blocks:"minecraft:sea_pickle"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:16.0d,id:"minecraft:block_interaction_range",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.4d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"16"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"0.4"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:unbreakable: '{}'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe XIX"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":5,"minecraft:fortune":5}}'
+          minecraft:custom_model_data: '{strings:["prism_hoe"]}'
+    '5':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:netherite_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"},{blocks:"minecraft:potatoes"},{blocks:"minecraft:beetroots"},{blocks:"minecraft:pitcher_crop"},{blocks:"minecraft:brown_mushroom"},{blocks:"minecraft:red_mushroom"},{blocks:"minecraft:dead_bush"},{blocks:"minecraft:sea_pickle"},{blocks:"minecraft:kelp"},{blocks:"minecraft:sponge"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:18.0d,id:"minecraft:block_interaction_range",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.42d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:unbreakable: '{}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"18"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"0.42"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe XXI"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":5,"minecraft:fortune":5}}'
+          minecraft:custom_model_data: '{strings:["prism_hoe"]}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:prismarine_bricks
+        count: 2
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"aqua","italic":false,"text":"Compressed
+            Prismarine Bricks"}'''
+      item2:
+        DataVersion: 4189
+        id: minecraft:netherite_hoe
+        count: 1
+        components:
+          minecraft:can_break: '{predicates:[{blocks:"minecraft:wheat"},{blocks:"minecraft:hay_block"},{blocks:"minecraft:carrots"},{blocks:"minecraft:potatoes"},{blocks:"minecraft:beetroots"},{blocks:"minecraft:pitcher_crop"},{blocks:"minecraft:brown_mushroom"},{blocks:"minecraft:red_mushroom"},{blocks:"minecraft:dead_bush"},{blocks:"minecraft:sea_pickle"},{blocks:"minecraft:kelp"}]}'
+          minecraft:attribute_modifiers: '{modifiers:[{amount:17.0d,id:"minecraft:block_interaction_range",operation:"add_value",slot:"hand",type:"minecraft:block_interaction_range"},{amount:0.42d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"}]}'
+          minecraft:unbreakable: '{}'
+          minecraft:lore: '[''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"17"}],"italic":false,"text":"Range:
+            "}'',''{"color":"gray","extra":[{"bold":true,"color":"green","italic":false,"text":"0.42"}],"italic":false,"text":"Walk
+            Speed: "}'']'
+          minecraft:custom_name: '''{"color":"blue","italic":false,"text":"Hoe XX"}'''
+          minecraft:enchantments: '{levels:{"minecraft:efficiency":5,"minecraft:fortune":5}}'
+          minecraft:custom_model_data: '{strings:["prism_hoe"]}'
+    '6':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:structure_void
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:structure_void
+        count: 1
+      item2:
+        DataVersion: 4189
+        id: minecraft:structure_void
+        count: 1
+    '7':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:netherite_sword
+        count: 1
+        components:
+          minecraft:attribute_modifiers: '{modifiers:[{amount:0.4d,id:"minecraft:movement_speed",operation:"add_value",slot:"hand",type:"minecraft:movement_speed"},{amount:5.0d,id:"minecraft:max_health",operation:"add_value",type:"minecraft:max_health"},{amount:2.0d,id:"minecraft:attack_damage",operation:"add_value",slot:"hand",type:"minecraft:attack_damage"},{amount:1.0d,id:"minecraft:attack_speed",operation:"add_value",slot:"hand",type:"minecraft:attack_speed"}]}'
+          minecraft:custom_model_data: '{strings:["prism_sword"]}'
+          minecraft:item_name: '''{"italic":false,"text":"Prismarine Sword"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:prismarine_bricks
+        count: 8
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"aqua","italic":false,"text":"Compressed
+            Prismarine Bricks"}'''
+      item2:
+        DataVersion: 4189
+        id: minecraft:netherite_sword
+        count: 1
+  snapshots: []
+'27':
+  uniqueId: 4ea2c629-994a-4d3a-8341-cb54fd2135cf
+  world: world
+  x: -109
+  y: 0
+  z: 1164
+  yaw: 349.06497
+  type: admin
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: minecraft:none
+    villagerType: minecraft:swamp
+    villagerLevel: 2
+  recipes:
+    '1':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:prismarine_crystals
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"aqua","italic":false,"text":"Compressed
+            Prismarine Crystals"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:prismarine_crystals
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '2':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:prismarine_crystals
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:prismarine_crystals
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"aqua","italic":false,"text":"Compressed
+            Prismarine Crystals"}'''
+    '3':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:prismarine
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:prismarine_crystals
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"aqua","italic":false,"text":"Compressed
+            Prismarine Crystals"}'''
+    '4':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:prismarine_crystals
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"aqua","italic":false,"text":"Compressed
+            Prismarine Crystals"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:prismarine
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '5':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:prismarine
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"aqua","italic":false,"text":"Compressed
+            Prismarine"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:prismarine
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '6':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:prismarine
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:prismarine
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"aqua","italic":false,"text":"Compressed
+            Prismarine"}'''
+    '7':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:prismarine_bricks
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:prismarine
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"aqua","italic":false,"text":"Compressed
+            Prismarine"}'''
+    '8':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:prismarine
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"aqua","italic":false,"text":"Compressed
+            Prismarine"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:prismarine_bricks
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '9':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:prismarine_bricks
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"aqua","italic":false,"text":"Compressed
+            Prismarine Bricks"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:prismarine_bricks
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '10':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:prismarine_bricks
+        count: 32
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:prismarine_bricks
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"aqua","italic":false,"text":"Compressed
+            Prismarine Bricks"}'''
+  snapshots: []
+'28':
+  uniqueId: c1a0ccf0-6c43-45fb-a595-ff917085d078
+  world: world
+  x: -111
+  y: -1
+  z: 1181
+  yaw: 92.37574
+  type: admin
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: minecraft:nitwit
+    villagerType: minecraft:swamp
+    villagerLevel: 1
+  recipes:
+    '1':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:turtle_helmet
+        count: 1
+      item1:
+        DataVersion: 4189
+        id: minecraft:prismarine
+        count: 16
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '2':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:tripwire_hook
+        count: 1
+        components:
+          minecraft:lore: '[''{"extra":[{"bold":false,"color":"gray","italic":false,"obfuscated":false,"strikethrough":false,"text":"Right
+            click a emerald crate to use","underlined":false}],"text":""}'']'
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"extra":[{"bold":true,"color":"#51B6E7","italic":false,"obfuscated":false,"strikethrough":false,"text":"A","underlined":false},{"bold":true,"color":"#52B8E8","italic":false,"obfuscated":false,"strikethrough":false,"text":"q","underlined":false},{"bold":true,"color":"#52BAEA","italic":false,"obfuscated":false,"strikethrough":false,"text":"u","underlined":false},{"bold":true,"color":"#53BCEB","italic":false,"obfuscated":false,"strikethrough":false,"text":"a","underlined":false},{"bold":true,"color":"#54BEEC","italic":false,"obfuscated":false,"strikethrough":false,"text":"t","underlined":false},{"bold":true,"color":"#54C0EE","italic":false,"obfuscated":false,"strikethrough":false,"text":"i","underlined":false},{"bold":true,"color":"#55C2EF","italic":false,"obfuscated":false,"strikethrough":false,"text":"c
+            ","underlined":false},{"bold":true,"color":"#57C6F2","italic":false,"obfuscated":false,"strikethrough":false,"text":"C","underlined":false},{"bold":true,"color":"#57C7F3","italic":false,"obfuscated":false,"strikethrough":false,"text":"r","underlined":false},{"bold":true,"color":"#58C9F4","italic":false,"obfuscated":false,"strikethrough":false,"text":"a","underlined":false},{"bold":true,"color":"#59CBF5","italic":false,"obfuscated":false,"strikethrough":false,"text":"t","underlined":false},{"bold":true,"color":"#59CDF7","italic":false,"obfuscated":false,"strikethrough":false,"text":"e
+            ","underlined":false},{"bold":true,"color":"#5BD1F9","italic":false,"obfuscated":false,"strikethrough":false,"text":"K","underlined":false},{"bold":true,"color":"#5BD3FB","italic":false,"obfuscated":false,"strikethrough":false,"text":"e","underlined":false},{"bold":true,"color":"#5CD5FC","italic":false,"obfuscated":false,"strikethrough":false,"text":"y","underlined":false}],"text":""}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:prismarine
+        count: 16
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"aqua","italic":false,"text":"Compressed
+            Prismarine"}'''
+    '3':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:heart_of_the_sea
+        count: 1
+        components:
+          minecraft:lore: '[''"Collect items in a 10 block range"'']'
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"blue","italic":false,"text":"Hyper
+            Magnet"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:prismarine_bricks
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item2:
+        DataVersion: 4189
+        id: minecraft:prismarine_shard
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"dark_purple","italic":false,"text":"Ultra
+            Magnet"}'''
+    '4':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:wind_charge
+        count: 16
+      item1:
+        DataVersion: 4189
+        id: minecraft:prismarine_bricks
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+    '5':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:enchanted_book
+        count: 1
+        components:
+          minecraft:stored_enchantments: '{levels:{"minecraft:depth_strider":3}}'
+      item1:
+        DataVersion: 4189
+        id: minecraft:prismarine_bricks
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+  snapshots: []
+'29':
+  uniqueId: 1e1f45cc-e27b-4bfb-b377-9ad396fc23c2
+  world: world
+  x: -88
+  y: 0
+  z: 1177
+  yaw: 62.981644
+  type: admin
+  name: ''
+  object:
+    type: villager
+    baby: false
+    profession: minecraft:farmer
+    villagerType: minecraft:swamp
+    villagerLevel: 1
+  recipes:
+    '1':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:prismarine_crystals
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:stick
+        count: 1
+    '2':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:prismarine_crystals
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"aqua","italic":false,"text":"Compressed
+            Prismarine Crystals"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:sea_pickle
+        count: 1
+    '3':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:prismarine
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 0b
+      item1:
+        DataVersion: 4189
+        id: minecraft:kelp
+        count: 1
+    '4':
+      resultItem:
+        DataVersion: 4189
+        id: minecraft:prismarine
+        count: 1
+        components:
+          minecraft:enchantment_glint_override: 1b
+          minecraft:custom_name: '''{"bold":true,"color":"aqua","italic":false,"text":"Compressed
+            Prismarine"}'''
+      item1:
+        DataVersion: 4189
+        id: minecraft:sponge
+        count: 1
+  snapshots: []

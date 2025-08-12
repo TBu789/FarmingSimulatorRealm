@@ -1,0 +1,11 @@
+{
+  "enabled": true,
+  "item": {
+    "material": "CHAIN_COMMAND_BLOCK",
+    "lore": [
+      "&7Click here to save your current",
+      "&7pet for you to spawn later"
+    ],
+    "name": "&#E3C79A&lSave Pet"
+  }
+}

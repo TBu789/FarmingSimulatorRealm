@@ -1,0 +1,14 @@
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"Plugin has been updated from version N/A to 2.5.2.","timestamp":1750968799662,"threadID":42,"threadName":"Server thread","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"FancyNpcs (2.5.2) has been enabled.","timestamp":1750968799903,"threadID":42,"threadName":"Server thread","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"WARN","message":"You are not using the latest version of the FancyNpcs plugin.","timestamp":1750968800033,"threadID":50,"threadName":"ForkJoinPool.commonPool-worker-1","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"FancyNpcs has been disabled.","timestamp":1750969040831,"threadID":42,"threadName":"Server thread","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"FancyNpcs (2.5.2) has been enabled.","timestamp":1750969075551,"threadID":42,"threadName":"Server thread","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"WARN","message":"You are not using the latest version of the FancyNpcs plugin.","timestamp":1750969075662,"threadID":50,"threadName":"ForkJoinPool.commonPool-worker-1","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"FancyNpcs has been disabled.","timestamp":1750969390159,"threadID":42,"threadName":"Server thread","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"FancyNpcs (2.5.2) has been enabled.","timestamp":1750969420742,"threadID":42,"threadName":"Server thread","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"WARN","message":"You are not using the latest version of the FancyNpcs plugin.","timestamp":1750969420858,"threadID":50,"threadName":"ForkJoinPool.commonPool-worker-1","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"WARN","message":"Could not fetch skin: invalid_image: Invalid image content type: application/octet-stream","timestamp":1750969747261,"threadID":94,"threadName":"FancyNpcs-Skins-3","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"WARN","message":"Could not fetch skin: invalid_image: Invalid image content type: application/octet-stream","timestamp":1750969763781,"threadID":93,"threadName":"FancyNpcs-Skins-2","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"WARN","message":"Could not fetch skin: invalid_image: Invalid image content type: application/octet-stream","timestamp":1750969891533,"threadID":93,"threadName":"FancyNpcs-Skins-2","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"Updated skin for NPC: petshop","timestamp":1750969954783,"threadID":94,"threadName":"FancyNpcs-Skins-3","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"Updated skin for NPC: petshop","timestamp":1750969989962,"threadID":94,"threadName":"FancyNpcs-Skins-3","properties":{}}

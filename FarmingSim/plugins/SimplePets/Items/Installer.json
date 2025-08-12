@@ -1,0 +1,10 @@
+{
+  "enabled": true,
+  "item": {
+    "material": "PLAYER_HEAD",
+    "meta": {
+      "texture": "http://textures.minecraft.net/texture/ce1f3cc63c73a6a1dde72fe09c6ac5569376d7b61231bb740764368788cbf1fa"
+    },
+    "name": "&#E3C79AInstall Addons"
+  }
+}

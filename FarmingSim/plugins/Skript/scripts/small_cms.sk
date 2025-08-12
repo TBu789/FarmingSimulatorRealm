@@ -1,0 +1,73 @@
+command /rdiscord:
+  aliases: rdc, rmdiscord, rmdc, realmdiscord, realmdc
+  trigger:
+    execute console command "scoreboard player set %player% sign_trigger 7"
+
+command /giveboosts <offlineplayer> <number> <text> <number> <text>:
+  permission: op
+  trigger:
+    send "%arg-1% %arg-2% %arg-3% %arg-4% %arg-5%" #DEBUG MESSAGE
+    if arg-1 is not set:
+      send "&cWrong Usage: <player> <amount in h/m> <m/h> <random number> <Boost: all/autoSell/autoCompress/tripleXp>"
+      stop
+    if arg-2 is not set:
+      send "&cWrong Usage: <player> <amount in h/m> <m/h> <random number> <Boost: all/autoSell/autoCompress/tripleXp>"
+      stop
+    if arg-3 is not set:
+      send "&cWrong Usage: <player> <amount in h/m> <m/h> <random number> <Boost: all/autoSell/autoCompress/tripleXp>"
+      stop
+    if arg-4 is not set:
+      send "&cWrong Usage: <player> <amount in h/m> <m/h> <random number> <Boost: all/autoSell/autoCompress/tripleXp>"
+      stop
+    set {_player} to arg-1
+    if arg-3 is "h" or "m":
+      set {_amountinput} to arg-2
+      if arg-3 is "h":
+        set {_amount} to {_amountinput} * 3600
+      else:
+        set {_amount} to {_amountinput} * 60
+      set {_type} to arg-5
+      if {_type} is "all":
+        execute console command "scoreboard players add %{_player}% double %{_amount}%"
+        execute console command "scoreboard players add %{_player}% autosell %{_amount}%"
+        execute console command "scoreboard players add %{_player}% autocompress %{_amount}%"
+        if arg-3 is "h":
+          send "&a%{_player}% has recieved all boosts for %{_amountinput}% hour(s)!"
+        else:
+          send "&a%{_player}% has recieved all boosts for %{_amountinput}% minute(s)!"
+        stop
+      if {_type} is "autoSell":
+        execute console command "scoreboard players add %{_player}% autosell %{_amount}%"
+      if {_type} is "autoCompress":
+        execute console command "scoreboard players add %{_player}% autocompress %{_amount}%"
+      if {_type} is "tripleXp":
+        execute console command "scoreboard players add %{_player}% double %{_amount}%"
+      if arg-3 is "h":
+        send "&a%{_player}% has recieved %{_type}% for %{_amountinput}% hours!"
+      else:
+        send "&a%{_player}% has recieved %{_type}% for %{_amountinput}% minutes!"
+      if {_type} is not "autoSell" or "autoCompress" or "tripleXp" or "all":
+        send "&cInvalid Input for argument 3: Expected 'autoSell', 'autoCompress', 'tripleXp' or 'all' and not '%arg-3%'!"
+      stop
+    else:
+      send "&cInvalid Input for argument 2: Expected 'm' or 'h' and not '%arg-2%'!"
+      stop
+
+on tab complete of "/giveboosts":
+  set tab completions for position 1 to offline players
+  set tab completions for position 2 to "Amount in m/h"
+  set tab completions for position 3 to "m" and "h"
+  set tab completions for position 4 to "0"
+  set tab completions for position 5 to "all", "autoSell", "autoCompress" and "tripleXP"
+
+command /broadcast <offlineplayer> <text>:
+  permission: broadcast
+  trigger:
+    set {_text} to "&7[&6Broadcast&7] &f%arg-2%"
+    
+    if arg-1 is not "all":
+      send {_text} to arg-1
+      send {_text} to player
+    else:
+      send {_text} to all players
+

@@ -1,0 +1,6 @@
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"FancyNpcs (2.5.2) has been enabled.","timestamp":1753543120099,"threadID":44,"threadName":"Server thread","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"WARN","message":"You are not using the latest version of the FancyNpcs plugin.","timestamp":1753543120267,"threadID":100,"threadName":"ForkJoinPool.commonPool-worker-2","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"Updated skin for NPC: petshop","timestamp":1753543132017,"threadID":98,"threadName":"FancyNpcs-Skins-3","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"Updated skin for NPC: tutorial","timestamp":1753543132145,"threadID":98,"threadName":"FancyNpcs-Skins-3","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"ERROR","message":"Error in mineskin request: java.net.SocketTimeoutException: Read timed out","timestamp":1753543133694,"threadID":96,"threadName":"FancyNpcs-Skins-1","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"ERROR","message":"Error in mineskin request: java.net.SocketTimeoutException: Read timed out","timestamp":1753543136357,"threadID":97,"threadName":"FancyNpcs-Skins-2","properties":{}}

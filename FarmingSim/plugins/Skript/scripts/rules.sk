@@ -1,0 +1,15 @@
+command /rules [<player>]:
+  trigger:
+    if arg-1 is not set:
+      set {_player} to player
+    else:
+      if player is op:
+        set {_player} to arg-1
+      else:
+        set {_player} to player
+    set {_guide} to a written book
+    set {_guidecontent1} to text component of "<#FCD05C>&lR<#FAC845>&lu<#F8C02E>&ll<#F5B817>&le<#F3B000>&ls %nl%%nl%&0Please read our rules carefully!%nl%• Be respectful%nl%• No hate speech %nl%• No bug exploiting%nl%• No advertisment%nl%• No links in chat %nl%%nl%&c&lNot knowing the rules isn't a reason to get unbanned!"
+    set page 1 of book {_guide} to {_guidecontent1}
+    set book author of {_guide} to "Tillo789"
+    set book title of {_guide} to "Rules"
+    open book {_guide} to {_player}

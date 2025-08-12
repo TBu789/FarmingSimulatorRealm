@@ -1,0 +1,350 @@
+#------------------------------------#
+#            Gold Crate              #
+#------------------------------------#
+
+#---Config---
+options:
+
+  #--Keys
+  KeyType: TRIPWIRE HOOK
+  KeyName: "&x&5&1&b&6&e&7&lA&x&5&2&b&8&e&8&lq&x&5&2&b&a&e&a&lu&x&5&3&b&c&e&b&la&x&5&4&b&e&e&c&lt&x&5&4&c&0&e&e&li&x&5&5&c&2&e&f&lc &x&5&7&c&6&f&2&lC&x&5&7&c&7&f&3&lr&x&5&8&c&9&f&4&la&x&5&9&c&b&f&5&lt&x&5&9&c&d&f&7&le &x&5&b&d&1&f&9&lK&x&5&b&d&3&f&b&le&x&5&c&d&5&f&c&ly"
+  KeyLore: "&7Right click a emerald crate to use"
+  
+  #--Crate
+  CrateBlock: CYAN SHULKER BOX
+  CrateName: "&x&5&1&b&6&e&7&lA&x&5&2&b&9&e&9&lq&x&5&3&b&b&e&b&lu&x&5&4&b&e&e&c&la&x&5&5&c&0&e&e&lt&x&5&6&c&3&f&0&li&x&5&7&c&6&f&2&lc &x&5&8&c&b&f&5&lC&x&5&9&c&d&f&7&lr&x&5&a&d&0&f&9&la&x&5&b&d&2&f&a&lt&x&5&c&d&5&f&c&le"
+  CrateAccentMaterial: CYAN_STAINED_GLASS_PANE
+  
+  
+  #--Messages
+  Prefix: "&x&f&f&e&7&2&5&lF&x&f&f&e&5&2&d&lS &x&f&f&e&0&3&e&lC&x&f&f&d&e&4&6&lr&x&f&f&d&c&4&f&la&x&f&f&d&a&5&7&lt&x&f&f&d&7&5&f&le&x&f&f&d&5&6&8&ls&x&f&f&d&3&7&0&l:"
+  NoKey: "&x&e&7&5&1&5&1&lW&x&e&a&5&5&5&5&lh&x&e&e&5&a&5&a&lo&x&f&1&5&e&5&e&lo&x&f&5&6&3&6&3&lp&x&f&8&6&7&6&7&ls&x&f&c&6&c&6&c&l! &7You need a crate key for that"
+  Cooldown: "&x&e&7&5&1&5&1&lW&x&e&a&5&5&5&5&lh&x&e&e&5&a&5&a&lo&x&f&1&5&e&5&e&lo&x&f&5&6&3&6&3&lp&x&f&8&6&7&6&7&ls&x&f&c&6&c&6&c&l! &7This action is on cooldown"
+  
+  #--GUI
+  GuiTitle: "&x&5&1&b&6&e&7&lA&x&5&2&b&9&e&9&lq&x&5&3&b&b&e&b&lu&x&5&4&b&e&e&c&la&x&5&5&c&0&e&e&lt&x&5&6&c&3&f&0&li&x&5&7&c&6&f&2&lc &x&5&8&c&b&f&5&lC&x&5&9&c&d&f&7&lr&x&5&a&d&0&f&9&la&x&5&b&d&2&f&a&lt&x&5&c&d&5&f&c&le"
+
+  #--Rewards
+  Reward1_Material: PRISMARINE
+  Reward1_Name: "&b&lCompressed Prismarine"
+  Reward1_Amount: 4
+  Reward1_EnGl: true
+  Reward1_Command: "give _PLAYER_ prismarine[enchantment_glint_override=true,custom_name='{""bold"":true,""color"":""aqua"",""italic"":false,""text"":""Compressed Prismarine""}'] 4"
+  #Chance: 20 <---Cannot change
+  
+  Reward2_Material: PRISMARINE
+  Reward2_Name: "&b&lCompressed Prismarine"
+  Reward2_Amount: 8
+  Reward2_EnGl: true
+  Reward2_Command: "give _PLAYER_ prismarine[enchantment_glint_override=true,custom_name='{""bold"":true,""color"":""aqua"",""italic"":false,""text"":""Compressed Prismarine""}'] 8"
+  #Chance: 20 <---Cannot change
+  
+  Reward3_Material: PRISMARINE
+  Reward3_Name: "&b&lCompressed Prismarine"
+  Reward3_Amount: 16
+  Reward3_EnGl: true
+  Reward3_Command: "give _PLAYER_ prismarine[enchantment_glint_override=true,custom_name='{""bold"":true,""color"":""aqua"",""italic"":false,""text"":""Compressed Prismarine""}'] 16"
+  #Chance: 20 <---Cannot change
+  
+  Reward4_Material: PRISMARINE_BRICKS
+  Reward4_Name: "&b&lPrismarine Bricks"
+  Reward4_Amount: 1
+  Reward4_EnGl: false
+  Reward4_Command: "give _PLAYER_ minecraft:prismarine_bricks[minecraft:enchantment_glint_override=false] 1"
+  #Chance: 10 <---Cannot change
+  
+  Reward5_Material: AMETHYST_SHARD
+  Reward5_Name: "&d&lPet Shard"
+  Reward5_Amount: 1
+  Reward5_EnGl: true
+  Reward5_Command: "give _PLAYER_ amethyst_shard[enchantment_glint_override=true,custom_name='{""bold"":true,""color"":""light_purple"",""italic"":false,""text"":""Pet Shard""}'] 1"
+  #Chance: 10 <---Cannot change
+  
+  Reward6_Material: AMETHYST_SHARD
+  Reward6_Name: "&d&lPet Shard"
+  Reward6_Amount: 2
+  Reward6_EnGl: true
+  Reward6_Command: "give _PLAYER_ amethyst_shard[enchantment_glint_override=true,custom_name='{""bold"":true,""color"":""light_purple"",""italic"":false,""text"":""Pet Shard""}'] 2"
+  #Chance: 10 <---Cannot change
+  
+  Reward7_Material: AMETHYST_SHARD
+  Reward7_Name: "&d&lPet Shard"
+  Reward7_Amount: 3
+  Reward7_EnGl: true
+  Reward7_Command: "give _PLAYER_ amethyst_shard[enchantment_glint_override=true,custom_name='{""bold"":true,""color"":""light_purple"",""italic"":false,""text"":""Pet Shard""}'] 3"
+  #Chance: 5 <---Cannot change
+  
+  Reward8_Material: SKULL
+  Reward8_Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGU5Njg4Yjk1MGQ4ODBiNTViN2FhMmNmY2Q3NmU1YTBmYTk0YWFjNmQxNmY3OGU4MzNmNzQ0M2VhMjlmZWQzIn19fQ=="
+  Reward8_Name: "&3&lDolphinPet"
+  Reward8_Amount: 1
+  Reward8_EnGl: true
+  Reward8_Command: "pet purchased add _PLAYER_ dolphin"
+  #Chance: 5 <---Cannot change
+
+
+#---Code---
+function hasCrateKey(p: player,n: number, t: text) :: boolean:
+    loop all items in {_p}'s inventory:
+        name of loop-item is {@KeyName}:
+            lore of loop-item is {@KeyLore}:
+                return true
+    return false
+
+function showRItem(p: player, slot: number, final: boolean, n: number, t: text):
+  set {_r} to random integer from 1 and 100
+  set {_broadcast} to false
+  if {_r} is between 1 and 19:
+    set {_material} to {@Reward1_Material}
+    set {_name} to {@Reward1_Name}
+    set {_amount} to {@Reward1_Amount}
+    set {_glint} to {@Reward1_EnGl}
+    set {_command} to {@Reward1_Command}
+  if {_r} is between 20 and 39:
+    set {_material} to {@Reward2_Material}
+    set {_name} to {@Reward2_Name}
+    set {_amount} to {@Reward2_Amount}
+    set {_glint} to {@Reward2_EnGl}
+    set {_command} to {@Reward2_Command}
+  if {_r} is between 40 and 59:
+    set {_material} to {@Reward3_Material}
+    set {_name} to {@Reward3_Name}
+    set {_amount} to {@Reward3_Amount}
+    set {_glint} to {@Reward3_EnGl}
+    set {_command} to {@Reward3_Command}
+  if {_r} is between 60 and 69:
+    set {_material} to {@Reward4_Material}
+    set {_name} to {@Reward4_Name}
+    set {_amount} to {@Reward4_Amount}
+    set {_glint} to {@Reward4_EnGl}
+    set {_command} to {@Reward4_Command}
+  if {_r} is between 70 and 79:
+    set {_material} to {@Reward5_Material}
+    set {_name} to {@Reward5_Name}
+    set {_amount} to {@Reward5_Amount}
+    set {_glint} to {@Reward5_EnGl}
+    set {_command} to {@Reward5_Command}
+  if {_r} is between 80 and 89:
+    set {_material} to {@Reward6_Material}
+    set {_name} to {@Reward6_Name}
+    set {_amount} to {@Reward6_Amount}
+    set {_glint} to {@Reward6_EnGl}
+    set {_command} to {@Reward6_Command}
+  if {_r} is between 90 and 95:
+    set {_material} to {@Reward7_Material}
+    set {_name} to {@Reward7_Name}
+    set {_amount} to {@Reward7_Amount}
+    set {_glint} to {@Reward7_EnGl}
+    set {_command} to {@Reward7_Command}
+  if {_r} is between 96 and 100:
+    set {_material} to {@Reward8_Material}
+    set {_name} to {@Reward8_Name}
+    set {_amount} to {@Reward8_Amount}
+    set {_glint} to {@Reward8_EnGl}
+    set {_command} to {@Reward8_Command}
+    set {_broadcast} to true
+  if {_material} is skull:
+    set slot {_slot} of {_p}'s current inventory to skull from value {@Reward8_Value} named {_name} with enchantment glint
+  else:
+    set {_material} to "%{_amount}% %{_material}%" parsed as item
+    if {_glint} is true:
+      set slot {_slot} of {_p}'s current inventory to {_material} named {_name} with enchantment glint
+    else:
+      set slot {_slot} of {_p}'s current inventory to {_material} named {_name}
+  if {_final} is true:
+    wait 1 second
+    close {_p}'s inventory
+    replace all "_PLAYER_" with "%{_p}%" in {_command}
+    execute console command "%{_command}%"
+    send "%{@Prefix}% &7You have recieved %{_amount}%x %{_name}% &7from %{@CrateName}%&7!" to {_p}
+    execute console command "clear %{_p}% white_stained_glass_pane"
+    execute console command "clear %{_p}% gray_stained_glass_pane"
+    execute console command "clear %{_p}% black_stained_glass_pane"
+    if {_broadcast} is true:
+      broadcast " %nl%%{@Prefix}% &e%{_p}% &7has won %{_name}%&7!%nl% "
+  else:
+    stop
+
+
+
+on leftclick on {@CrateBlock}:
+  if block under event-block is not oak fence:
+    stop
+  cancel event
+  open chest inventory with 4 rows named {@GuiTitle} to player
+  showVerBorder(player, 0, GRAY_STAINED_GLASS_PANE)
+  showVerBorder(player, 8, GRAY_STAINED_GLASS_PANE)
+  set slot 1 of player's current inventory to gray stained glass pane named " "
+  set slot 2 of player's current inventory to gray stained glass pane named " "
+  set slot 3 of player's current inventory to gray stained glass pane named " "
+  set slot 5 of player's current inventory to gray stained glass pane named " "
+  set slot 6 of player's current inventory to gray stained glass pane named " "
+  set slot 7 of player's current inventory to gray stained glass pane named " "
+  set slot 28 of player's current inventory to gray stained glass pane named " "
+  set slot 29 of player's current inventory to gray stained glass pane named " "
+  set slot 30 of player's current inventory to gray stained glass pane named " "
+  set slot 32 of player's current inventory to gray stained glass pane named " "
+  set slot 33 of player's current inventory to gray stained glass pane named " "
+  set slot 34 of player's current inventory to gray stained glass pane named " "
+  
+  set slot 0 of player's current inventory to {@CrateAccentMaterial} named " "
+  set slot 8 of player's current inventory to {@CrateAccentMaterial} named " "
+  set slot 27 of player's current inventory to {@CrateAccentMaterial} named " "
+  set slot 35 of player's current inventory to {@CrateAccentMaterial} named " "
+  
+  set slot 19 of player's current inventory to skull from value {@Reward8_Value} named {@Reward8_Name} with lore "&7Chance: 5"
+  
+  set slot 4 of player's current inventory to {@CrateBlock} named {@CrateName} with lore "&7Right click the block with a key to open"
+  set slot 31 of player's current inventory to barrier named "&cClose"
+  
+  showReward(player, 10, {@Reward1_Material}, {@Reward1_Amount}, {@Reward1_Name}, {@Reward1_EnGl}, 20)
+  showReward(player, 11, {@Reward2_Material}, {@Reward2_Amount}, {@Reward2_Name}, {@Reward2_EnGl}, 20)
+  showReward(player, 12, {@Reward3_Material}, {@Reward3_Amount}, {@Reward3_Name}, {@Reward3_EnGl}, 20)
+  showReward(player, 13, {@Reward4_Material}, {@Reward4_Amount}, {@Reward4_Name}, {@Reward4_EnGl}, 10)
+  showReward(player, 14, {@Reward5_Material}, {@Reward5_Amount}, {@Reward5_Name}, {@Reward5_EnGl}, 10)
+  showReward(player, 15, {@Reward6_Material}, {@Reward6_Amount}, {@Reward6_Name}, {@Reward6_EnGl}, 10)
+  showReward(player, 16, {@Reward7_Material}, {@Reward7_Amount}, {@Reward7_Name}, {@Reward7_EnGl}, 5)
+
+on rightclick on {@CrateBlock}:
+  if block under event-block is not oak fence:
+    stop
+  cancel event
+  if {tillocrates::%uuid of player%} is true:
+    send {@Cooldown} to player
+    stop
+  set {_hasCrateKey} to hasCrateKey(player, 1, "idk")
+  if {_hasCrateKey} is true:
+    wait 1 tick
+    remove 1 of {@KeyType} named {@KeyName} with lore {@KeyLore} with enchantment glint from player's inventory
+    set {tillocrates::%uuid of player%} to true
+    open chest inventory with 5 rows named {@GuiTitle} to player
+    
+    loop 5 times:
+      set {_s} to 0
+      loop 45 times:
+        showRItem(player, {_s}, false, 1, "idk")
+        add 1 to {_s}
+      wait 2 ticks
+      play sound "minecraft:block.note_block.xylophone" for player
+    play sound "minecraft:block.piston.contract" for player
+    loop 4 times:
+      set {_s} to 0
+      loop 45 times:
+        showRItem(player, {_s}, false, 1, "idk")
+        add 1 to {_s}
+      showVerBorder(player, 0, WHITE_STAINED_GLASS_PANE)
+      showVerBorder(player, 8, WHITE_STAINED_GLASS_PANE)
+      wait 2 ticks
+      play sound "minecraft:block.note_block.xylophone" for player
+    play sound "minecraft:block.piston.contract" for player
+    loop 3 times:
+      showVerBorder(player, 0, GRAY_STAINED_GLASS_PANE)
+      showVerBorder(player, 1, WHITE_STAINED_GLASS_PANE)
+      showVerBorder(player, 7, WHITE_STAINED_GLASS_PANE)
+      showVerBorder(player, 8, GRAY_STAINED_GLASS_PANE)
+      play sound "minecraft:block.note_block.xylophone" for player
+      set {_s} to 2
+      loop 5 times:
+        loop 5 times:
+          showRItem(player, {_s}, false, 1, "idk")
+          add 1 to {_s}
+        add 4 to {_s}
+      wait 2 ticks
+    play sound "minecraft:block.piston.contract" for player
+    loop 2 times:
+      set {_s} to 0
+      loop 45 times:
+        showRItem(player, {_s}, false, 1, "idk")
+        add 1 to {_s}
+      play sound "minecraft:block.note_block.xylophone" for player
+      showVerBorder(player, 0, BLACK_STAINED_GLASS_PANE)
+      showVerBorder(player, 1, GRAY_STAINED_GLASS_PANE)
+      showVerBorder(player, 2, WHITE_STAINED_GLASS_PANE)
+      showVerBorder(player, 6, WHITE_STAINED_GLASS_PANE)
+      showVerBorder(player, 7, GRAY_STAINED_GLASS_PANE)
+      showVerBorder(player, 8, BLACK_STAINED_GLASS_PANE)
+      play sound "minecraft:block.note_block.xylophone" for player
+      wait 2 ticks
+    play sound "minecraft:block.piston.contract" for player
+    loop 2 times:
+      set {_s} to 0
+      loop 45 times:
+        showRItem(player, {_s}, false, 1, "idk")
+        add 1 to {_s}
+      play sound "minecraft:block.note_block.xylophone" for player
+      showVerBorder(player, 0, BLACK_STAINED_GLASS_PANE)
+      showVerBorder(player, 1, BLACK_STAINED_GLASS_PANE)
+      showVerBorder(player, 2, GRAY_STAINED_GLASS_PANE)
+      showVerBorder(player, 3, WHITE_STAINED_GLASS_PANE)
+      showVerBorder(player, 5, WHITE_STAINED_GLASS_PANE)
+      showVerBorder(player, 6, GRAY_STAINED_GLASS_PANE)
+      showVerBorder(player, 7, BLACK_STAINED_GLASS_PANE)
+      showVerBorder(player, 8, BLACK_STAINED_GLASS_PANE)
+      play sound "minecraft:block.note_block.xylophone" for player
+      wait 2 ticks
+    play sound "minecraft:block.piston.contract" for player
+    set {_s} to 0
+    loop 45 times:
+      showRItem(player, {_s}, false, 1, "idk")
+      add 1 to {_s}
+    showVerBorder(player, 0, BLACK_STAINED_GLASS_PANE)
+    showVerBorder(player, 1, BLACK_STAINED_GLASS_PANE)
+    showVerBorder(player, 2, GRAY_STAINED_GLASS_PANE)
+    showVerBorder(player, 3, WHITE_STAINED_GLASS_PANE)
+    showVerBorder(player, 5, WHITE_STAINED_GLASS_PANE)
+    showVerBorder(player, 6, GRAY_STAINED_GLASS_PANE)
+    showVerBorder(player, 7, BLACK_STAINED_GLASS_PANE)
+    showVerBorder(player, 8, BLACK_STAINED_GLASS_PANE)
+    set slot 4 of player's current inventory to white stained glass pane named " "	
+    set slot 40 of player's current inventory to white stained glass pane named " "
+    play sound "minecraft:block.piston.contract" for player
+    showRItem(player, 22, true, 1, "idk")
+    showVerBorder(player, 0, BLACK_STAINED_GLASS_PANE)
+    showVerBorder(player, 1, BLACK_STAINED_GLASS_PANE)
+    showVerBorder(player, 2, GRAY_STAINED_GLASS_PANE)
+    showVerBorder(player, 3, GRAY_STAINED_GLASS_PANE)
+    showVerBorder(player, 5, GRAY_STAINED_GLASS_PANE)
+    showVerBorder(player, 6, GRAY_STAINED_GLASS_PANE)
+    showVerBorder(player, 7, BLACK_STAINED_GLASS_PANE)
+    showVerBorder(player, 8, BLACK_STAINED_GLASS_PANE)
+    set slot 4 of player's current inventory to gray stained glass pane named " "
+    set slot 12 of player's current inventory to white stained glass pane named " "
+    set slot 13 of player's current inventory to white stained glass pane named " "
+    set slot 14 of player's current inventory to white stained glass pane named " "
+    set slot 21 of player's current inventory to white stained glass pane named " "
+    set slot 23 of player's current inventory to white stained glass pane named " "
+    set slot 30 of player's current inventory to white stained glass pane named " "
+    set slot 31 of player's current inventory to white stained glass pane named " "
+    set slot 32 of player's current inventory to white stained glass pane named " "
+    set slot 40 of player's current inventory to gray stained glass pane named " "
+    wait 1 second
+    set {tillocrates::%uuid of player%} to false
+  else:
+    send {@NoKey} to player
+    
+on inventory click:
+  if name of event-inventory is {@GuiTitle}:
+    cancel event
+    if {tillocrates::%uuid of player%} is not true:
+      if index of event-slot is 31:
+        close player's inventory
+    
+command /crate_aquatic <text> [<player>] [<number>]:
+  permission: op
+  trigger:
+    if arg-1 is "keygive":
+      if arg-2 is not set:
+        send "&cPlease give a player!"
+        stop
+      if arg-3 is not set:
+        send "&cPlease give an amount!"
+        stop
+      set {_p} to arg-2
+      loop arg-3 times:
+        give {_p} {@KeyType} named {@KeyName} with lore {@KeyLore} with enchantment glint
+      send "%{@Prefix}% &7You have recieved %arg-3%x %{@KeyName}%&7!" to arg-2
+      send "%{@Prefix}% &7You have given %arg-3%x %{@KeyName}%&7 to %arg-2%!" to player
+
+on tab complete of "/crate_aquatic":
+  set tab completions for position 1 to "keygive"
+  set tab completions for position 3 to "1" , "3", "5" and "10"

@@ -1,0 +1,58 @@
+command /warp:
+  trigger:
+    set {_rsWarp} to the placeholder "objective_scorep_{rs_warp}" for player parsed as number
+    if {_rsWarp} is 0:
+      send "&cYou don't have the permission to use this command" to player
+      stop
+      
+    set {_save} to the placeholder "objective_scorep_{inSaveZone}" for player parsed as number
+    if {_save} is 0:
+      send "&cYou need to stand in a save zone to use /warp!" to player
+      stop
+      
+    set {_curLevel} to the placeholder "objective_scorep_{curLevel}" for player parsed as number
+    
+    open chest inventory with 4 rows named "&b&lWarps" to player
+    
+    set slot 0 of player's current inventory to gray stained glass pane named " "
+    set slot 1 of player's current inventory to gray stained glass pane named " "
+    set slot 2 of player's current inventory to gray stained glass pane named " "
+    set slot 3 of player's current inventory to gray stained glass pane named " "
+    set slot 4 of player's current inventory to gray stained glass pane named " "
+    set slot 5 of player's current inventory to gray stained glass pane named " "
+    set slot 6 of player's current inventory to gray stained glass pane named " "
+    set slot 7 of player's current inventory to gray stained glass pane named " "
+    
+    set slot 8 of player's current inventory to barrier named "&cClose"
+    
+    set slot 20 of player's current inventory to wheat named "&bBarn 1"
+    set slot 21 of player's current inventory to beetroot named "&bBarn 2"
+    set slot 22 of player's current inventory to brown mushroom named "&bBarn 3"
+    set slot 23 of player's current inventory to sand named "&bBeach" with lore "&c[Level 5000 Required]"
+    set slot 24 of player's current inventory to prismarine named "&bMounment" with lore "&c[Level 15000 Required]"
+    
+on inventory click:
+  if name of event-inventory is "&b&lWarps":
+    cancel event
+    set {_curLevel} to the placeholder "objective_scorep_{curLevel}" for player parsed as number
+    if index of event-slot is 8:
+      close player's inventory
+    if index of event-slot is 20:
+      execute console command "tp %player% 33 -2 1176 facing 33 -1 1174"
+      close player's inventory
+    if index of event-slot is 21:
+      execute console command "tp %player% 5 -2 1250 facing 5 -1 1248"
+      close player's inventory
+    if index of event-slot is 22:
+      execute console command "tp %player% -53 -2 1081 facing -53 -1 1083"
+      close player's inventory
+    if index of event-slot is 23:
+      if {_curLevel} < 5000:
+        stop
+      execute console command "tp %player% -98 -2 1158 ~ 0"
+      close player's inventory
+    if index of event-slot is 24:
+      if {_curLevel} < 15000:
+        stop
+      execute console command "tp %player% -356 -11 1238"
+      close player's inventory

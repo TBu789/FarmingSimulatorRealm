@@ -1,0 +1,4 @@
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"FancyNpcs (2.5.2) has been enabled.","timestamp":1753612996303,"threadID":44,"threadName":"Server thread","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"WARN","message":"You are not using the latest version of the FancyNpcs plugin.","timestamp":1753612996412,"threadID":100,"threadName":"ForkJoinPool.commonPool-worker-2","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"Updated skin for NPC: Discord","timestamp":1753613011560,"threadID":95,"threadName":"FancyNpcs-Skins-0","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"Updated skin for NPC: battlepass","timestamp":1753613015171,"threadID":99,"threadName":"FancyNpcs-Skins-4","properties":{}}

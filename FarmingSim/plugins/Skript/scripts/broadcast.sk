@@ -1,0 +1,2 @@
+every 30 minutes:
+    console command "scoreboard players set @a sign_trigger 12"

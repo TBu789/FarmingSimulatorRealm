@@ -1,0 +1,309 @@
+npcs:
+  3c0e7f66-2e21-4bc9-bd81-02db959ef0ae:
+    name: petshop
+    creator: 6272d13b-f1cf-4280-b110-2bf06bf9fe98
+    displayName: '&a&lPet Shop'
+    type: PLAYER
+    location:
+      world: world
+      x: 46.30000001192093
+      y: -2.0
+      z: 1179.0202256165621
+      yaw: 90.44446
+      pitch: -1.3499614
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: 2147483647
+    skin:
+      identifier: TheJoCraft
+      variant: AUTO
+      mirrorSkin: false
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: pet gui
+  27042e83-109f-4e82-b30b-b65d869f3082:
+    name: BlackMarket
+    creator: 62f4fecb-8edf-4422-895b-4ef828e7c77c
+    displayName: BlackMarket
+    type: PLAYER
+    location:
+      world: world
+      x: -46.54409794251271
+      y: -2.0
+      z: 1068.3774671679794
+      yaw: -56.802105
+      pitch: 2.2097538
+    showInTab: false
+    spawnEntity: true
+    collidable: false
+    glowing: true
+    glowingColor: black
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: 3
+    skin:
+      identifier: https://t.novaskin.me/15a3b359231265637b999703869416a3319143f0d102f117fede1484fe2aa1d4
+      variant: AUTO
+      mirrorSkin: false
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command_as_op
+          value: blackmarket
+  0211b405-5936-4dd1-b96f-3bc697ac80f9:
+    name: tutorial
+    creator: 6272d13b-f1cf-4280-b110-2bf06bf9fe98
+    displayName: '&a&lTutorial'
+    type: PLAYER
+    location:
+      world: world
+      x: 38.46460758909261
+      y: -2.0
+      z: 1174.5050326851274
+      yaw: -44.512714
+      pitch: 0.14999314
+    showInTab: false
+    spawnEntity: true
+    collidable: false
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: 2147483647
+    skin:
+      identifier: xXPascalXx
+      variant: AUTO
+      mirrorSkin: false
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: trigger sign_trigger set 5
+  42779f8e-e870-40cf-9319-21d3bc2c399c:
+    name: farmer
+    creator: 6272d13b-f1cf-4280-b110-2bf06bf9fe98
+    displayName: '&6&lFarmer'
+    type: PLAYER
+    location:
+      world: world
+      x: 36.52786099174908
+      y: -2.0
+      z: 1174.5061950369777
+      yaw: -87.34781
+      pitch: 1.949987
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: 2147483647
+    skin:
+      identifier: https://www.minecraftskins.com/uploads/skins/2025/06/26/farmer-23362001.png?v867
+      variant: AUTO
+      mirrorSkin: false
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: trigger sign_trigger set 6
+  1aee435f-a65f-45b3-9a12-6ee9ee3054dc:
+    name: Discord
+    creator: 7ba638f1-3daf-406f-a002-ffcbd8592d47
+    displayName: '&9&lDiscord'
+    type: PLAYER
+    location:
+      world: world
+      x: 10.300000011920929
+      y: -2.0
+      z: 1178.6499330020563
+      yaw: -89.24951
+      pitch: -7.9499636
+    showInTab: false
+    spawnEntity: true
+    collidable: false
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: 2147483647
+    skin:
+      mirrorSkin: false
+      identifier: https://www.minecraftskins.com/uploads/skins/2023/10/31/discord-wumpus-skin-mc-22083584.png?v867
+      variant: AUTO
+    actions:
+      ANY_CLICK:
+        '1':
+          action: message
+          value: '&9Discord: dsc.gg/supro'
+  495077a1-7643-4fa2-94e9-32d21a19251e:
+    name: dailyreward
+    creator: 6272d13b-f1cf-4280-b110-2bf06bf9fe98
+    displayName: '&d&lDaily Reward'
+    type: PLAYER
+    location:
+      world: world
+      x: 20.50976074467202
+      y: -2.0
+      z: 1174.6198742093695
+      yaw: -0.3026123
+      pitch: -0.29999495
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: 2147483647
+    skin:
+      mirrorSkin: false
+      identifier: https://www.minecraftskins.com/uploads/skins/2025/06/24/jack-black-farmer-23356180.png?v876
+      variant: AUTO
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command_as_op
+          value: dailyreward
+  779e28ac-21c8-43ff-b55f-5d00ca819eef:
+    name: worker_miner
+    creator: 6272d13b-f1cf-4280-b110-2bf06bf9fe98
+    displayName: '&e&lWorker'
+    type: PLAYER
+    location:
+      world: world
+      x: -237.53754224311686
+      y: -40.0
+      z: 241.38677083586435
+      yaw: -133.06985
+      pitch: -1.2000041
+    showInTab: false
+    spawnEntity: true
+    collidable: false
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: 2147483647
+    skin:
+      identifier: https://www.minecraftskins.com/uploads/skins/2025/05/19/miner-23281440.png?v881
+      variant: AUTO
+      mirrorSkin: false
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command_as_op
+          value: worker
+  16d6e56d-f052-4598-ab99-d6b1974f1dcd:
+    name: stats
+    creator: 6272d13b-f1cf-4280-b110-2bf06bf9fe98
+    displayName: '&b&lMy Profile'
+    type: PLAYER
+    location:
+      world: world
+      x: 18.49376267293368
+      y: -2.0
+      z: 1174.5441624035846
+      yaw: 0.15185547
+      pitch: 0.29998106
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: 2147483647
+    skin:
+      mirrorSkin: true
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: profile
+  f8e01b24-d9a8-40b8-97e5-0f3715218025:
+    name: battlepass
+    creator: 6272d13b-f1cf-4280-b110-2bf06bf9fe98
+    displayName: '&#FCD05C&lB&#FCC85C&la&#FCC05C&lt&#FCB85C&lt&#FCB05C&ll&#FCA95C&le&#FCA15C&lp&#FC995C&la&#FC915C&ls&#FC895C&ls'
+    type: PLAYER
+    location:
+      world: world
+      x: 10.44498910850361
+      y: -1.5
+      z: 1249.403986442511
+      yaw: 13.191162
+      pitch: 10.199945
+    showInTab: false
+    spawnEntity: true
+    collidable: false
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      identifier: https://www.minecraftskins.com/uploads/skins/2025/07/01/seraniil--serin--viraeux-23370541.png?v883
+      variant: AUTO
+      mirrorSkin: false
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command
+          value: battlepass
+  cd60860f-b53d-449b-9d5c-76c413e3fbaa:
+    name: research
+    creator: 6272d13b-f1cf-4280-b110-2bf06bf9fe98
+    displayName: '&x&5&D&F&4&5&4&lR&x&6&2&F&3&5&A&le&x&6&8&F&3&5&F&ls&x&6&D&F&2&6&5&le&x&7&2&F&1&6&B&la&x&7&8&F&1&7&0&lr&x&7&D&F&0&7&6&lc&x&8&2&E&F&7&C&lh&x&8&8&E&F&8&1&le&x&8&D&E&E&8&7&lr'
+    type: PLAYER
+    location:
+      world: world
+      x: -55.47338108293895
+      y: -1.5
+      z: 1080.5357676095346
+      yaw: -89.400024
+      pitch: -1.8000379
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      identifier: https://www.minecraftskins.com/uploads/skins/2025/07/08/prof--pugg-alan-23386490.png
+      variant: AUTO
+      mirrorSkin: false
+    actions:
+      ANY_CLICK:
+        '1':
+          action: player_command_as_op
+          value: research

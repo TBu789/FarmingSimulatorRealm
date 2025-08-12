@@ -1,0 +1,19 @@
+command /rank [<text>] [<offlineplayer>] [<text>]:
+  permission: none
+  trigger:
+    if arg-1 or arg-2 or arg-3 is not set:
+      send "&cWrong Usage: /setrank <remove/add/r/a> <player> <rank>"
+      stop
+    if arg-1 is not "remove" or "add" or "r" or "a":
+      send "&cWrong Usage: /setrank <remove/add/r/a> <player> <rank>"
+      stop
+    if arg-1 is "remove" or "r":
+      set {_command} to "scoreboard players reset %arg-2% rank_%arg-3%"
+      execute console command "%{_command}%"
+      send "&aRemoved %arg-3% from %arg-2%!"
+      stop
+    if arg-1 is "add" or "a":
+      set {_command} to "scoreboard players set %arg-2% rank_%arg-3% 1"
+      execute console command "%{_command}%"
+      send "&aAdded %arg-3% to %arg-2%!"
+      stop
