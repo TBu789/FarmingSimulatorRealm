@@ -31,7 +31,7 @@ Map Design
 - Nurmick
 - legoofost
 
-Art
+Art / RessourcePack
 - WorldCrafter66
 
 ## Lizenz
