@@ -37,5 +37,5 @@ Art
 ## Lizenz
 Die Lizenz regelt die Nutzung und weitere Veröffentlichung dieses Realms/Projektes. Sie befindet sich in der `LICENSE.md`-Datei und sollte gründlich durch gelesen werden.
 
-##Danksagung
+## Danksagung
 Danke an alle die bei dem Erstellen dieses Realm mit geholfen haben. Ohne euch wäre dies alles nicht möglich gewesen. Auch ein großen Dankeschön an alle Supporter und Booster, die geholfen haben diese Realm am laufen zu halten. Natürlich darf auch nicht die Spieler vergessen, die dieses Realm/Projekt erst zu etwas ganz besonderem gemacht haben.
