@@ -1,0 +1,810 @@
+options:
+  qcount: 10
+  reward-cooldown: 24 hours
+
+command /resetbattlepass [<offlineplayer>]:
+  permission: none
+  trigger:
+    if arg-1 is not set:
+      send "&cWrong Usage: /resetbattlepass <player>"
+      stop
+    execute console command "scoreboard players reset %arg-1% battlepass"
+    execute console command "scoreboard players reset %arg-1% battlepass_claimed"
+    execute console command "scoreboard players reset %arg-1% battlepass_opened"
+    execute console command "scoreboard players reset %arg-1% battlepass_xp"
+    send "&aThe battlepass got reset for %arg-1%!"
+
+function showIcon(p: player, title: text, lore: text, slot: number, claimedNeed: number, xpNeeded: number, xp: number, claimed: number):
+  if {_xp} < {_xpNeeded}:
+    set slot {_slot} of {_p}'s current inventory to skull from value {not} named "%{_title}%" with lore "%{_lore}%"
+  else:
+    if {_claimed} = {_claimedNeed}:
+      set {_newTitle} to {_title} + " - &aClick to claim!"
+      set slot {_slot} of {_p}'s current inventory to skull from value "%{gold}%" named "%{_newTitle}%" with lore "%{_lore}%" with enchantment glint
+    else:
+      if {_claimed} < {_claimedNeed}:
+        set {_lore} to "&cYou need to claim the reward before!"
+        set slot {_slot} of {_p}'s current inventory to skull from value {not} named "%{_title}%" with lore "%{_lore}%"
+      else:
+        set {_lore} to "&a✔Claimed"
+        set slot {_slot} of {_p}'s current inventory to skull from value {lime} named "%{_title}%" with lore "%{_lore}%"
+  if {_slot} is 25:
+    set slot {_slot} of {_p}'s current inventory to skull from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTk1M2NmYjY5NmQ5ZTQ3NjkzYjJhNzhmM2ViZjhiODk5NDFiZmE4MzY2OGUwZjgzY2ZmNzQ1YjY5ZTkwMzIxZCJ9fX0=" named "%{_title}%" with lore "%{_lore}%" with enchantment glint
+
+on join:
+  set {prefix} to "<#FCD05C>&lB<#FCC85C>&la<#FCC05C>&lt<#FCB85C>&lt<#FCB05C>&ll<#FCA95C>&le<#FCA15C>&lp<#FC995C>&la<#FC915C>&ls<#FC895C>&ls: "
+
+command /battlepass [<text>]:
+  aliases: bp
+  trigger:
+    send "battlepass" to console
+    set {prefix} to "<#FCD05C>&lB<#FCC85C>&la<#FCC05C>&lt<#FCB85C>&lt<#FCB05C>&ll<#FCA95C>&le<#FCA15C>&lp<#FC995C>&la<#FC915C>&ls<#FC895C>&ls: "
+    #if player is not op:
+      #send "%{prefix}%&7Der Battlepass wird gerade noch erforscht!"
+      #stop
+    set {_openedBefore} to the placeholder "objective_scorep_{battlepass_opened}" for player parsed as number
+    if {_openedBefore} is not 1:
+      execute console command "scoreboard players set %player% battlepass_opened 1"
+      wait 0.1 second
+      make player execute command "battlepass guide"
+      stop
+    if arg-1 is "guide":
+      set {_guide} to a written book
+      set {_guidecontent1} to text component of "<#FCD05C>&lB<#FCC85C>&la<#FCC05C>&lt<#FCB85C>&lt<#FCB05C>&ll<#FCA95C>&le<#FCA15C>&lp<#FC995C>&la<#FC915C>&ls<#FC895C>&ls%nl%%nl%&0The battlepass gives you cool rewards for playing and completing quests! In the top are the two main tabs: Quests and Pass. Click on the icons to switch between the tabs. The quests tab shows your current quests while the pass tab shows | NextPage->"
+      set {_guidecontent2} to text component of "<#FCD05C>&lB<#FCC85C>&la<#FCC05C>&lt<#FCB85C>&lt<#FCB05C>&ll<#FCA95C>&le<#FCA15C>&lp<#FC995C>&la<#FC915C>&ls<#FC895C>&ls%nl%%nl%&0your progress in the battlepass. This is also the place where you collect your rewards! &7(Click the npc again to open the battlepass gui)"
+      set page 1 of book {_guide} to {_guidecontent1}
+      set page 2 of book {_guide} to {_guidecontent2}
+      set book author of {_guide} to "Tillo789"
+      set book title of {_guide} to "Worker Guide"
+      open book {_guide} to player
+      stop
+    
+    if arg-1 is not set:
+      set {battlepass::%player%::page} to "pass"
+    else:
+      set {battlepass::%player%::page} to arg-1
+    
+    #---Load Battlepass Data---
+    set {_xp} to the placeholder "objective_scorep_{battlepass_xp}" for player parsed as number
+    set {_claimed} to the placeholder "objective_scorep_{battlepass_claimed}" for player parsed as number
+    
+    open chest inventory with 6 rows named "<#FCD05C>&lB<#FCC85C>&la<#FCC05C>&lt<#FCB85C>&lt<#FCB05C>&ll<#FCA95C>&le<#FCA15C>&lp<#FC995C>&la<#FC915C>&ls<#FC895C>&ls" to player
+    
+    #---Top Bar---
+    set slot 0 of player's current inventory to experience bottle named "&aPass" with lore "&7Click to view"
+    set slot 1 of player's current inventory to paper named "&eQuests" with lore "&7Click to view"
+    set slot 2 of player's current inventory to gray stained glass pane named " "
+    set slot 3 of player's current inventory to gray stained glass pane named " "
+    set slot 4 of player's current inventory to gray stained glass pane named " "
+    set slot 5 of player's current inventory to gray stained glass pane named " "
+    set slot 6 of player's current inventory to gray stained glass pane named " "
+    set slot 7 of player's current inventory to writable book named "&6Guide" with lore "&7Click to open guide" #Guide
+    set slot 8 of player's current inventory to barrier named "&cClose" #<--- Close Button
+    
+    #---Quests Page---
+    if {battlepass::%player%::page} is "quests":
+      set slot 22 of player's current inventory to book named "&eQuests" with lore "&7Complete quests to move forward %nl%&7in the battlepass. Quests reset%nl%&7every day!" with enchantment glint
+      set {_slot} to 29
+      loop {@qcount} times:
+        set {_type} to {dailyquests::quest%loop-number%::type}
+        set {_target} to {dailyquests::quest%loop-number%::target}
+        set {_amount} to {dailyquests::quest%loop-number%::amount}
+        set {_display} to {dailyquests::quest%loop-number%::display}
+        set {_progress} to {dailyquest_progress::%uuid of player%::quest%loop-number%}
+        if {_progress} is not set:
+          set {_progress} to 0
+        if {_type} is "kill":
+          set {_material} to "wooden sword" parsed as item
+          set {_materialfin} to "golden sword" parsed as item
+        if {_type} is "mine":
+          set {_material} to "wooden pickaxe" parsed as item
+          set {_materialfin} to "golden pickaxe" parsed as item
+        if {_type} is "break":
+          set {_material} to "wooden axe" parsed as item
+          set {_materialfin} to "golden axe" parsed as item
+        if {_type} is "farm":
+          set {_material} to "wooden hoe" parsed as item
+          set {_materialfin} to "golden hoe" parsed as item
+        if {_type} is "walk":
+          set {_material} to "leather boots" parsed as item
+          set {_materialfin} to "golden boots" parsed as item
+        if {_type} is "boost":
+          set {_material} to "bottle" parsed as item
+          set {_materialfin} to "honey bottle" parsed as item
+        if {dailyquest_progress::%uuid of player%::quest%loop-number%::done} is set:
+          set slot {_slot} of player's current inventory to {_materialfin} named "&a✔ Quest completed" with lore "&7New Day, new Quests!"
+        else:
+          set slot {_slot} of player's current inventory to {_material} named "&b%{_display}%" with lore "&7%{_progress}%/%{_amount}%%nl% %nl%&f+%{dailyquests::quest%loop-number%::reward}% BattlepassXP"
+        add 1 to {_slot}
+        if {_slot} is 34:
+          set {_slot} to 38
+    
+    #---Pass Page---
+    if {battlepass::%player%::page} is "pass":
+      set {not} to "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWJjZGYwZmYwNzEyYWUzZGU1NTRjMzcyNjA3NzYxMDAwZDNiMGI2Yjg2MTNiOGEyYzZkZGEwMGNkMTBkNzhkOCJ9fX0="
+      set {lime} to "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTk4NWU5NjEyMjgzOTNhNGNkNTdmYWFlMTdiZmIwN2JkMGZkYTA4NTMxNmZkOGJlNTg0NTk4NzRkZWNjM2JjOCJ9fX0="
+      set {gold} to "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDFiNWZkZWZmZmZmYTcwODM4MWU3MGYzNTAzYTI3NTc3MmI0NTI5NmNmOWYxNjI1YTg3ZWRjNmI2MjU0OWVmNiJ9fX0="
+      
+      #---Level 1
+      set {_title} to "&aLevel 1"
+      set {_slot} to 19
+      set {_claimedNeed} to 0
+      set {_xpNeeded} to 5
+      set {_lore} to "&7%{_xp}%/%{_xpNeeded}% XP %nl%%nl%&f- 8 Compressed Blocks of Emerald"
+      showIcon(player, {_title}, {_lore}, {_slot}, {_claimedNeed}, {_xpNeeded}, {_xp}, {_claimed})
+      
+      #---Level 2
+      set {_title} to "&aLevel 2"
+      set {_slot} to 28
+      set {_claimedNeed} to 1
+      set {_xpNeeded} to 10
+      set {_lore} to "&7%{_xp}%/%{_xpNeeded}% XP %nl%%nl%&f- 1 Emerald Key"
+      showIcon(player, {_title}, {_lore}, {_slot}, {_claimedNeed}, {_xpNeeded}, {_xp}, {_claimed})
+      
+      #---Level 3
+      set {_title} to "&aLevel 3"
+      set {_slot} to 37
+      set {_claimedNeed} to 2
+      set {_xpNeeded} to 20
+      set {_lore} to "&7%{_xp}%/%{_xpNeeded}% XP %nl%%nl%&f- 1 Special Key"
+      showIcon(player, {_title}, {_lore}, {_slot}, {_claimedNeed}, {_xpNeeded}, {_xp}, {_claimed})
+      
+      #---Level 4
+      set {_title} to "&aLevel 4"
+      set {_slot} to 38
+      set {_claimedNeed} to 3
+      set {_xpNeeded} to 50
+      set {_lore} to "&7%{_xp}%/%{_xpNeeded}% XP %nl%%nl%&f- 16 Compressed Blocks of Emerald%nl%&f- +5 Level"
+      showIcon(player, {_title}, {_lore}, {_slot}, {_claimedNeed}, {_xpNeeded}, {_xp}, {_claimed})
+      
+      #---Level 5
+      set {_title} to "&aLevel 5"
+      set {_slot} to 39
+      set {_claimedNeed} to 4
+      set {_xpNeeded} to 75
+      set {_lore} to "&7%{_xp}%/%{_xpNeeded}% XP %nl%%nl%&f- 16 Compressed Blocks of Emerald%nl%&f- +10 Level%nl%&f- 1 Special Key"
+      showIcon(player, {_title}, {_lore}, {_slot}, {_claimedNeed}, {_xpNeeded}, {_xp}, {_claimed})
+      
+      #---Level 6
+      set {_title} to "&aLevel 6"
+      set {_slot} to 30
+      set {_claimedNeed} to 5
+      set {_xpNeeded} to 100
+      set {_lore} to "&7%{_xp}%/%{_xpNeeded}% XP %nl%%nl%&f- +15 Level%nl%&f- 3 Emerald Keys"
+      showIcon(player, {_title}, {_lore}, {_slot}, {_claimedNeed}, {_xpNeeded}, {_xp}, {_claimed})
+      
+      #---Level 7
+      set {_title} to "&aLevel 7"
+      set {_slot} to 21
+      set {_claimedNeed} to 6
+      set {_xpNeeded} to 150
+      set {_lore} to "&7%{_xp}%/%{_xpNeeded}% XP %nl%%nl%&f- +20 Level%nl%&f- 16 Blocks of Diamond"
+      showIcon(player, {_title}, {_lore}, {_slot}, {_claimedNeed}, {_xpNeeded}, {_xp}, {_claimed})
+      
+      #---Level 8
+      set {_title} to "&aLevel 8"
+      set {_slot} to 22
+      set {_claimedNeed} to 7
+      set {_xpNeeded} to 200
+      set {_lore} to "&7%{_xp}%/%{_xpNeeded}% XP %nl%%nl%&f- +25 Level%nl%&f- 16 Blocks of Diamond"
+      showIcon(player, {_title}, {_lore}, {_slot}, {_claimedNeed}, {_xpNeeded}, {_xp}, {_claimed})
+      
+      #---Level 9
+      set {_title} to "&aLevel 9"
+      set {_slot} to 23
+      set {_claimedNeed} to 8
+      set {_xpNeeded} to 250
+      set {_lore} to "&7%{_xp}%/%{_xpNeeded}% XP %nl%%nl%&f- +25 Level%nl%&f- 16 Blocks of Diamond%nl%&f- 1 Diamond Key"
+      showIcon(player, {_title}, {_lore}, {_slot}, {_claimedNeed}, {_xpNeeded}, {_xp}, {_claimed})
+      
+      #---Level 10
+      set {_title} to "&aLevel 10"
+      set {_slot} to 32
+      set {_claimedNeed} to 9
+      set {_xpNeeded} to 500
+      set {_lore} to "&7%{_xp}%/%{_xpNeeded}% XP %nl%%nl%&f- +25 Level%nl%&f- 16 Blocks of Diamond%nl%&f- 1 Diamond Key%nl%&f- 1 Special Key"
+      showIcon(player, {_title}, {_lore}, {_slot}, {_claimedNeed}, {_xpNeeded}, {_xp}, {_claimed})
+      
+      #---Level 11
+      set {_title} to "&aLevel 11"
+      set {_slot} to 41
+      set {_claimedNeed} to 10
+      set {_xpNeeded} to 750
+      set {_lore} to "&7%{_xp}%/%{_xpNeeded}% XP %nl%%nl%&f- +25 Level%nl%&f- 32 Blocks of Diamond%nl%&f- 2 Diamond Key%nl%&f- 1 Special Key"
+      showIcon(player, {_title}, {_lore}, {_slot}, {_claimedNeed}, {_xpNeeded}, {_xp}, {_claimed})
+      
+      #---Level 12
+      set {_title} to "&aLevel 12"
+      set {_slot} to 42
+      set {_claimedNeed} to 11
+      set {_xpNeeded} to 1000
+      set {_lore} to "&7%{_xp}%/%{_xpNeeded}% XP %nl%%nl%&f- +50 Level%nl%&f- 64 Blocks of Gold"
+      showIcon(player, {_title}, {_lore}, {_slot}, {_claimedNeed}, {_xpNeeded}, {_xp}, {_claimed})
+      
+      #---Level 13
+      set {_title} to "&aLevel 13"
+      set {_slot} to 43
+      set {_claimedNeed} to 12
+      set {_xpNeeded} to 1500
+      set {_lore} to "&7%{_xp}%/%{_xpNeeded}% XP %nl%%nl%&f- +50 Level%nl%&f- 64 Blocks of Gold%nl%&f- 1 Gold Key"
+      showIcon(player, {_title}, {_lore}, {_slot}, {_claimedNeed}, {_xpNeeded}, {_xp}, {_claimed})
+      
+      #---Level 14
+      set {_title} to "&aLevel 14"
+      set {_slot} to 34
+      set {_claimedNeed} to 13
+      set {_xpNeeded} to 2500
+      set {_lore} to "&7%{_xp}%/%{_xpNeeded}% XP %nl%%nl%&f- +100 Level%nl%&f- 128 Prismarine%nl%&f- 1 Aquatic Key"
+      showIcon(player, {_title}, {_lore}, {_slot}, {_claimedNeed}, {_xpNeeded}, {_xp}, {_claimed})
+      
+      #---Level 15
+      set {_title} to "&aLevel 15"
+      set {_slot} to 25
+      set {_claimedNeed} to 14
+      set {_xpNeeded} to 5000
+      set {_lore} to "&7%{_xp}%/%{_xpNeeded}% XP %nl%%nl%&f- Warden Pet"
+      showIcon(player, {_title}, {_lore}, {_slot}, {_claimedNeed}, {_xpNeeded}, {_xp}, {_claimed})
+      
+on inventory click:
+  if name of event-inventory is "<#FCD05C>&lB<#FCC85C>&la<#FCC05C>&lt<#FCB85C>&lt<#FCB05C>&ll<#FCA95C>&le<#FCA15C>&lp<#FC995C>&la<#FC915C>&ls<#FC895C>&ls":
+    cancel event
+    if index of event-slot is 8:
+      close player's inventory
+    if index of event-slot is 7:
+      wait 0.1 second
+      make player execute command "battlepass guide"
+      stop
+    if index of event-slot is 0:
+      if {battlepass::%player%::page} is "pass":
+        stop
+      wait 0.1 second
+      make player execute command "battlepass pass"
+      stop
+    if index of event-slot is 1:
+      if {battlepass::%player%::page} is "quests":
+        stop
+      wait 0.1 second
+      make player execute command "battlepass quests"
+      stop
+    
+    if {battlepass::%player%::page} is "quests":
+      stop
+    
+    set {_xp} to the placeholder "objective_scorep_{battlepass_xp}" for player parsed as number
+    set {_claimed} to the placeholder "objective_scorep_{battlepass_claimed}" for player parsed as number
+    
+    # Level 1
+    if index of event-slot is 19:
+      if {_xp} >= 5:
+        if {_claimed} = 0:
+          execute console command "scoreboard players set %player% battlepass_claimed 1"
+          execute console command "give %player% emerald_block[enchantment_glint_override=true,custom_name='{""bold"":true,""color"":""green"",""italic"":false,""text"":""Compressed Block of Emerald""}'] 8"
+          wait 0.1 second
+          make player execute command "battlepass"
+          stop
+        else:
+          stop
+      else:
+        stop
+        
+    # Level 2
+    if index of event-slot is 28:
+      if {_xp} >= 10:
+        if {_claimed} = 1:
+          execute console command "scoreboard players set %player% battlepass_claimed 2"
+          execute console command "crate_emerald keygive %player% 1"
+          wait 0.1 second
+          make player execute command "battlepass"
+          stop
+        else:
+          stop
+      else:
+        stop
+        
+    # Level 3
+    if index of event-slot is 37:
+      if {_xp} >= 20:
+        if {_claimed} = 2:
+          execute console command "scoreboard players set %player% battlepass_claimed 3"
+          execute console command "crate_special keygive %player% 1"
+          wait 0.1 second
+          make player execute command "battlepass"
+          stop
+        else:
+          stop
+      else:
+        stop
+        
+    # Level 4    
+    if index of event-slot is 38:
+      if {_xp} >= 50:
+        if {_claimed} = 3:
+          execute console command "scoreboard players set %player% battlepass_claimed 4"
+          execute console command "give %player% emerald_block[enchantment_glint_override=true,custom_name='{""bold"":true,""color"":""green"",""italic"":false,""text"":""Compressed Block of Emerald""}'] 16"
+          execute console command "xp add %player% 5 levels"
+          wait 0.1 second
+          make player execute command "battlepass"
+          stop
+        else:
+          stop
+      else:
+        stop
+    
+    # Level 5    
+    if index of event-slot is 39:
+      if {_xp} >= 75:
+        if {_claimed} = 4:
+          execute console command "scoreboard players set %player% battlepass_claimed 5"
+          execute console command "give %player% emerald_block[enchantment_glint_override=true,custom_name='{""bold"":true,""color"":""green"",""italic"":false,""text"":""Compressed Block of Emerald""}'] 16"
+          execute console command "xp add %player% 10 levels"
+          execute console command "crate_special keygive %player% 1"
+          wait 0.1 second
+          make player execute command "battlepass"
+          stop
+        else:
+          stop
+      else:
+        stop
+    
+    # Level 6   
+    if index of event-slot is 30:
+      if {_xp} >= 100:
+        if {_claimed} = 5:
+          execute console command "scoreboard players set %player% battlepass_claimed 6"
+          execute console command "xp add %player% 15 levels"
+          execute console command "crate_emerald keygive %player% 3"
+          wait 0.1 second
+          make player execute command "battlepass"
+          stop
+        else:
+          stop
+      else:
+        stop
+        
+    # Level 7   
+    if index of event-slot is 21:
+      if {_xp} >= 150:
+        if {_claimed} = 6:
+          execute console command "scoreboard players set %player% battlepass_claimed 7"
+          execute console command "xp add %player% 20 levels"
+          execute console command "give %player% diamond_block[minecraft:enchantment_glint_override=false] 16"
+          wait 0.1 second
+          make player execute command "battlepass"
+          stop
+        else:
+          stop
+      else:
+        stop    
+        
+    # Level 8  
+    if index of event-slot is 22:
+      if {_xp} >= 200:
+        if {_claimed} = 7:
+          execute console command "scoreboard players set %player% battlepass_claimed 8"
+          execute console command "xp add %player% 25 levels"
+          execute console command "give %player% diamond_block[minecraft:enchantment_glint_override=false] 16"
+          wait 0.1 second
+          make player execute command "battlepass"
+          stop
+        else:
+          stop
+      else:
+        stop        
+        
+    # Level 9  
+    if index of event-slot is 23:
+      if {_xp} >= 250:
+        if {_claimed} = 8:
+          execute console command "scoreboard players set %player% battlepass_claimed 9"
+          execute console command "xp add %player% 25 levels"
+          execute console command "give %player% diamond_block[minecraft:enchantment_glint_override=false] 16"
+          execute console command "crate_diamond keygive %player% 1"
+          wait 0.1 second
+          make player execute command "battlepass"
+          stop
+        else:
+          stop
+      else:
+        stop        
+        
+    # Level 10 
+    if index of event-slot is 32:
+      if {_xp} >= 500:
+        if {_claimed} = 9:
+          execute console command "scoreboard players set %player% battlepass_claimed 10"
+          execute console command "xp add %player% 25 levels"
+          execute console command "give %player% diamond_block[minecraft:enchantment_glint_override=false] 16"
+          execute console command "crate_diamond keygive %player% 1"
+          execute console command "crate_special keygive %player% 1"
+          wait 0.1 second
+          make player execute command "battlepass"
+          stop
+        else:
+          stop
+      else:
+        stop       
+        
+    # Level 11 
+    if index of event-slot is 41:
+      if {_xp} >= 750:
+        if {_claimed} = 10:
+          execute console command "scoreboard players set %player% battlepass_claimed 11"
+          execute console command "xp add %player% 25 levels"
+          execute console command "give %player% diamond_block[minecraft:enchantment_glint_override=false] 32"
+          execute console command "crate_diamond keygive %player% 2"
+          execute console command "crate_special keygive %player% 1"
+          wait 0.1 second
+          make player execute command "battlepass"
+          stop
+        else:
+          stop
+      else:
+        stop     
+        
+    # Level 12 
+    if index of event-slot is 42:
+      if {_xp} >= 1000:
+        if {_claimed} = 11:
+          execute console command "scoreboard players set %player% battlepass_claimed 12"
+          execute console command "xp add %player% 50 levels"
+          execute console command "give %player% gold_block[minecraft:enchantment_glint_override=false] 64"
+          wait 0.1 second
+          make player execute command "battlepass"
+          stop
+        else:
+          stop
+      else:
+        stop     
+        
+    # Level 13 
+    if index of event-slot is 43:
+      if {_xp} >= 1500:
+        if {_claimed} = 12:
+          execute console command "scoreboard players set %player% battlepass_claimed 13"
+          execute console command "xp add %player% 50 levels"
+          execute console command "give %player% gold_block[minecraft:enchantment_glint_override=false] 64"
+          execute console command "crate_gold keygive %player% 1"
+          wait 0.1 second
+          make player execute command "battlepass"
+          stop
+        else:
+          stop
+      else:
+        stop         
+        
+    # Level 14 
+    if index of event-slot is 34:
+      if {_xp} >= 2500:
+        if {_claimed} = 13:
+          execute console command "scoreboard players set %player% battlepass_claimed 14"
+          execute console command "xp add %player% 100 levels"
+          execute console command "give %player% prismarine[minecraft:enchantment_glint_override=false] 128"
+          execute console command "crate_aquatic keygive %player% 1"
+          wait 0.1 second
+          make player execute command "battlepass"
+          stop
+        else:
+          stop
+      else:
+        stop             
+    
+    # Level 15 
+    if index of event-slot is 25:
+      if {_xp} >= 5000:
+        if {_claimed} = 14:
+          execute console command "scoreboard players set %player% battlepass_claimed 15"
+          execute console command "pet purchased add %player% warden"
+          wait 0.1 second
+          make player execute command "battlepass"
+          stop
+        else:
+          stop
+      else:
+        stop     
+
+#Quest Tracking
+function genQuests():
+  broadcast "%{prefix}%&7New quests are available!"
+  delete {dailyquests::*}
+  delete {dailyquest_progress::*}
+  delete {_used::*}
+
+  loop {@qcount} times:
+    loop 50 times:
+      set {_r} to random integer between 1 and 15
+      if {_r} is not in {_used::*}:
+        add {_r} to {_used::*}
+        stop loop
+    set {_id} to loop-number
+        
+    if {_r} = 1:
+      set {dailyquests::quest%loop-number%::type} to "mine"
+      set {dailyquests::quest%loop-number%::target} to "coal_ore"
+      set {dailyquests::quest%loop-number%::display} to "Mine Coal Ore"
+      set {dailyquests::quest%loop-number%::amount} to 100
+      set {dailyquests::quest%loop-number%::reward} to 15
+    if {_r} = 2:
+      set {dailyquests::quest%loop-number%::type} to "kill"
+      set {dailyquests::quest%loop-number%::target} to "zombie"
+      set {dailyquests::quest%loop-number%::display} to "Kill Zombies"
+      set {dailyquests::quest%loop-number%::amount} to 10
+      set {dailyquests::quest%loop-number%::reward} to 20
+    if {_r} = 3:
+      set {dailyquests::quest%loop-number%::type} to "kill"
+      set {dailyquests::quest%loop-number%::target} to "skeleton"
+      set {dailyquests::quest%loop-number%::display} to "Kill Skeletons"
+      set {dailyquests::quest%loop-number%::amount} to 10
+      set {dailyquests::quest%loop-number%::reward} to 20
+    if {_r} = 4:
+      set {dailyquests::quest%loop-number%::type} to "kill"
+      set {dailyquests::quest%loop-number%::target} to "piglin brute"
+      set {dailyquests::quest%loop-number%::display} to "Kill Piglin Brutes"
+      set {dailyquests::quest%loop-number%::amount} to 10
+      set {dailyquests::quest%loop-number%::reward} to 20
+    if {_r} = 5:
+      set {dailyquests::quest%loop-number%::type} to "kill"
+      set {dailyquests::quest%loop-number%::target} to "hoglin"
+      set {dailyquests::quest%loop-number%::display} to "Kill Hoglins"
+      set {dailyquests::quest%loop-number%::amount} to 10
+      set {dailyquests::quest%loop-number%::reward} to 20
+    if {_r} = 6:
+      set {dailyquests::quest%loop-number%::type} to "kill"
+      set {dailyquests::quest%loop-number%::target} to "zoglin"
+      set {dailyquests::quest%loop-number%::display} to "Kill Zoglins"
+      set {dailyquests::quest%loop-number%::amount} to 10
+      set {dailyquests::quest%loop-number%::reward} to 20
+    if {_r} = 7:
+      set {dailyquests::quest%loop-number%::type} to "mine"
+      set {dailyquests::quest%loop-number%::target} to "copper_ore"
+      set {dailyquests::quest%loop-number%::display} to "Mine Copper Ore"
+      set {dailyquests::quest%loop-number%::amount} to 100
+      set {dailyquests::quest%loop-number%::reward} to 15
+    if {_r} = 8:
+      set {dailyquests::quest%loop-number%::type} to "mine"
+      set {dailyquests::quest%loop-number%::target} to "iron_ore"
+      set {dailyquests::quest%loop-number%::display} to "Mine Iron Ore"
+      set {dailyquests::quest%loop-number%::amount} to 100
+      set {dailyquests::quest%loop-number%::reward} to 15
+    if {_r} = 9:
+      set {dailyquests::quest%loop-number%::type} to "break"
+      set {dailyquests::quest%loop-number%::target} to "mu_stem"
+      set {dailyquests::quest%loop-number%::display} to "Break Mushroom Stem"
+      set {dailyquests::quest%loop-number%::amount} to 500
+      set {dailyquests::quest%loop-number%::reward} to 15
+    if {_r} = 10:
+      set {dailyquests::quest%loop-number%::type} to "farm"
+      set {dailyquests::quest%loop-number%::target} to "wheat"
+      set {dailyquests::quest%loop-number%::display} to "Farm Wheat"
+      set {dailyquests::quest%loop-number%::amount} to 2500
+      set {dailyquests::quest%loop-number%::reward} to 5
+    if {_r} = 11:
+      set {dailyquests::quest%loop-number%::type} to "farm"
+      set {dailyquests::quest%loop-number%::target} to "carrot"
+      set {dailyquests::quest%loop-number%::display} to "Farm Carrots"
+      set {dailyquests::quest%loop-number%::amount} to 2500
+      set {dailyquests::quest%loop-number%::reward} to 5
+    if {_r} = 12:
+      set {dailyquests::quest%loop-number%::type} to "farm"
+      set {dailyquests::quest%loop-number%::target} to "potato"
+      set {dailyquests::quest%loop-number%::display} to "Farm Potato"
+      set {dailyquests::quest%loop-number%::amount} to 2500
+      set {dailyquests::quest%loop-number%::reward} to 5
+    if {_r} = 13:
+      set {dailyquests::quest%loop-number%::type} to "farm"
+      set {dailyquests::quest%loop-number%::target} to "beetroot"
+      set {dailyquests::quest%loop-number%::display} to "Farm Beetroot"
+      set {dailyquests::quest%loop-number%::amount} to 2500
+      set {dailyquests::quest%loop-number%::reward} to 5
+    if {_r} = 14:
+      set {dailyquests::quest%loop-number%::type} to "farm"
+      set {dailyquests::quest%loop-number%::target} to "pitcher"
+      set {dailyquests::quest%loop-number%::display} to "Farm Pitcher Pods"
+      set {dailyquests::quest%loop-number%::amount} to 2500
+      set {dailyquests::quest%loop-number%::reward} to 5
+    if {_r} = 15:
+      set {dailyquests::quest%{_id}%::type} to "boost"
+      set {dailyquests::quest%{_id}%::target} to "boost"
+      set {dailyquests::quest%{_id}%::display} to "Have Boosts active"
+      set {dailyquests::quest%{_id}%::amount} to 3
+      set {dailyquests::quest%{_id}%::reward} to 5
+    if {_r} = 16:
+      set {dailyquests::quest%{_id}%::type} to "walk"
+      set {dailyquests::quest%{_id}%::target} to "distance"
+      set {dailyquests::quest%{_id}%::display} to "Travel 1000 Blocks"
+      set {dailyquests::quest%{_id}%::amount} to 1000
+      set {dailyquests::quest%{_id}%::reward} to 20
+
+command /resetbattlepassquests:
+  permission: op
+  trigger:
+    set {lastRun} to now
+    genQuests()
+
+on break of coal ore:
+  loop {@qcount} times:
+    if {dailyquests::quest%loop-number%::type} is "mine":
+      if {dailyquests::quest%loop-number%::target} is "coal_ore":
+        add 1 to {dailyquest_progress::%uuid of player%::quest%loop-number%}
+        if {dailyquest_progress::%uuid of player%::quest%loop-number%} >= {dailyquests::quest%loop-number%::amount}:
+          if {dailyquest_progress::%uuid of player%::quest%loop-number%::done} is not set:
+            set {dailyquest_progress::%uuid of player%::quest%loop-number%::done} to true
+            send "&a%{prefix}%&7You have completed a quest!" to player
+            execute console command "scoreboard players add %player% battlepass_xp %{dailyquests::quest%loop-number%::reward}%"
+on break of copper ore:
+  loop {@qcount} times:
+    if {dailyquests::quest%loop-number%::type} is "mine":
+      if {dailyquests::quest%loop-number%::target} is "copper_ore":
+        add 1 to {dailyquest_progress::%uuid of player%::quest%loop-number%}
+        if {dailyquest_progress::%uuid of player%::quest%loop-number%} >= {dailyquests::quest%loop-number%::amount}:
+          if {dailyquest_progress::%uuid of player%::quest%loop-number%::done} is not set:
+            set {dailyquest_progress::%uuid of player%::quest%loop-number%::done} to true
+            send "&a%{prefix}%&7You have completed a quest!" to player
+            execute console command "scoreboard players add %player% battlepass_xp %{dailyquests::quest%loop-number%::reward}%"
+on break of iron ore:
+  loop {@qcount} times:
+    if {dailyquests::quest%loop-number%::type} is "mine":
+      if {dailyquests::quest%loop-number%::target} is "iron_ore":
+        add 1 to {dailyquest_progress::%uuid of player%::quest%loop-number%}
+        if {dailyquest_progress::%uuid of player%::quest%loop-number%} >= {dailyquests::quest%loop-number%::amount}:
+          if {dailyquest_progress::%uuid of player%::quest%loop-number%::done} is not set:
+            set {dailyquest_progress::%uuid of player%::quest%loop-number%::done} to true
+            send "&a%{prefix}%&7You have completed a quest!" to player
+            execute console command "scoreboard players add %player% battlepass_xp %{dailyquests::quest%loop-number%::reward}%"
+on break of mushroom stem:
+  loop {@qcount} times:
+    if {dailyquests::quest%loop-number%::type} is "break":
+      if {dailyquests::quest%loop-number%::target} is "mu_stem":
+        add 1 to {dailyquest_progress::%uuid of player%::quest%loop-number%}
+        if {dailyquest_progress::%uuid of player%::quest%loop-number%} >= {dailyquests::quest%loop-number%::amount}:
+          if {dailyquest_progress::%uuid of player%::quest%loop-number%::done} is not set:
+            set {dailyquest_progress::%uuid of player%::quest%loop-number%::done} to true
+            send "&a%{prefix}%&7You have completed a quest!" to player
+            execute console command "scoreboard players add %player% battlepass_xp %{dailyquests::quest%loop-number%::reward}%"
+on break of wheat:
+  loop {@qcount} times:
+    if {dailyquests::quest%loop-number%::type} is "farm":
+      if {dailyquests::quest%loop-number%::target} is "wheat":
+        add 1 to {dailyquest_progress::%uuid of player%::quest%loop-number%}
+        if {dailyquest_progress::%uuid of player%::quest%loop-number%} >= {dailyquests::quest%loop-number%::amount}:
+          if {dailyquest_progress::%uuid of player%::quest%loop-number%::done} is not set:
+            set {dailyquest_progress::%uuid of player%::quest%loop-number%::done} to true
+            send "&a%{prefix}%&7You have completed a quest!" to player
+            execute console command "scoreboard players add %player% battlepass_xp %{dailyquests::quest%loop-number%::reward}%"
+on break of carrot:
+  loop {@qcount} times:
+    if {dailyquests::quest%loop-number%::type} is "farm":
+      if {dailyquests::quest%loop-number%::target} is "carrot":
+        add 1 to {dailyquest_progress::%uuid of player%::quest%loop-number%}
+        if {dailyquest_progress::%uuid of player%::quest%loop-number%} >= {dailyquests::quest%loop-number%::amount}:
+          if {dailyquest_progress::%uuid of player%::quest%loop-number%::done} is not set:
+            set {dailyquest_progress::%uuid of player%::quest%loop-number%::done} to true
+            send "&a%{prefix}%&7You have completed a quest!" to player
+            execute console command "scoreboard players add %player% battlepass_xp %{dailyquests::quest%loop-number%::reward}%"
+on break of potatoes:
+  loop {@qcount} times:
+    if {dailyquests::quest%loop-number%::type} is "farm":
+      if {dailyquests::quest%loop-number%::target} is "potato":
+        add 1 to {dailyquest_progress::%uuid of player%::quest%loop-number%}
+        if {dailyquest_progress::%uuid of player%::quest%loop-number%} >= {dailyquests::quest%loop-number%::amount}:
+          if {dailyquest_progress::%uuid of player%::quest%loop-number%::done} is not set:
+            set {dailyquest_progress::%uuid of player%::quest%loop-number%::done} to true
+            send "&a%{prefix}%&7You have completed a quest!" to player
+            execute console command "scoreboard players add %player% battlepass_xp %{dailyquests::quest%loop-number%::reward}%"
+on break of beetroot:
+  loop {@qcount} times:
+    if {dailyquests::quest%loop-number%::type} is "farm":
+      if {dailyquests::quest%loop-number%::target} is "beetroot":
+        add 1 to {dailyquest_progress::%uuid of player%::quest%loop-number%}
+        if {dailyquest_progress::%uuid of player%::quest%loop-number%} >= {dailyquests::quest%loop-number%::amount}:
+          if {dailyquest_progress::%uuid of player%::quest%loop-number%::done} is not set:
+            set {dailyquest_progress::%uuid of player%::quest%loop-number%::done} to true
+            send "&a%{prefix}%&7You have completed a quest!" to player 
+            execute console command "scoreboard players add %player% battlepass_xp %{dailyquests::quest%loop-number%::reward}%"
+on break of pitcher crop:
+  loop {@qcount} times:
+    if {dailyquests::quest%loop-number%::type} is "farm":
+      if {dailyquests::quest%loop-number%::target} is "pitcher":
+        add 1 to {dailyquest_progress::%uuid of player%::quest%loop-number%}
+        if {dailyquest_progress::%uuid of player%::quest%loop-number%} >= {dailyquests::quest%loop-number%::amount}:
+          if {dailyquest_progress::%uuid of player%::quest%loop-number%::done} is not set:
+            set {dailyquest_progress::%uuid of player%::quest%loop-number%::done} to true
+            send "&a%{prefix}%&7You have completed a quest!" to player 
+            execute console command "scoreboard players add %player% battlepass_xp %{dailyquests::quest%loop-number%::reward}%"
+
+
+on death:
+  loop {@qcount} times:
+    if {dailyquests::quest%loop-number%::type} is "kill":
+      if victim is zombie:
+        if {dailyquests::quest%loop-number%::target} is "zombie":
+          add 1 to {dailyquest_progress::%uuid of attacker%::quest%loop-number%}
+          if {dailyquest_progress::%uuid of attacker%::quest%loop-number%} >= {dailyquests::quest%loop-number%::amount}:
+            if {dailyquest_progress::%uuid of attacker%::quest%loop-number%::done} is not set:
+              set {dailyquest_progress::%uuid of attacker%::quest%loop-number%::done} to true
+              send "&a%{prefix}%&7You have completed a quest!" to attacker
+              execute console command "scoreboard players add %attacker% battlepass_xp %{dailyquests::quest%loop-number%::reward}%"
+      if victim is skeleton:
+        if {dailyquests::quest%loop-number%::target} is "skeleton":
+          add 1 to {dailyquest_progress::%uuid of attacker%::quest%loop-number%}
+          if {dailyquest_progress::%uuid of attacker%::quest%loop-number%} >= {dailyquests::quest%loop-number%::amount}:
+            if {dailyquest_progress::%uuid of attacker%::quest%loop-number%::done} is not set:
+              set {dailyquest_progress::%uuid of attacker%::quest%loop-number%::done} to true
+              send "&a%{prefix}%&7You have completed a quest!" to attacker
+              execute console command "scoreboard players add %attacker% battlepass_xp %{dailyquests::quest%loop-number%::reward}%"
+      if victim is piglin brute:
+        if {dailyquests::quest%loop-number%::target} is "piglin brute":
+          add 1 to {dailyquest_progress::%uuid of attacker%::quest%loop-number%}
+          if {dailyquest_progress::%uuid of attacker%::quest%loop-number%} >= {dailyquests::quest%loop-number%::amount}:
+            if {dailyquest_progress::%uuid of attacker%::quest%loop-number%::done} is not set:
+              set {dailyquest_progress::%uuid of attacker%::quest%loop-number%::done} to true
+              send "&a%{prefix}%&7You have completed a quest!" to attacker
+              execute console command "scoreboard players add %attacker% battlepass_xp %{dailyquests::quest%loop-number%::reward}%"
+      if victim is hoglin:
+        if {dailyquests::quest%loop-number%::target} is "hoglin":
+          add 1 to {dailyquest_progress::%uuid of attacker%::quest%loop-number%}
+          if {dailyquest_progress::%uuid of attacker%::quest%loop-number%} >= {dailyquests::quest%loop-number%::amount}:
+            if {dailyquest_progress::%uuid of attacker%::quest%loop-number%::done} is not set:
+              set {dailyquest_progress::%uuid of attacker%::quest%loop-number%::done} to true
+              send "&a%{prefix}%&7You have completed a quest!" to attacker
+              execute console command "scoreboard players add %attacker% battlepass_xp %{dailyquests::quest%loop-number%::reward}%"
+      if victim is zoglin:
+        if {dailyquests::quest%loop-number%::target} is "zoglin":
+          add 1 to {dailyquest_progress::%uuid of attacker%::quest%loop-number%}
+          if {dailyquest_progress::%uuid of attacker%::quest%loop-number%} >= {dailyquests::quest%loop-number%::amount}:
+            if {dailyquest_progress::%uuid of attacker%::quest%loop-number%::done} is not set:
+              set {dailyquest_progress::%uuid of attacker%::quest%loop-number%::done} to true
+              send "&a%{prefix}%&7You have completed a quest!" to attacker
+              execute console command "scoreboard players add %attacker% battlepass_xp %{dailyquests::quest%loop-number%::reward}%" 
+every 5 seconds:
+  loop all players:
+    set {_bcount} to 0
+    set {_boost1} to the placeholder "objective_scorep_{double}" for loop-player parsed as number
+    if {_boost1} > 0:
+      add 1 to {_bcount}
+    set {_boost2} to the placeholder "objective_scorep_{autosell}" for loop-player parsed as number
+    if {_boost2} > 0:
+      add 1 to {_bcount}
+    set {_boost3} to the placeholder "objective_scorep_{autocompress}" for loop-player parsed as number
+    if {_boost3} > 0:
+      add 1 to {_bcount}
+    set {_p} to loop-player
+    loop {@qcount} times:
+      if {dailyquests::quest%loop-number%::type} is "boost":
+        if {dailyquests::quest%loop-number%::target} is "boost":
+          set {dailyquest_progress::%uuid of {_p}%::quest%loop-number%} to {_bcount}
+          if {dailyquest_progress::%uuid of {_p}%::quest%loop-number%} >= {dailyquests::quest%loop-number%::amount}:
+            if {dailyquest_progress::%uuid of {_p}%::quest%loop-number%::done} is not set:
+              set {dailyquest_progress::%uuid of {_p}%::quest%loop-number%::done} to true
+              send "&a%{prefix}%&7You have completed a quest!" to {_p}  
+              execute console command "scoreboard players add %{_p}% battlepass_xp %{dailyquests::quest%loop-number%::reward}%"  
+
+#on move:
+  #event-entity is player:
+    #set {_distance} to distance between event-location and previous location
+    #if {_distance} < 0.1:
+      #stop
+    #add {_distance} to {dailyquest_progress::%uuid of player%::walked}
+    
+    #if {dailyquests::quest1::type} is "walk":
+      #set {_target} to {dailyquests::quest1::amount}
+      #set {_progress} to {dailyquest_progress::%uuid of player%::walked}
+      #if {_progress} >= {_target}:
+        #set {dailyquest_progress::%uuid of attacker%::quest%loop-number%::done} to true
+        #send "&a%{prefix}%&7You have completed a quest!" to attacker
+        #execute console command "scoreboard players add %attacker% battlepass_xp %{dailyquests::quest%loop-number%::reward}%" 
+
+every minute:
+  if {dailyreward::server} is not set:
+    set {dailyreward::server} to now - {@reward-cooldown}
+    set {_lastClaim} to {dailyreward::server}
+    if difference between now and {_lastClaim} >= {@reward-cooldown}:
+      genQuests()
+      set {dailyreward::server} to now
+
+on load:
+    if {lastRun} is not set:
+        set {lastRun} to now
+        
+command /time:
+    trigger:
+        send "The current time is: %now%"

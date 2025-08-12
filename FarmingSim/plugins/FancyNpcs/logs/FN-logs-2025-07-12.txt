@@ -1,0 +1,5 @@
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"FancyNpcs (2.5.2) has been enabled.","timestamp":1752307612036,"threadID":50,"threadName":"Server thread","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"WARN","message":"You are not using the latest version of the FancyNpcs plugin.","timestamp":1752307612054,"threadID":106,"threadName":"ForkJoinPool.commonPool-worker-2","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"Updated skin for NPC: tutorial","timestamp":1752307622154,"threadID":104,"threadName":"FancyNpcs-Skins-3","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"ERROR","message":"Error in mineskin request: java.net.SocketTimeoutException: Read timeout","timestamp":1752307626456,"threadID":105,"threadName":"FancyNpcs-Skins-4","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"Updated skin for NPC: Discord","timestamp":1752307630671,"threadID":101,"threadName":"FancyNpcs-Skins-0","properties":{}}

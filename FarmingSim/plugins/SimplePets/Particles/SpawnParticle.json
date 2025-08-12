@@ -1,0 +1,12 @@
+{
+  "particle": {
+    "offset": {
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "count": 15,
+    "particle": "SPELL_INSTANT",
+    "speed": 0
+  }
+}

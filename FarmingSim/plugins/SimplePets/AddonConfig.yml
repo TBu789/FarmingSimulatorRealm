@@ -1,0 +1,3 @@
+ItemEconomy:
+  # Enable/Disable the ItemEconomy module
+  Enabled: true

@@ -1,0 +1,502 @@
+{
+  "enabled": true,
+  "hat": true,
+  "mount": true,
+  "ambient-sound": "ENTITY_TROPICAL_FISH_AMBIENT",
+  "commands": {
+    "SPAWN": [
+      
+    ],
+    "REVOKE": [
+      
+    ],
+    "RIDE": [
+      
+    ],
+    "RIDE_DISMOUNT": [
+      
+    ],
+    "HAT": [
+      
+    ],
+    "TELEPORT": [
+      
+    ],
+    "FAILED": [
+      
+    ]
+  },
+  "ride_speed": 0.200004838418579,
+  "walk_speed": 0.580804838418579,
+  "fly_speed": 0.300000438418579,
+  "fly": false,
+  "float_down": false,
+  "display_name": "&a&l%player%'s Tropical Fish Pet",
+  "item": {
+    "material": "PLAYER_HEAD",
+    "meta": {
+      "texture": "http://textures.minecraft.net/texture/d6dd5e6addb56acbc694ea4ba5923b1b25688178feffa72290299e2505c97281"
+    },
+    "name": "&#C8F792Tropical Fish"
+  },
+  "data": {
+    "visible": {
+      "enabled": false,
+      "default": true,
+      "values": {
+        "true": {
+          "material": "GLASS_BOTTLE",
+          "name": "&#C8C8C8Visible: &atrue"
+        },
+        "false": {
+          "material": "SPLASH_POTION",
+          "name": "&#C8C8C8Visible: &cfalse"
+        }
+      }
+    },
+    "frozen": {
+      "enabled": true,
+      "default": false,
+      "values": {
+        "true": {
+          "material": "ICE",
+          "name": "&#C8C8C8Frozen: &atrue"
+        },
+        "false": {
+          "material": "GRASS_BLOCK",
+          "name": "&#C8C8C8Frozen: &cfalse"
+        }
+      }
+    },
+    "burning": {
+      "enabled": true,
+      "default": false,
+      "values": {
+        "true": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/4080bbefca87dc0f36536b6508425cfc4b95ba6e8f5e6a46ff9e9cb488a9ed"
+          },
+          "name": "&#C8C8C8Burning: &atrue"
+        },
+        "false": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/4080bbefca87dc0f36536b6508425cfc4b95ba6e8f5e6a46ff9e9cb488a9ed"
+          },
+          "name": "&#C8C8C8Burning: &cfalse"
+        }
+      }
+    },
+    "silent": {
+      "enabled": true,
+      "default": false,
+      "values": {
+        "true": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/b1f327c3f349158d209b4867d68ffb1890bc57a01ba9483e3fffe4ec7fdea0b0"
+          },
+          "name": "&#C8C8C8Silent: &atrue"
+        },
+        "false": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/5461518b74d5f7016f72294756fc68c5471110cc97f3bb093e0c6ed94a9e3"
+          },
+          "name": "&#C8C8C8Silent: &cfalse"
+        }
+      }
+    },
+    "body_color": {
+      "enabled": true,
+      "default": "WHITE",
+      "values": {
+        "WHITE": {
+          "material": "WHITE_WOOL",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        },
+        "GRAY": {
+          "material": "GRAY_WOOL",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        },
+        "BLUE": {
+          "material": "BLUE_WOOL",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        },
+        "PURPLE": {
+          "material": "PURPLE_WOOL",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        },
+        "GREEN": {
+          "material": "GREEN_WOOL",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        },
+        "RED": {
+          "material": "RED_WOOL",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        },
+        "PINK": {
+          "material": "PINK_WOOL",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        },
+        "LIGHT_GRAY": {
+          "material": "LIGHT_GRAY_WOOL",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        },
+        "LIGHT_BLUE": {
+          "material": "LIGHT_BLUE_WOOL",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        },
+        "LIME": {
+          "material": "LIME_WOOL",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        },
+        "MAGENTA": {
+          "material": "MAGENTA_WOOL",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        },
+        "BLACK": {
+          "material": "BLACK_WOOL",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        },
+        "YELLOW": {
+          "material": "YELLOW_WOOL",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        },
+        "CYAN": {
+          "material": "CYAN_WOOL",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        },
+        "BROWN": {
+          "material": "BROWN_WOOL",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        },
+        "ORANGE": {
+          "material": "ORANGE_WOOL",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        }
+      }
+    },
+    "pattern": {
+      "enabled": true,
+      "default": "KOB",
+      "values": {
+        "CLAYFISH": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/36d149e4d499929672e2768949e6477959c21e65254613b327b538df1e4df"
+          },
+          "name": "&#C8C8C8Pattern: &aCLAYFISH"
+        },
+        "BETTY": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/36d149e4d499929672e2768949e6477959c21e65254613b327b538df1e4df"
+          },
+          "name": "&#C8C8C8Pattern: &aBETTY"
+        },
+        "FLOPPER": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/36d149e4d499929672e2768949e6477959c21e65254613b327b538df1e4df"
+          },
+          "name": "&#C8C8C8Pattern: &aFLOPPER"
+        },
+        "BLOCKFISH": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/36d149e4d499929672e2768949e6477959c21e65254613b327b538df1e4df"
+          },
+          "name": "&#C8C8C8Pattern: &aBLOCKFISH"
+        },
+        "GLITTER": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/36d149e4d499929672e2768949e6477959c21e65254613b327b538df1e4df"
+          },
+          "name": "&#C8C8C8Pattern: &aGLITTER"
+        },
+        "SUNSTREAK": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/36d149e4d499929672e2768949e6477959c21e65254613b327b538df1e4df"
+          },
+          "name": "&#C8C8C8Pattern: &aSUNSTREAK"
+        },
+        "SPOTTY": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/36d149e4d499929672e2768949e6477959c21e65254613b327b538df1e4df"
+          },
+          "name": "&#C8C8C8Pattern: &aSPOTTY"
+        },
+        "DASHER": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/36d149e4d499929672e2768949e6477959c21e65254613b327b538df1e4df"
+          },
+          "name": "&#C8C8C8Pattern: &aDASHER"
+        },
+        "BRINELY": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/36d149e4d499929672e2768949e6477959c21e65254613b327b538df1e4df"
+          },
+          "name": "&#C8C8C8Pattern: &aBRINELY"
+        },
+        "STRIPEY": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/36d149e4d499929672e2768949e6477959c21e65254613b327b538df1e4df"
+          },
+          "name": "&#C8C8C8Pattern: &aSTRIPEY"
+        },
+        "KOB": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/36d149e4d499929672e2768949e6477959c21e65254613b327b538df1e4df"
+          },
+          "name": "&#C8C8C8Pattern: &aKOB"
+        },
+        "SNOOPER": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/36d149e4d499929672e2768949e6477959c21e65254613b327b538df1e4df"
+          },
+          "name": "&#C8C8C8Pattern: &aSNOOPER"
+        }
+      }
+    },
+    "pattern_color": {
+      "enabled": true,
+      "default": "WHITE",
+      "values": {
+        "WHITE": {
+          "material": "WHITE_TERRACOTTA",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        },
+        "GRAY": {
+          "material": "GRAY_TERRACOTTA",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        },
+        "BLUE": {
+          "material": "BLUE_TERRACOTTA",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        },
+        "PURPLE": {
+          "material": "PURPLE_TERRACOTTA",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        },
+        "GREEN": {
+          "material": "GREEN_TERRACOTTA",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        },
+        "RED": {
+          "material": "RED_TERRACOTTA",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        },
+        "PINK": {
+          "material": "PINK_TERRACOTTA",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        },
+        "LIGHT_GRAY": {
+          "material": "LIGHT_GRAY_TERRACOTTA",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        },
+        "LIGHT_BLUE": {
+          "material": "LIGHT_BLUE_TERRACOTTA",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        },
+        "LIME": {
+          "material": "LIME_TERRACOTTA",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        },
+        "MAGENTA": {
+          "material": "MAGENTA_TERRACOTTA",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        },
+        "BLACK": {
+          "material": "BLACK_TERRACOTTA",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        },
+        "YELLOW": {
+          "material": "YELLOW_TERRACOTTA",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        },
+        "CYAN": {
+          "material": "CYAN_TERRACOTTA",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        },
+        "BROWN": {
+          "material": "BROWN_TERRACOTTA",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        },
+        "ORANGE": {
+          "material": "ORANGE_TERRACOTTA",
+          "lore": [
+            "&#C8C8C8Previous: {previousColor}{previousName}",
+            "&#C8C8C8Current: {currentColor}{currentName}",
+            "&#C8C8C8Next: {nextColor}{nextName}"
+          ],
+          "name": " "
+        }
+      }
+    }
+  }
+}

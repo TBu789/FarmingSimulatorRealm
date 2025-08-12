@@ -1,0 +1,121 @@
+options:
+  score-objective: "playtime_mins"
+  
+command /scoretest:
+  trigger:
+    #---Playtime---
+    set {_playtime} to time played of player
+    if {_playtime} is not set:
+      set {_playtime} to "0 minutes 0 seconds"
+    set {_playtime} to "%{_playtime}%"
+    replace all "and" with "" in {_playtime}
+    replace all " " with "" in {_playtime}
+    replace all "days" with "d " in {_playtime}
+    replace all "day" with "d " in {_playtime}
+    replace all "hours" with "h " in {_playtime}
+    replace all "hour" with "h " in {_playtime}
+    replace all "weeks" with "w " in {_playtime}
+    replace all "week" with "w " in {_playtime}
+    replace all "minutes" with "m-" in {_playtime}
+    replace all "seconds" with "s" in {_playtime}
+    set {_text} to {_playtime}
+    set {_letter} to "-"
+    set {_i} to index of {_letter} in {_text}
+    if {_i} is set:
+      set {_result} to subtext of {_text} from 1 to {_i} - 1
+      set {_playtime} to {_result}
+    else:
+      set {_playtime} to "ERROR"
+    if {_playtime} is not set:
+      set {_playtime} to "Loading"
+    #---Reset Time---
+    set {_resettime} to the placeholder "objective_score_{game}_{reset}" for player parsed as number
+    set {_resettotalSeconds} to floor({_resettime} / 20)
+    set {_resetminutes} to floor({_resettotalseconds} / 60)
+    set {_resetseconds} to mod({_resettotalseconds}, 60)
+    
+    #---Booster---
+    set {_boosterdouble} to the placeholder "objective_scorep_{double}" for player parsed as number
+    set {_boosterdoubletotalseconds} to {_boosterdouble}
+    set {_boosterdoubleminutes} to floor({_boosterdoubletotalseconds} / 60)
+    set {_boosterdoubleseconds} to mod({_boosterdoubletotalseconds}, 60)
+    
+    set {_boostersell} to the placeholder "objective_scorep_{autosell}" for player parsed as number
+    set {_boosterselltotalseconds} to {_boostersell}
+    set {_boostersellminutes} to floor({_boosterselltotalseconds} / 60)
+    set {_boostersellseconds} to mod({_boosterselltotalseconds}, 60)
+    
+    set {_boostercompress} to the placeholder "objective_scorep_{autocompress}" for player parsed as number
+    set {_boostercompresstotalseconds} to {_boostercompress}
+    set {_boostercompressminutes} to floor({_boostercompresstotalseconds} / 60)
+    set {_boostercompressseconds} to mod({_boostercompresstotalseconds}, 60)
+      
+every 1 second:
+  loop all players:
+    #---Playtime---
+    set {_playtime} to time played of loop-player
+    set {_playtime} to "%{_playtime}%"
+    replace all "and" with "" in {_playtime}
+    replace all " " with "" in {_playtime}
+    replace all "days" with "d " in {_playtime}
+    replace all "day" with "d " in {_playtime}
+    replace all "hours" with "h " in {_playtime}
+    replace all "hour" with "h " in {_playtime}
+    replace all "weeks" with "w " in {_playtime}
+    replace all "week" with "w " in {_playtime}
+    replace all "minutes" with "m-" in {_playtime}
+    replace all "seconds" with "s" in {_playtime}
+    set {_text} to {_playtime}
+    set {_letter} to "-"
+    set {_i} to index of {_letter} in {_text}
+    if {_i} is set:
+      set {_result} to subtext of {_text} from 1 to {_i} - 1
+      set {_playtime} to {_result}
+    else:
+      set {_playtime} to "ERROR"
+    if {_playtime} is not set:
+      set {_playtime} to "Loading"
+
+    #---Reset Time---
+    set {_resettime} to the placeholder "objective_score_{game}_{reset}" for loop-player parsed as number
+    set {_resettotalSeconds} to floor({_resettime} / 20)
+    set {_resetminutes} to floor({_resettotalseconds} / 60)
+    set {_resetseconds} to mod({_resettotalseconds}, 60)
+    
+    #---Booster---
+    set {_boosterdouble} to the placeholder "objective_scorep_{double}" for loop-player parsed as number
+    set {_boosterdoubletotalseconds} to {_boosterdouble}
+    set {_boosterdoubleminutes} to floor({_boosterdoubletotalseconds} / 60)
+    set {_boosterdoubleseconds} to mod({_boosterdoubletotalseconds}, 60)
+    
+    set {_boostersell} to the placeholder "objective_scorep_{autosell}" for loop-player parsed as number
+    set {_boosterselltotalseconds} to {_boostersell}
+    set {_boostersellminutes} to floor({_boosterselltotalseconds} / 60)
+    set {_boostersellseconds} to mod({_boosterselltotalseconds}, 60)
+    
+    set {_boostercompress} to the placeholder "objective_scorep_{autocompress}" for loop-player parsed as number
+    set {_boostercompresstotalseconds} to {_boostercompress}
+    set {_boostercompressminutes} to floor({_boostercompresstotalseconds} / 60)
+    set {_boostercompressseconds} to mod({_boostercompresstotalseconds}, 60)
+
+#---Display Scoreboard---
+    set title of loop-player's fastboard to "&#FFD568F&#FFD062a&#FFCB5Br&#FFC655m&#FFC14Ei&#FFBC48n&#FFB741g &#FFAE34S&#FFA92Ei&#FFA427m&#FF9F21u&#FF9A1Al&#FF9514a&#FF900Dt&#FF8B07o&#FF8600r"
+    set line 1 of loop-player's fastboard to ""
+    set line 2 of loop-player's fastboard to "&7Next Reset in"
+    set line 3 of loop-player's fastboard to "%{_resetminutes}%m %{_resetseconds}%s"
+    set line 4 of loop-player's fastboard to ""
+    set line 5 of loop-player's fastboard to "&7Playtime: &f%{_playtime}%"
+    set line 6 of loop-player's fastboard to ""
+    set line 7 of loop-player's fastboard to "&7Booster:"
+    if {_boosterdouble} is 0:
+      set line 8 of loop-player's fastboard to "&cTriple XP: 0s"
+    else:
+      set line 8 of loop-player's fastboard to "&aTriple XP: %{_boosterdoubleminutes}%m %{_boosterdoubleseconds}%s"
+    if {_boostersell} is 0:
+      set line 9 of loop-player's fastboard to "&cAutoSell: %{_boostersell}%s"
+    else:
+      set line 9 of loop-player's fastboard to "&aAutoSell: %{_boostersellminutes}%m %{_boostersellseconds}%s"
+    if {_boostercompress} is 0:
+      set line 10 of loop-player's fastboard to "&cAutoCompress: %{_boostercompress}%s"
+    else:
+      set line 10 of loop-player's fastboard to "&aAutoCompress: %{_boostercompressminutes}%m %{_boostercompressseconds}%s"

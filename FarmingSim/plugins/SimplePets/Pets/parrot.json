@@ -1,0 +1,201 @@
+{
+  "enabled": false,
+  "hat": true,
+  "mount": true,
+  "ambient-sound": "ENTITY_PARROT_AMBIENT",
+  "commands": {
+    "SPAWN": [
+      
+    ],
+    "REVOKE": [
+      
+    ],
+    "RIDE": [
+      
+    ],
+    "RIDE_DISMOUNT": [
+      
+    ],
+    "HAT": [
+      
+    ],
+    "TELEPORT": [
+      
+    ],
+    "FAILED": [
+      
+    ]
+  },
+  "ride_speed": 0.200004838418579,
+  "walk_speed": 0.580804838418579,
+  "fly_speed": 0.300000438418579,
+  "fly": true,
+  "float_down": false,
+  "display_name": "&a&l%player%'s Parrot Pet",
+  "item": {
+    "material": "PLAYER_HEAD",
+    "meta": {
+      "texture": "http://textures.minecraft.net/texture/a4ba8d66fecb1992e94b8687d6ab4a5320ab7594ac194a2615ed4df818edbc3"
+    },
+    "name": "&#C8F792Parrot"
+  },
+  "data": {
+    "visible": {
+      "enabled": false,
+      "default": true,
+      "values": {
+        "true": {
+          "material": "GLASS_BOTTLE",
+          "name": "&#C8C8C8Visible: &atrue"
+        },
+        "false": {
+          "material": "SPLASH_POTION",
+          "name": "&#C8C8C8Visible: &cfalse"
+        }
+      }
+    },
+    "frozen": {
+      "enabled": true,
+      "default": false,
+      "values": {
+        "true": {
+          "material": "ICE",
+          "name": "&#C8C8C8Frozen: &atrue"
+        },
+        "false": {
+          "material": "GRASS_BLOCK",
+          "name": "&#C8C8C8Frozen: &cfalse"
+        }
+      }
+    },
+    "burning": {
+      "enabled": true,
+      "default": false,
+      "values": {
+        "true": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/4080bbefca87dc0f36536b6508425cfc4b95ba6e8f5e6a46ff9e9cb488a9ed"
+          },
+          "name": "&#C8C8C8Burning: &atrue"
+        },
+        "false": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/4080bbefca87dc0f36536b6508425cfc4b95ba6e8f5e6a46ff9e9cb488a9ed"
+          },
+          "name": "&#C8C8C8Burning: &cfalse"
+        }
+      }
+    },
+    "silent": {
+      "enabled": true,
+      "default": false,
+      "values": {
+        "true": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/b1f327c3f349158d209b4867d68ffb1890bc57a01ba9483e3fffe4ec7fdea0b0"
+          },
+          "name": "&#C8C8C8Silent: &atrue"
+        },
+        "false": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/5461518b74d5f7016f72294756fc68c5471110cc97f3bb093e0c6ed94a9e3"
+          },
+          "name": "&#C8C8C8Silent: &cfalse"
+        }
+      }
+    },
+    "rainbow": {
+      "enabled": true,
+      "default": false,
+      "values": {
+        "true": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/c69e3e6e5b2b92f0beb368b738b993d7ba225bf9bb2758bfc9fc2daba4a5a7d"
+          },
+          "name": "&#C8C8C8Rainbow: &atrue"
+        },
+        "false": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/c69e3e6e5b2b92f0beb368b738b993d7ba225bf9bb2758bfc9fc2daba4a5a7d"
+          },
+          "name": "&#C8C8C8Rainbow: &cfalse"
+        }
+      }
+    },
+    "tamed": {
+      "enabled": true,
+      "default": false,
+      "values": {
+        "true": {
+          "material": "BONE",
+          "name": "&#C8C8C8Tamed: &atrue"
+        },
+        "false": {
+          "material": "BONE",
+          "name": "&#C8C8C8Tamed: &cfalse"
+        }
+      }
+    },
+    "variant": {
+      "enabled": true,
+      "default": "RED",
+      "values": {
+        "RED": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/a4ba8d66fecb1992e94b8687d6ab4a5320ab7594ac194a2615ed4df818edbc3"
+          },
+          "name": "&#C8C8C8Variant: &aRED"
+        },
+        "GRAY": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/3d6f4a21e0d62af824f8708ac63410f1a01bbb41d7f4a702d9469c6113222"
+          },
+          "name": "&#C8C8C8Variant: &aGRAY"
+        },
+        "BLUE": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/aca580b051c63be29da545a9aa7ff7e136df77a81c67dc1ee9e6170c14fb310"
+          },
+          "name": "&#C8C8C8Variant: &aBLUE"
+        },
+        "CYAN": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/2b94f236c4a642eb2bcdc3589b9c3c4a0b5bd5df9cd5d68f37f8c83f8e3f1"
+          },
+          "name": "&#C8C8C8Variant: &aCYAN"
+        },
+        "GREEN": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/ab9a36c5589f3a2e59c1caa9b3b88fada76732bdb4a7926388a8c088bbbcb"
+          },
+          "name": "&#C8C8C8Variant: &aGREEN"
+        }
+      }
+    },
+    "sitting": {
+      "enabled": true,
+      "default": false,
+      "values": {
+        "true": {
+          "material": "OAK_STAIRS",
+          "name": "&#C8C8C8Sitting: &atrue"
+        },
+        "false": {
+          "material": "OAK_STAIRS",
+          "name": "&#C8C8C8Sitting: &cfalse"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "enabled": false,
+  "hat": true,
+  "mount": true,
+  "ambient-sound": "ENTITY_WITHER_AMBIENT",
+  "commands": {
+    "SPAWN": [
+      
+    ],
+    "REVOKE": [
+      
+    ],
+    "RIDE": [
+      
+    ],
+    "RIDE_DISMOUNT": [
+      
+    ],
+    "HAT": [
+      
+    ],
+    "TELEPORT": [
+      
+    ],
+    "FAILED": [
+      
+    ]
+  },
+  "ride_speed": 0.200004838418579,
+  "walk_speed": 0.580804838418579,
+  "fly_speed": 0.300000438418579,
+  "fly": true,
+  "float_down": false,
+  "display_name": "&a&l%player%'s Wither Pet",
+  "item": {
+    "material": "PLAYER_HEAD",
+    "meta": {
+      "texture": "http://textures.minecraft.net/texture/cdf74e323ed41436965f5c57ddf2815d5332fe999e68fbb9d6cf5c8bd4139f"
+    },
+    "name": "&#C8F792Wither"
+  },
+  "data": {
+    "visible": {
+      "enabled": false,
+      "default": true,
+      "values": {
+        "true": {
+          "material": "GLASS_BOTTLE",
+          "name": "&#C8C8C8Visible: &atrue"
+        },
+        "false": {
+          "material": "SPLASH_POTION",
+          "name": "&#C8C8C8Visible: &cfalse"
+        }
+      }
+    },
+    "frozen": {
+      "enabled": true,
+      "default": false,
+      "values": {
+        "true": {
+          "material": "ICE",
+          "name": "&#C8C8C8Frozen: &atrue"
+        },
+        "false": {
+          "material": "GRASS_BLOCK",
+          "name": "&#C8C8C8Frozen: &cfalse"
+        }
+      }
+    },
+    "burning": {
+      "enabled": true,
+      "default": false,
+      "values": {
+        "true": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/4080bbefca87dc0f36536b6508425cfc4b95ba6e8f5e6a46ff9e9cb488a9ed"
+          },
+          "name": "&#C8C8C8Burning: &atrue"
+        },
+        "false": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/4080bbefca87dc0f36536b6508425cfc4b95ba6e8f5e6a46ff9e9cb488a9ed"
+          },
+          "name": "&#C8C8C8Burning: &cfalse"
+        }
+      }
+    },
+    "silent": {
+      "enabled": true,
+      "default": false,
+      "values": {
+        "true": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/b1f327c3f349158d209b4867d68ffb1890bc57a01ba9483e3fffe4ec7fdea0b0"
+          },
+          "name": "&#C8C8C8Silent: &atrue"
+        },
+        "false": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/5461518b74d5f7016f72294756fc68c5471110cc97f3bb093e0c6ed94a9e3"
+          },
+          "name": "&#C8C8C8Silent: &cfalse"
+        }
+      }
+    },
+    "shielded": {
+      "enabled": true,
+      "default": false,
+      "values": {
+        "true": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/a435164c05cea299a3f016bbbed05706ebb720dac912ce4351c2296626aecd9a"
+          },
+          "name": "&#C8C8C8Shielded: &atrue"
+        },
+        "false": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/ee280cefe946911ea90e87ded1b3e18330c63a23af5129dfcfe9a8e166588041"
+          },
+          "name": "&#C8C8C8Shielded: &cfalse"
+        }
+      }
+    },
+    "small": {
+      "enabled": true,
+      "default": false,
+      "values": {
+        "true": {
+          "material": "NETHER_STAR",
+          "name": "&#C8C8C8Small: &atrue"
+        },
+        "false": {
+          "material": "NETHER_STAR",
+          "name": "&#C8C8C8Small: &cfalse"
+        }
+      }
+    }
+  }
+}

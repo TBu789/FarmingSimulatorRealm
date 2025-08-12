@@ -1,0 +1,12 @@
+{
+  "particle": {
+    "offset": {
+      "x": 1,
+      "y": 0,
+      "z": 1
+    },
+    "count": 20,
+    "particle": "PORTAL",
+    "speed": 0
+  }
+}

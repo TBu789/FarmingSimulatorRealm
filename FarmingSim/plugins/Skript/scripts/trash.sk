@@ -1,0 +1,3 @@
+on rightclick on trapped chest:
+  cancel event
+  open chest inventory with 3 rows named "Trash" to player

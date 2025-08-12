@@ -1,0 +1,334 @@
+{
+  "enabled": false,
+  "hat": true,
+  "mount": true,
+  "ambient-sound": "ENTITY_ZOMBIE_VILLAGER_AMBIENT",
+  "commands": {
+    "SPAWN": [
+      
+    ],
+    "REVOKE": [
+      
+    ],
+    "RIDE": [
+      
+    ],
+    "RIDE_DISMOUNT": [
+      
+    ],
+    "HAT": [
+      
+    ],
+    "TELEPORT": [
+      
+    ],
+    "FAILED": [
+      
+    ]
+  },
+  "ride_speed": 0.200004838418579,
+  "walk_speed": 0.580804838418579,
+  "fly_speed": 0.300000438418579,
+  "fly": false,
+  "float_down": false,
+  "display_name": "&a&l%player%'s Zombie Villager Pet",
+  "item": {
+    "material": "PLAYER_HEAD",
+    "meta": {
+      "texture": "http://textures.minecraft.net/texture/e5e08a8776c1764c3fe6a6ddd412dfcb87f41331dad479ac96c21df4bf3ac89c"
+    },
+    "name": "&#C8F792Zombie Villager"
+  },
+  "data": {
+    "visible": {
+      "enabled": false,
+      "default": true,
+      "values": {
+        "true": {
+          "material": "GLASS_BOTTLE",
+          "name": "&#C8C8C8Visible: &atrue"
+        },
+        "false": {
+          "material": "SPLASH_POTION",
+          "name": "&#C8C8C8Visible: &cfalse"
+        }
+      }
+    },
+    "frozen": {
+      "enabled": true,
+      "default": false,
+      "values": {
+        "true": {
+          "material": "ICE",
+          "name": "&#C8C8C8Frozen: &atrue"
+        },
+        "false": {
+          "material": "GRASS_BLOCK",
+          "name": "&#C8C8C8Frozen: &cfalse"
+        }
+      }
+    },
+    "burning": {
+      "enabled": true,
+      "default": false,
+      "values": {
+        "true": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/4080bbefca87dc0f36536b6508425cfc4b95ba6e8f5e6a46ff9e9cb488a9ed"
+          },
+          "name": "&#C8C8C8Burning: &atrue"
+        },
+        "false": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/4080bbefca87dc0f36536b6508425cfc4b95ba6e8f5e6a46ff9e9cb488a9ed"
+          },
+          "name": "&#C8C8C8Burning: &cfalse"
+        }
+      }
+    },
+    "silent": {
+      "enabled": true,
+      "default": false,
+      "values": {
+        "true": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/b1f327c3f349158d209b4867d68ffb1890bc57a01ba9483e3fffe4ec7fdea0b0"
+          },
+          "name": "&#C8C8C8Silent: &atrue"
+        },
+        "false": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/5461518b74d5f7016f72294756fc68c5471110cc97f3bb093e0c6ed94a9e3"
+          },
+          "name": "&#C8C8C8Silent: &cfalse"
+        }
+      }
+    },
+    "baby": {
+      "enabled": true,
+      "default": false,
+      "values": {
+        "true": {
+          "material": "WHEAT",
+          "name": "&#C8C8C8Baby: &atrue"
+        },
+        "false": {
+          "material": "WHEAT",
+          "name": "&#C8C8C8Baby: &cfalse"
+        }
+      }
+    },
+    "raised_arms": {
+      "enabled": true,
+      "default": false,
+      "values": {
+        "true": {
+          "material": "STICK",
+          "name": "&#C8C8C8Raised Arms: &atrue"
+        },
+        "false": {
+          "material": "STICK",
+          "name": "&#C8C8C8Raised Arms: &cfalse"
+        }
+      }
+    },
+    "shaking": {
+      "enabled": true,
+      "default": false,
+      "values": {
+        "true": {
+          "material": "ENCHANTED_GOLDEN_APPLE",
+          "name": "&#C8C8C8Shaking: &atrue"
+        },
+        "false": {
+          "material": "ENCHANTED_GOLDEN_APPLE",
+          "name": "&#C8C8C8Shaking: &cfalse"
+        }
+      }
+    },
+    "profession": {
+      "enabled": true,
+      "default": "NONE",
+      "values": {
+        "CARTOGRAPHER": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/afc6ac9d85554bbe56a6668de0a54cb1eff93e14f4bcdf7245a744cc37721f0a"
+          },
+          "name": "&#C8C8C8Profession: &aCARTOGRAPHER"
+        },
+        "MASON": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/2c02c3ffd5705ab488b305d57ff0168e26de70fd3f739e839661ab947dff37b1"
+          },
+          "name": "&#C8C8C8Profession: &aMASON"
+        },
+        "SHEPHERD": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/11955168ef53f7120c089dafe3e6e437e95240555d8c3accf944d6c56b740475"
+          },
+          "name": "&#C8C8C8Profession: &aSHEPHERD"
+        },
+        "ARMORER": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/c29676ee6da5a3521cb478463779b8711e31887cd9a6d9fdecfcbc55083e5515"
+          },
+          "name": "&#C8C8C8Profession: &aARMORER"
+        },
+        "TOOLSMITH": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/16ec61097e11bfe6f10aaa12e5c0a54c829bdbd9d9d7a32fc627e6b5a931e77"
+          },
+          "name": "&#C8C8C8Profession: &aTOOLSMITH"
+        },
+        "FARMER": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/d01e035a3d8d6126072bcbe52a97913ace93552a99995b5d4070d6783a31e909"
+          },
+          "name": "&#C8C8C8Profession: &aFARMER"
+        },
+        "FLETCHER": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/5d1c1bc63a2d59c93d07ed1ab6dae7bdd4c2e9f1a77b16dc7fb106c3545b6e47"
+          },
+          "name": "&#C8C8C8Profession: &aFLETCHER"
+        },
+        "NITWIT": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/4541e8ebc881c8a02fe4af44f2928ea9188b539fd561b5b3fd731896c33bb524"
+          },
+          "name": "&#C8C8C8Profession: &aNITWIT"
+        },
+        "LEATHERWORKER": {
+          "material": "LEATHER",
+          "name": "&#C8C8C8Profession: &aLEATHERWORKER"
+        },
+        "LIBRARIAN": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/e698477d7d532748af4e09115ef16bb95994f0e58b090e6d3064458bb9ae1687"
+          },
+          "name": "&#C8C8C8Profession: &aLIBRARIAN"
+        },
+        "CLERIC": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/261c40f8da409eef4432ce1063f50052017075038cf3a9a65485ea621c549f40"
+          },
+          "name": "&#C8C8C8Profession: &aCLERIC"
+        },
+        "FISHERMAN": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/79a9ebdd2c1bf2d0a61c3b98c0bc4277444a1b8fedbb16cca4faaca9f7ec0592"
+          },
+          "name": "&#C8C8C8Profession: &aFISHERMAN"
+        },
+        "BUTCHER": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/73bd1e78664d76aab13706f7ce91f75a52cec017d60446fb43bd8bf2042dd3b3"
+          },
+          "name": "&#C8C8C8Profession: &aBUTCHER"
+        },
+        "WEAPONSMITH": {
+          "material": "IRON_SWORD",
+          "name": "&#C8C8C8Profession: &aWEAPONSMITH"
+        },
+        "NONE": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/41b830eb4082acec836bc835e40a11282bb51193315f91184337e8d3555583"
+          },
+          "name": "&#C8C8C8Profession: &aNONE"
+        }
+      }
+    },
+    "biome": {
+      "enabled": true,
+      "default": "PLAINS",
+      "values": {
+        "SAVANNA": {
+          "material": "ACACIA_LOG",
+          "name": "&#C8C8C8Biome: &aSAVANNA"
+        },
+        "JUNGLE": {
+          "material": "VINE",
+          "name": "&#C8C8C8Biome: &aJUNGLE"
+        },
+        "SNOW": {
+          "material": "SNOW_BLOCK",
+          "name": "&#C8C8C8Biome: &aSNOW"
+        },
+        "PLAINS": {
+          "material": "GRASS_BLOCK",
+          "name": "&#C8C8C8Biome: &aPLAINS"
+        },
+        "TAIGA": {
+          "material": "PODZOL",
+          "name": "&#C8C8C8Biome: &aTAIGA"
+        },
+        "DESERT": {
+          "material": "SAND",
+          "name": "&#C8C8C8Biome: &aDESERT"
+        },
+        "SWAMP": {
+          "material": "SLIME_BLOCK",
+          "name": "&#C8C8C8Biome: &aSWAMP"
+        }
+      }
+    },
+    "level": {
+      "enabled": true,
+      "default": "NOVICE",
+      "values": {
+        "JOURNEYMAN": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/97f57e7aa8de86591bb0bc52cba30a49d931bfabbd47bbc80bdd662251392161"
+          },
+          "name": "&#C8C8C8Level: &aJOURNEYMAN"
+        },
+        "EXPERT": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/ac906d688e65802569d9705b579bce56edc86ea5c36bdd6d6fc35516a77d4"
+          },
+          "name": "&#C8C8C8Level: &aEXPERT"
+        },
+        "MASTER": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/a00b26a42df13c769942b01727e0a4205bbd56c61c5fbd25ce35f3d7478c73b8"
+          },
+          "name": "&#C8C8C8Level: &aMASTER"
+        },
+        "APPRENTICE": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/126b772329cf32f8643c4928626b6a325233ff61aa9c7725873a4bd66db3d692"
+          },
+          "name": "&#C8C8C8Level: &aAPPRENTICE"
+        },
+        "NOVICE": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/8e140dc30e7bd57d0c5ff71a6818500434692f492479a5426aa231d7ad994d8a"
+          },
+          "name": "&#C8C8C8Level: &aNOVICE"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"FancyNpcs (2.5.2) has been enabled.","timestamp":1751014373708,"threadID":45,"threadName":"Server thread","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"WARN","message":"You are not using the latest version of the FancyNpcs plugin.","timestamp":1751014373987,"threadID":53,"threadName":"ForkJoinPool.commonPool-worker-1","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"WARN","message":"Could not fetch skin: invalid_image: Invalid image dimensions. Must be 64x32 or 64x64 (Were 204x420)","timestamp":1751018772032,"threadID":97,"threadName":"FancyNpcs-Skins-2","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"WARN","message":"Could not fetch skin: invalid_image: Invalid image dimensions. Must be 64x32 or 64x64 (Were 204x420)","timestamp":1751018836341,"threadID":98,"threadName":"FancyNpcs-Skins-4","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"Updated skin for NPC: BlackMarket","timestamp":1751018872053,"threadID":95,"threadName":"FancyNpcs-Skins-1","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"Updated skin for NPC: tutorial","timestamp":1751024956075,"threadID":97,"threadName":"FancyNpcs-Skins-2","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"Updated skin for NPC: tutorial","timestamp":1751025024235,"threadID":98,"threadName":"FancyNpcs-Skins-4","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"Updated skin for NPC: tutorial","timestamp":1751025085508,"threadID":94,"threadName":"FancyNpcs-Skins-0","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"Updated skin for NPC: tutorial","timestamp":1751025094742,"threadID":95,"threadName":"FancyNpcs-Skins-1","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"Updated skin for NPC: tutorial","timestamp":1751025878832,"threadID":98,"threadName":"FancyNpcs-Skins-4","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"Updated skin for NPC: Discord","timestamp":1751028086343,"threadID":98,"threadName":"FancyNpcs-Skins-4","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"FancyNpcs has been disabled.","timestamp":1751031281099,"threadID":45,"threadName":"Server thread","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"FancyNpcs (2.5.2) has been enabled.","timestamp":1751031312273,"threadID":42,"threadName":"Server thread","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"WARN","message":"You are not using the latest version of the FancyNpcs plugin.","timestamp":1751031312432,"threadID":50,"threadName":"ForkJoinPool.commonPool-worker-1","properties":{}}

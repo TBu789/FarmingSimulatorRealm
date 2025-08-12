@@ -1,0 +1,3 @@
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"FancyNpcs (2.5.2) has been enabled.","timestamp":1751179597781,"threadID":45,"threadName":"Server thread","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"WARN","message":"You are not using the latest version of the FancyNpcs plugin.","timestamp":1751179597789,"threadID":101,"threadName":"ForkJoinPool.commonPool-worker-2","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"Updated skin for NPC: worker_miner","timestamp":1751218560347,"threadID":96,"threadName":"FancyNpcs-Skins-0","properties":{}}

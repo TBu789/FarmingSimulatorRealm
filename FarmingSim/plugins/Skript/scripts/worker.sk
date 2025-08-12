@@ -1,0 +1,159 @@
+command /worker [<player>] [<text>] [<number>]:
+  trigger:
+    set {_nearWorker} to the placeholder "objective_scorep_{worker_near}" for player parsed as number
+    if {_nearWorker} is not 1:
+      send "&cYou're too far away from your Worker!"
+      stop
+    set {_target} to player
+    set {worker::%player%::target} to {_target}
+    
+    #---Guide---
+    
+    if arg-2 is "guide":
+      set {_guide} to a written book
+      set {_guidecontent1} to text component of "&6&lWorker Guide %nl%%nl%&0The top bar with the emerald, diamond, etc. represents the material your worker should farm. You can select a material by clicking on the corresponding item. A worker can only farm one material at a time. %nl%%nl%         - 1/2 -"
+      set {_guidecontent2} to text component of "&6&lWorker Guide %nl%%nl%&0To upgrade your worker just click to the item called 'Upgrade'. The price gets displayed when you hover over it. Remember that worker only work when you're online!&7 (Right the npc again to open the managment gui)%nl%         &0- 2/2 -"
+      set page 1 of book {_guide} to {_guidecontent1}
+      set page 2 of book {_guide} to {_guidecontent2}
+      set book author of {_guide} to "Tillo789"
+      set book title of {_guide} to "Worker Guide"
+      open book {_guide} to {_target}
+      stop
+    
+    #---Change Farmtype---
+    if arg-2 is "change":
+      execute console command "scoreboard players set %player% worker_farmtype %arg-3%"
+      stop
+    
+    #---Loading Data---
+    
+    set {_level} to the placeholder "objective_scorep_{worker}" for {_target} parsed as number
+    set {_nextLevel} to {_level} + 1
+    set {_reward} to the placeholder "objective_scorep_{worker_reward}" for {_target} parsed as number
+    set {worker::%player%::amount} to {_reward}
+    set {_farmtype} to the placeholder "objective_scorep_{worker_farmtype}" for {_target} parsed as number
+    set {_price} to {_nextLevel} * 2
+    set {worker::%player%::price} to {_price}
+    set {_max} to {_level} * 32
+    set {worker::%player%::max} to {_max}
+    if {_farmtype} is not 1 or 2 or 3:
+      set {_farmtype} to 1
+      execute console command "scoreboard players set %player% worker_farmtype 1"
+      execute console command "worker %player% guide" #<--- Displaying Player Guide when first time
+      stop
+    
+    if {_farmtype} is 1:
+      set {_rewardType} to "Block(s) of Emerald"
+    if {_farmtype} is 2:
+      set {_rewardType} to "Diamond(s)"
+    if {_farmtype} is 3:
+      set {_rewardType} to "Prismarine"
+    set {worker::%player%::farmtype} to {_farmType}
+    set {_level} to the placeholder "objective_scorep_{worker}" for player parsed as number
+    #--Open inventory---
+    
+    open chest inventory with 4 rows named "&e&lWorker Manager" to player
+    
+    #---Top Bar---
+    
+    set slot 8 of player's current inventory to barrier named "&cClose" #<--- Close Button
+    set slot 0 of player's current inventory to skull from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGE4ODcwYWEwNGMzNDJiZTBlYTA5YjY1ZjFiODlhYjMyYTBmNDE4MWUxNzY2YThjZjBiNWUwZjllMGQ1NmYxMiJ9fX0=" named "&eMy Worker" with lore "&7Level: &f%{_level}%" #<--- Worker Head with level display
+    set slot 7 of player's current inventory to writable book named "&6Guide" with lore "&7Click to open guide" #Guide
+    
+    set slot 1 of player's current inventory to gray stained glass pane named " "
+    if {_farmtype} is 1:
+      set slot 2 of player's current inventory to emerald named "&aEmeralds" with lore "&fSelected" with enchantment glint
+    else:
+      set slot 2 of player's current inventory to emerald named "&aEmeralds" with lore "&7Click to select"
+    if {_farmtype} is 2:
+      set slot 3 of player's current inventory to diamond named "&bDiamonds" with lore "&fSelected" with enchantment glint
+    else:
+      set slot 3 of player's current inventory to diamond named "&bDiamonds" with lore "&7Click to select"
+    if {_farmtype} is 3:
+      set slot 4 of player's current inventory to prismarine crystals named "&3Prismarine" with lore "&fSelected" with enchantment glint
+    else:
+      if {_level} < 15000:
+        set slot 4 of player's current inventory to prismarine crystals named "&3Prismarine" with lore "&7Click to select%nl%&c[Level 15000 required]"
+      else:
+        set slot 4 of player's current inventory to prismarine crystals named "&3Prismarine" with lore "&7Click to select%nl%&a[Level 15000 required]"
+    set slot 5 of player's current inventory to gray stained glass pane named " "
+    set slot 6 of player's current inventory to gray stained glass pane named " "
+    
+    #---Upgrade---
+    if {_level} is 5:
+      set slot 24 of player's current inventory to skull from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTRhNTY2N2VmNzI4NWM5MjI1ZmMyNjdkNDUxMTdlYWI1NDc4Yzc4NmJkNWFmMGExOTljMjlhMmMxNGMxZiJ9fX0=" named "&aMax Level Worker" with lore "&fCurrent Level: &f&l%{_level}%"
+    else:
+      set slot 24 of player's current inventory to skull from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjIyMWRhNDQxOGJkM2JmYjQyZWI2NGQyYWI0MjljNjFkZWNiOGY0YmY3ZDRjZmI3N2ExNjJiZTNkY2IwYjkyNyJ9fX0=" named "&aUpgrade Worker" with lore "&fCurrent Level: &f&l%{_level}%%nl%&fPrice: &f&l%{_price}% Compressed Blocks of Gold"
+    set slot 20 of player's current inventory to paper named "&eStatistics" with lore "&fLevel: &f&l%{_level}%%nl%&fCurrent Production Rate: &f&l%{_level}%&f/min%nl%&fMax Capacity: &f&l%{_max}%" with enchantment glint
+    if {_reward} is 0:
+      set slot 22 of player's current inventory to gold block named "&6&lCollect your reward" with lore "&7Click to collect your reward%nl%%nl%&f%{_reward}%/%{_max}% %{_rewardtype}%"
+    else:
+      set slot 22 of player's current inventory to gold block named "&6&lCollect your reward" with lore "&7Click to collect your reward%nl%%nl%&f%{_reward}%/%{_max}% %{_rewardtype}%" with enchantment glint
+    
+    stop
+   
+on inventory click:
+  if name of event-inventory is "&e&lWorker Manager":
+    cancel event
+    if index of event-slot is 8:
+      close player's inventory
+    if index of event-slot is 7:
+      make player execute command "worker %player% guide" #<--- Displaying Player Guide
+      stop
+    if index of event-slot is 2:
+      execute console command "scoreboard players set %player% worker_farmtype 1"
+      make player execute command "worker"
+      stop
+    if index of event-slot is 3:
+      execute console command "scoreboard players set %player% worker_farmtype 2"
+      make player execute command "worker"
+      stop
+    if index of event-slot is 4:
+      set {_level} to the placeholder "objective_scorep_{curLevel}" for player parsed as number
+      if {_level} < 15000:
+        send "&cYou need a higher level to collect this material!"
+        stop
+      execute console command "scoreboard players set %player% worker_farmtype 3"
+      make player execute command "worker"
+      stop
+    if index of event-slot is 22:
+      if {worker::%player%::amount} > 0:
+        play sound "block.note_block.pling" with volume 1 and pitch 2 at player
+      else:
+        stop
+      if {worker::%player%::farmtype} is 1:
+        execute console command "give %{worker::%player%::target}% emerald_block[enchantment_glint_override=false] %{worker::%player%::amount}%"
+        send "&aYou have collected %{worker::%player%::amount}% Block(s) of Emerald!"
+      if {worker::%player%::farmtype} is 2:
+        execute console command "give %{worker::%player%::target}% diamond[enchantment_glint_override=false] %{worker::%player%::amount}%"
+        send "&aYou have collected %{worker::%player%::amount}% Diamond(s)!"
+      if {worker::%player%::farmtype} is 3:
+        execute console command "give %{worker::%player%::target}% prismarine[enchantment_glint_override=false] %{worker::%player%::amount}%"
+        send "&aYou have collected %{worker::%player%::amount}% Prismarine!"
+      execute console command "scoreboard players set %{worker::%player%::target}% worker_reward 0"
+      set {worker::%player%::amount} to 0
+      make player execute command "worker"
+      stop
+    if index of event-slot is 24:
+      set {_level} to the placeholder "objective_scorep_{worker}" for player parsed as number
+      set {_nextLevel} to {_level} + 1
+      if {_level} is 5:
+        stop
+      set {_money} to the placeholder "objective_scorep_{compressed_gold_block_count}" for player parsed as number
+      if {_money} >= {worker::%player%::price}:
+        execute console command "clear %player% gold_block[enchantment_glint_override=true] %{worker::%player%::price}%"
+        execute console command "scoreboard players add %player% worker 1"
+        send "&aYour has been upgraded! (Now Level %{_nextLevel}%)"
+        play sound "block.note_block.pling" with volume 1 and pitch 2 at player
+        make player execute command "worker"
+      else:
+        send "&cYou don't have enough &c&lCompressed Blocks of Gold&c!"
+        play sound "block.note_block.pling" with volume 1 and pitch -5 at player
+
+every minute:
+  loop all players:
+    set {_level} to the placeholder "objective_scorep_{worker}" for loop-player parsed as number
+    execute console command "scoreboard players add %loop-player% worker_reward %{_level}%"
+    set {_currentReward} to the placeholder "objective_scorep_{worker_reward}" for loop-player parsed as number
+    if {_currentReward} > {worker::%loop-player%::max}:
+      execute console command "scoreboard players set %loop-player% worker_reward %{worker::%loop-player%::max}%"

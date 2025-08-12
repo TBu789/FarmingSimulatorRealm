@@ -1,0 +1,286 @@
+command /statistics [<offlineplayer>] [<text>] [<number>] [<boolean>] [<boolean>]:
+  trigger:
+    if arg-1 is not set:
+      set {stats::%player%::target} to player
+    else:
+      set {stats::%player%::target} to arg-1
+    wait 1 tick
+    if arg-2 is not set:
+      send "&aLoading %{stats::%player%::target}%'s statistics page..."
+      set {_pagetype} to "general"
+    else:
+      set {_pagetype} to arg-2
+    if arg-3 is not set:
+      set {_page} to 1
+    else:
+      set {_page} to arg-3
+    if {_pagetype} is not "general" or "crops" or "mobs":
+      set {_pagetype} to "general"
+    set {stats::%player%::pagetype} to {_pagetype}
+    set {stats::%player%::page} to {_page}
+    
+    if arg-4 is not set:
+      open chest inventory with 6 rows named "&b&lStats Viewer" to player
+    if arg-4 is false:
+      open chest inventory with 6 rows named "&b&lStats Viewer" to player
+   
+    #---Rank System---
+    set {_placeholderitem} to "gray stained glass pane" parsed as item
+    set {_rank} to "&7Player"
+    
+    set {_rankVip} to the placeholder "objective_scorep_{rank_vip}" for {stats::%player%::target}
+    if {_rankVip} is "1":
+      set {_rank} to "&5VIP"
+      set {_placeholderitem} to "purple stained glass pane" parsed as item
+    set {_rankBooster} to the placeholder "objective_scorep_{rank_booster}" for {stats::%player%::target}
+    if {_rankBooster} is "1":
+      set {_rank} to "&dBooster"
+      set {_placeholderitem} to "pink stained glass pane" parsed as item
+    set {_rankSupport} to the placeholder "objective_scorep_{rank_support}" for {stats::%player%::target}
+    if {_rankSupport} is "1":
+      set {_rank} to "&9Support"
+      set {_placeholderitem} to "blue stained glass pane" parsed as item
+    set {_rankTeam} to the placeholder "objective_scorep_{rank_team}" for {stats::%player%::target}
+    if {_rankTeam} is "1":
+      set {_rank} to "&aTeam"
+      set {_placeholderitem} to "lime stained glass pane" parsed as item
+    set {_rankDev} to the placeholder "objective_scorep_{rank_dev}" for {stats::%player%::target}
+    if {_rankDev} is "1":
+      set {_rank} to "&5Dev"
+      set {_placeholderitem} to "purple stained glass pane" parsed as item
+    set {_rankCoowner} to the placeholder "objective_scorep_{rank_coowner}" for {stats::%player%::target}
+    if {_rankCoowner} is "1":
+      set {_rank} to "&bCo-Owner"
+      set {_placeholderitem} to "light blue stained glass pane" parsed as item
+    set {_rankOwner} to the placeholder "objective_scorep_{rank_owner}" for {stats::%player%::target}
+    if {_rankOwner} is "1":
+      set {_rank} to "&cOwner"
+      set {_placeholderitem} to "red stained glass pane" parsed as item
+      
+    #---top bar---
+    set slot 0 of player's current inventory to skull of {stats::%player%::target} named "&e%{stats::%player%::target}%'s Stats &7[%{_rank}%&7]" with lore "&7Click to change player"
+    set slot 8 of player's current inventory to barrier named "&cClose"
+    
+    #---Defider---
+    set slot 9 of player's current inventory to {_placeholderitem} named " "
+    set slot 10 of player's current inventory to {_placeholderitem} named " "
+    if {_pagetype} is "general":
+      set slot 11 of player's current inventory to grass block named "&aGeneral" with enchantment glint
+    else:
+      set slot 11 of player's current inventory to grass block named "&aGeneral"
+    set slot 12 of player's current inventory to {_placeholderitem} named " "
+    if {_pagetype} is "crops":
+      set slot 13 of player's current inventory to wheat named "&eCrops" with enchantment glint with lore "&fPage %{_page}%"
+    else:
+      set slot 13 of player's current inventory to wheat named "&eCrops"
+    set slot 14 of player's current inventory to {_placeholderitem} named " "
+    set {_creeper} to "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTYzYmYzMTM3YjM3ZmYxNWRjYTkyNGY2ODFkZDc4YTQ5NWQ4YTMwYTg2MTQwZmVjNjZkNGZhZGRlNTc3ZTQzYiJ9fX0="
+    if {_pagetype} is "mobs":
+      set slot 15 of player's current inventory to head from value {_creeper} named "&bMobs" with enchantment glint
+    else:
+      set slot 15 of player's current inventory to head from value {_creeper} named "&bMobs"
+    set slot 16 of player's current inventory to {_placeholderitem} named " "
+    set slot 17 of player's current inventory to {_placeholderitem} named " "
+    
+    #---Back Button---
+    set slot 45 of player's current inventory to skull from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2E2Y2E0NWMxYjAyOTQxMDk3NWNjMGI3NjEyMTZjNGEwNTRlNzFhMWQxMjg1MWY5NDA0MjgxYTk2YTM0N2I3OSJ9fX0=" named "&eBack"
+    
+    #---No Information Message---
+    if {stats::%player%::target} has played before:
+      set slot 17 of player's current inventory to {_placeholderitem} named " " #<-- Because I don't want to get a annoying message
+    else:
+      set slot 30 of player's current inventory to red stained glass pane named " "
+      set slot 31 of player's current inventory to book named "&cPlayer Not Found" with lore "&7It seems like the player has never visited the server"
+      set slot 32 of player's current inventory to red stained glass pane named " "
+      stop
+    
+    #---General Page---
+    if {_pagetype} is "general":
+      set {_player} to {stats::%player%::target}
+      set {_level} to the placeholder "objective_scorep_{curLevel}" for {_player}
+      set {_playtime} to time played of {_player}
+      if {_playtime} is not set:
+        set {_playtime} to "0 minutes 0 seconds"
+      set {_playtime} to "%{_playtime}%"
+      replace all "and" with "" in {_playtime}
+      replace all " " with "" in {_playtime}
+      replace all "days" with "d " in {_playtime}
+      replace all "day" with "d " in {_playtime}
+      replace all "hours" with "h " in {_playtime}
+      replace all "hour" with "h " in {_playtime}
+      replace all "week" with "w " in {_playtime}
+      replace all "minutes" with "m-" in {_playtime}
+      replace all "seconds" with "s" in {_playtime}
+      set {_text} to {_playtime}
+      set {_letter} to "-"
+      set {_i} to index of {_letter} in {_text}
+      if {_i} is set:
+        set {_result} to subtext of {_text} from 1 to {_i} - 1
+        set {_playtime} to {_result}
+      else:
+        set {_playtime} to "Failed to load"
+      if {_playtime} is not set:
+        set {_playtime} to "Failed to load"
+      set {_statBarrel} to the placeholder "objective_scorep_{stat_general_barrel}" for {_player}
+      set {_statDeath} to the placeholder "objective_scorep_{stat_general_death}" for {_player}
+      set slot 29 of player's current inventory to experience bottle named "&7Level" with lore "&f%{_level}%"
+      set slot 30 of player's current inventory to clock named "&7Playtime" with lore "&f%{_playtime}%"
+      set slot 31 of player's current inventory to barrel named "&7Barrels opened" with lore "&f%{_statBarrel}%"
+      set slot 32 of player's current inventory to skull from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmI1ZmI2ODk5MGQyODliOTIyZDk0NTEzN2EwOTYwMTE3NjZlMWYxNDYwZTdkZWE1YjIwNzcyZjRiZTU0OTM3In19fQ==" named "&7Times Died" with lore "&f%{_statDeath}%"
+      stop
+   
+    #---Crop Page---
+    if {_pagetype} is "crops":
+      set {_player} to {stats::%player%::target}
+      set {_statWheat} to the placeholder "objective_scorep_{stat_crop_wheat}" for {_player}
+      set {_statHay} to the placeholder "objective_scorep_{stat_crop_hayblock}" for {_player}
+      set {_statCarrot} to the placeholder "objective_scorep_{stat_crop_carrot}" for {_player}
+      set {_statPotato} to the placeholder "objective_scorep_{stat_crop_potato}" for {_player}
+      set {_statBeetroot} to the placeholder "objective_scorep_{stat_crop_beetroot}" for {_player}
+      set {_statPitcher} to the placeholder "objective_scorep_{stat_crop_pitcher}" for {_player}
+      set {_statBrmu} to the placeholder "objective_scorep_{stat_crop_brmu}" for {_player}
+      set {_statBrmuBlock} to the placeholder "objective_scorep_{stat_crop_brmu_block}" for {_player}
+      set {_statRedmu} to the placeholder "objective_scorep_{stat_crop_redmu}" for {_player}
+      set {_statRedmuBlock} to the placeholder "objective_scorep_{stat_crop_redmu_block}" for {_player}
+      set {_statMuStem} to the placeholder "objective_scorep_{stat_crop_mu_stem}" for {_player}
+      
+      set {_statCoal} to the placeholder "objective_scorep_{stat_ore_coal}" for {_player}
+      set {_statCopper} to the placeholder "objective_scorep_{stat_ore_copper}" for {_player}
+      set {_statIron} to the placeholder "objective_scorep_{stat_ore_iron}" for {_player}
+      set {_statLapis} to the placeholder "objective_scorep_{stat_ore_lapis}" for {_player}
+      set {_statRedstone} to the placeholder "objective_scorep_{stat_ore_redstone}" for {_player}
+      set {_statGold} to the placeholder "objective_scorep_{stat_ore_gold}" for {_player}
+      
+      set {_statDeadbush} to the placeholder "objective_scorep_{stat_crop_deadbush}" for {_player}
+      set {_statSeapickle} to the placeholder "objective_scorep_{stat_crop_seapickle}" for {_player}
+      
+      set {_arrowUp} to "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWFkNmM4MWY4OTlhNzg1ZWNmMjZiZTFkYzQ4ZWFlMmJjZmU3NzdhODYyMzkwZjU3ODVlOTViZDgzYmQxNGQifX19"
+      set {_arrowDown} to "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODgyZmFmOWE1ODRjNGQ2NzZkNzMwYjIzZjg5NDJiYjk5N2ZhM2RhZDQ2ZDRmNjVlMjg4YzM5ZWI0NzFjZTcifX19"
+      set slot 34 of player's current inventory to head from value {_arrowUp} named "&ePrevious Page" with lore "&fCurrent Page: %{_page}%"
+      set slot 43 of player's current inventory to head from value {_arrowDown} named "&eNext Page" with lore "&fCurrent Page: %{_page}%"
+      
+      if {_page} is 1:
+        set slot 28 of player's current inventory to wheat named "&7Wheat farmed" with lore "&f%{_statWheat}%"
+        set slot 29 of player's current inventory to hay block named "&7Hay Bales farmed" with lore "&f%{_statHay}%"
+        set slot 30 of player's current inventory to carrot named "&7Carrots farmed" with lore "&f%{_statCarrot}%"
+        set slot 31 of player's current inventory to potato named "&7Potatoes farmed" with lore "&f%{_statPotato}%"
+        set slot 32 of player's current inventory to beetroot named "&7Beetroots farmed" with lore "&f%{_statBeetroot}%"
+        set slot 37 of player's current inventory to pitcher plant named "&7Pitcher Crops farmed" with lore "&f%{_statPitcher}%"
+        set slot 38 of player's current inventory to brown mushroom named "&7Brown Mushrooms farmed" with lore "&f%{_statBrmu}%"
+        set slot 39 of player's current inventory to brown mushroom block named "&7Brown Mushroom Blocks farmed" with lore "&f%{_statBrmuBlock}%"
+        set slot 40 of player's current inventory to red mushroom named "&7Red Mushrooms farmed" with lore "&f%{_statRedmu}%"
+        set slot 41 of player's current inventory to red mushroom block named "&7Red Mushroom Blocks farmed" with lore "&f%{_statRedmuBlock}%"
+      if {_page} is 2:
+        set slot 28 of player's current inventory to mushroom stem named "&7Mushroom Stem farmed" with lore "&f%{_statMuStem}%"
+        set slot 29 of player's current inventory to coal ore named "&7Coal Ore mined" with lore "&f%{_statCoal}%"
+        set slot 30 of player's current inventory to copper ore named "&7Copper Ore mined" with lore "&f%{_statCopper}%"
+        set slot 31 of player's current inventory to iron ore named "&7Iron Ore mined" with lore "&f%{_statIron}%"
+        set slot 32 of player's current inventory to deepslate lapis ore named "&7Deepslate Lapis Ore mined" with lore "&f%{_statLapis}%"
+        set slot 37 of player's current inventory to deepslate redstone ore named "&7Deepslate Redstone Ore mined" with lore "&f%{_statRedstone}%"
+        set slot 38 of player's current inventory to deepslate gold ore named "&7Deepslate Gold Ore mined" with lore "&f%{_statGold}%"
+        set slot 39 of player's current inventory to dead bush named "&7Dead Bushs destroyed" with lore "&f%{_statDeadbush}%"
+        set slot 40 of player's current inventory to sea pickle named "&7Sea Pickle farmed" with lore "&f%{_statSeapickle}%"
+        set slot 41 of player's current inventory to air
+      if {_page} is 3:
+        set slot 28 of player's current inventory to air
+        set slot 29 of player's current inventory to air
+        set slot 30 of player's current inventory to air
+        set slot 31 of player's current inventory to air
+        set slot 32 of player's current inventory to air
+        set slot 37 of player's current inventory to air
+        set slot 38 of player's current inventory to air
+        set slot 39 of player's current inventory to air
+        set slot 40 of player's current inventory to air
+        set slot 41 of player's current inventory to air
+      stop
+    
+    #---Mob Page---
+    if {_pagetype} is "mobs":
+      set {_player} to {stats::%player%::target}
+      
+      set {_statPiglin} to the placeholder "objective_scorep_{stat_kills_piglin}" for {_player}
+      set {_statHoglin} to the placeholder "objective_scorep_{stat_kills_hoglin}" for {_player}
+      set {_statZoglin} to the placeholder "objective_scorep_{stat_kills_zoglin}" for {_player}
+      set {_statZombie} to the placeholder "objective_scorep_{stat_kills_zombie}" for {_player}
+      set {_statSkeleton} to the placeholder "objective_scorep_{stat_kills_skeleton}" for {_player}
+      
+      set slot 29 of player's current inventory to piglin brute spawn egg named "&7Piglin Brute" with lore "&fKilled: %{_statPiglin}%"
+      set slot 30 of player's current inventory to hoglin spawn egg named "&7Hoglin" with lore "&fKilled: %{_statHoglin}%"
+      set slot 31 of player's current inventory to zoglin spawn egg named "&7Zoglin" with lore "&fKilled: %{_statZoglin}%"
+      set slot 32 of player's current inventory to zombie spawn egg named "&7Zombie" with lore "&fKilled: %{_statZombie}%"
+      set slot 33 of player's current inventory to skeleton spawn egg named "&7Skeleton" with lore "&fKilled: %{_statSkeleton}%"
+      stop
+      
+on inventory click:
+    if name of event-inventory is "&b&lStats Viewer":
+        cancel event
+        if index of event-slot is 8:
+            close player's inventory
+        if index of event-slot is 11:
+            make player execute command "statistics %{stats::%player%::target}% general"
+        if index of event-slot is 13:
+            make player execute command "statistics %{stats::%player%::target}% crops"
+        if index of event-slot is 15:
+            make player execute command "statistics %{stats::%player%::target}% mobs"
+        if index of event-slot is 0:
+            close player's inventory
+            send "&ePlease type a player name in chat!" to player
+            set {nameinput::%player%::waiting} to true
+            
+            loop 30 times:
+                if {counting::%player%} is not true:
+                    stop
+                set {_time} to {countdown::%player%}
+                send title "&6Waiting for input..." with subtitle "&7Time left: %{_time}% seconds" to player for 1 second
+                wait 1 second
+                subtract 1 from {countdown::%player%}
+            
+            if {nameinput::%player%::waiting} is true:
+                send "&cYou took too long to respond." to player
+                delete {nameinput::%player%::waiting}
+        
+        #---Previous Page---
+        if index of event-slot is 34:
+            if {stats::%player%::pagetype} is "crops":
+                set {_currentPage} to {stats::%player%::page}
+                if {_currentPage} is 1:
+                    stop
+                if {_currentPage} is 2:
+                    set {_newPage} to 1
+                if {_currentPage} is 3:
+                    set {_newPage} to 2
+                if {_newPage} is not set:
+                    stop
+                make player execute command "statistics %{stats::%player%::target}% crops %{_newPage}% true"
+                stop
+            
+        #---Next Page---
+        if index of event-slot is 43:
+            if {stats::%player%::pagetype} is "crops":
+                set {_currentPage} to {stats::%player%::page}
+                if {_currentPage} is 3:
+                    stop
+                if {_currentPage} is 2:
+                    set {_newPage} to 3
+                if {_currentPage} is 1:
+                    set {_newPage} to 2
+                if {_newPage} is not set:
+                    stop
+                make player execute command "statistics %{stats::%player%::target}% crops %{_newPage}% true"
+                stop
+        
+        #---Back Button---
+        if index of event-slot is 45:
+            make player execute command "profile"
+        
+
+on chat:
+    if {nameinput::%player%::waiting} is true:
+        cancel event
+        set {nameinput::%player%::response} to message
+        #send "&aYou entered: &f%message%" to player
+        make player execute command "statistics %message%"
+        delete {nameinput::%player%::waiting}
+
+on quit:
+   delete {nameinput::%player%::*}

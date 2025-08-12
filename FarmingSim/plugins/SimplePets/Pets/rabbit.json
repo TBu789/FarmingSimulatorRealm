@@ -1,0 +1,181 @@
+{
+  "enabled": false,
+  "hat": true,
+  "mount": true,
+  "ambient-sound": "ENTITY_RABBIT_AMBIENT",
+  "commands": {
+    "SPAWN": [
+      
+    ],
+    "REVOKE": [
+      
+    ],
+    "RIDE": [
+      
+    ],
+    "RIDE_DISMOUNT": [
+      
+    ],
+    "HAT": [
+      
+    ],
+    "TELEPORT": [
+      
+    ],
+    "FAILED": [
+      
+    ]
+  },
+  "ride_speed": 0.200004838418579,
+  "walk_speed": 0.580804838418579,
+  "fly_speed": 0.300000438418579,
+  "fly": false,
+  "float_down": false,
+  "display_name": "&a&l%player%'s Rabbit Pet",
+  "item": {
+    "material": "PLAYER_HEAD",
+    "meta": {
+      "texture": "http://textures.minecraft.net/texture/ffecc6b5e6ea5ced74c46e7627be3f0826327fba26386c6cc7863372e9bc"
+    },
+    "name": "&#C8F792Rabbit"
+  },
+  "data": {
+    "visible": {
+      "enabled": false,
+      "default": true,
+      "values": {
+        "true": {
+          "material": "GLASS_BOTTLE",
+          "name": "&#C8C8C8Visible: &atrue"
+        },
+        "false": {
+          "material": "SPLASH_POTION",
+          "name": "&#C8C8C8Visible: &cfalse"
+        }
+      }
+    },
+    "frozen": {
+      "enabled": true,
+      "default": false,
+      "values": {
+        "true": {
+          "material": "ICE",
+          "name": "&#C8C8C8Frozen: &atrue"
+        },
+        "false": {
+          "material": "GRASS_BLOCK",
+          "name": "&#C8C8C8Frozen: &cfalse"
+        }
+      }
+    },
+    "burning": {
+      "enabled": true,
+      "default": false,
+      "values": {
+        "true": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/4080bbefca87dc0f36536b6508425cfc4b95ba6e8f5e6a46ff9e9cb488a9ed"
+          },
+          "name": "&#C8C8C8Burning: &atrue"
+        },
+        "false": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/4080bbefca87dc0f36536b6508425cfc4b95ba6e8f5e6a46ff9e9cb488a9ed"
+          },
+          "name": "&#C8C8C8Burning: &cfalse"
+        }
+      }
+    },
+    "silent": {
+      "enabled": true,
+      "default": false,
+      "values": {
+        "true": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/b1f327c3f349158d209b4867d68ffb1890bc57a01ba9483e3fffe4ec7fdea0b0"
+          },
+          "name": "&#C8C8C8Silent: &atrue"
+        },
+        "false": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/5461518b74d5f7016f72294756fc68c5471110cc97f3bb093e0c6ed94a9e3"
+          },
+          "name": "&#C8C8C8Silent: &cfalse"
+        }
+      }
+    },
+    "baby": {
+      "enabled": true,
+      "default": false,
+      "values": {
+        "true": {
+          "material": "WHEAT",
+          "name": "&#C8C8C8Baby: &atrue"
+        },
+        "false": {
+          "material": "WHEAT",
+          "name": "&#C8C8C8Baby: &cfalse"
+        }
+      }
+    },
+    "variant": {
+      "enabled": true,
+      "default": "BROWN",
+      "values": {
+        "THE_KILLER_BUNNY": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/1f59851de93f4c6547f809ca3aed189e94bbf4f888f1f75208e94c3733852a1"
+          },
+          "name": "&#C8C8C8Variant: &aTHE_KILLER_BUNNY"
+        },
+        "GOLD": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/c977a3266bf3b9eaf17e5a02ea5fbb46801159863dd288b93e6c12c9cb"
+          },
+          "name": "&#C8C8C8Variant: &aGOLD"
+        },
+        "WHITE": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/374d8298797e712bb1f75ad6ffa7734ac4237ea69be1db92f0e41115a2c170cf"
+          },
+          "name": "&#C8C8C8Variant: &aWHITE"
+        },
+        "SALT_AND_PEPPER": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/ffecc6b5e6ea5ced74c46e7627be3f0826327fba26386c6cc7863372e9bc"
+          },
+          "name": "&#C8C8C8Variant: &aSALT_AND_PEPPER"
+        },
+        "BLACK_AND_WHITE": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/cb8cff4b15b8ca37e25750f345718f289cb22c5b3ad22627a71223faccc"
+          },
+          "name": "&#C8C8C8Variant: &aBLACK_AND_WHITE"
+        },
+        "BLACK": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/72c58116a147d1a9a26269224a8be184fe8e5f3f3df9b61751369ad87382ec9"
+          },
+          "name": "&#C8C8C8Variant: &aBLACK"
+        },
+        "BROWN": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/7d1169b2694a6aba826360992365bcda5a10c89a3aa2b48c438531dd8685c3a7"
+          },
+          "name": "&#C8C8C8Variant: &aBROWN"
+        }
+      }
+    }
+  }
+}

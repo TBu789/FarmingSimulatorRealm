@@ -1,0 +1,268 @@
+{
+  "enabled": true,
+  "hat": true,
+  "mount": true,
+  "ambient-sound": "ENTITY_HORSE_AMBIENT",
+  "commands": {
+    "SPAWN": [
+      
+    ],
+    "REVOKE": [
+      
+    ],
+    "RIDE": [
+      
+    ],
+    "RIDE_DISMOUNT": [
+      
+    ],
+    "HAT": [
+      
+    ],
+    "TELEPORT": [
+      
+    ],
+    "FAILED": [
+      
+    ]
+  },
+  "ride_speed": 0.200004838418579,
+  "walk_speed": 0.580804838418579,
+  "fly_speed": 0.300000438418579,
+  "fly": false,
+  "float_down": false,
+  "display_name": "&a&l%player%'s Horse Pet",
+  "item": {
+    "material": "PLAYER_HEAD",
+    "meta": {
+      "texture": "http://textures.minecraft.net/texture/628d1ab4be1e28b7b461fdea46381ac363a7e5c3591c9e5d2683fbe1ec9fcd3"
+    },
+    "name": "&#C8F792Horse"
+  },
+  "data": {
+    "visible": {
+      "enabled": false,
+      "default": true,
+      "values": {
+        "true": {
+          "material": "GLASS_BOTTLE",
+          "name": "&#C8C8C8Visible: &atrue"
+        },
+        "false": {
+          "material": "SPLASH_POTION",
+          "name": "&#C8C8C8Visible: &cfalse"
+        }
+      }
+    },
+    "frozen": {
+      "enabled": true,
+      "default": false,
+      "values": {
+        "true": {
+          "material": "ICE",
+          "name": "&#C8C8C8Frozen: &atrue"
+        },
+        "false": {
+          "material": "GRASS_BLOCK",
+          "name": "&#C8C8C8Frozen: &cfalse"
+        }
+      }
+    },
+    "burning": {
+      "enabled": true,
+      "default": false,
+      "values": {
+        "true": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/4080bbefca87dc0f36536b6508425cfc4b95ba6e8f5e6a46ff9e9cb488a9ed"
+          },
+          "name": "&#C8C8C8Burning: &atrue"
+        },
+        "false": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/4080bbefca87dc0f36536b6508425cfc4b95ba6e8f5e6a46ff9e9cb488a9ed"
+          },
+          "name": "&#C8C8C8Burning: &cfalse"
+        }
+      }
+    },
+    "silent": {
+      "enabled": true,
+      "default": false,
+      "values": {
+        "true": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/b1f327c3f349158d209b4867d68ffb1890bc57a01ba9483e3fffe4ec7fdea0b0"
+          },
+          "name": "&#C8C8C8Silent: &atrue"
+        },
+        "false": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/5461518b74d5f7016f72294756fc68c5471110cc97f3bb093e0c6ed94a9e3"
+          },
+          "name": "&#C8C8C8Silent: &cfalse"
+        }
+      }
+    },
+    "baby": {
+      "enabled": true,
+      "default": false,
+      "values": {
+        "true": {
+          "material": "WHEAT",
+          "name": "&#C8C8C8Baby: &atrue"
+        },
+        "false": {
+          "material": "WHEAT",
+          "name": "&#C8C8C8Baby: &cfalse"
+        }
+      }
+    },
+    "eating": {
+      "enabled": true,
+      "default": false,
+      "values": {
+        "true": {
+          "material": "APPLE",
+          "name": "&#C8C8C8Eating: &atrue"
+        },
+        "false": {
+          "material": "APPLE",
+          "name": "&#C8C8C8Eating: &cfalse"
+        }
+      }
+    },
+    "armor": {
+      "enabled": true,
+      "default": "NONE",
+      "values": {
+        "GOLD": {
+          "material": "STONE",
+          "name": "&#C8C8C8Armor: &aGOLD"
+        },
+        "DIAMOND": {
+          "material": "DIAMOND_HORSE_ARMOR",
+          "name": "&#C8C8C8Armor: &aDIAMOND"
+        },
+        "LEATHER": {
+          "material": "LEATHER_HORSE_ARMOR",
+          "meta": {
+            "color": {
+              "r": 160,
+              "b": 64,
+              "g": 101
+            }
+          },
+          "name": "&#C8C8C8Armor: &aLEATHER"
+        },
+        "IRON": {
+          "material": "IRON_HORSE_ARMOR",
+          "name": "&#C8C8C8Armor: &aIRON"
+        },
+        "NONE": {
+          "material": "BARRIER",
+          "name": "&#C8C8C8Armor: &aNONE"
+        }
+      }
+    },
+    "color": {
+      "enabled": true,
+      "default": "WHITE",
+      "values": {
+        "WHITE": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/9f4bdd59d4f8f1d5782e0fee4bd64aed100627f188a91489ba37eeadededd827"
+          },
+          "name": "&#C8C8C8Color: &aWHITE"
+        },
+        "GRAY": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/8f0d955889b0378d4933c956398567e770103ae9eff0f702d0d53d52e7f6a83b"
+          },
+          "name": "&#C8C8C8Color: &aGRAY"
+        },
+        "CHESTNUT": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/9717d71025f7a62c90a333c51663ffeb385a9a0d92af68083c5b045c0524b23f"
+          },
+          "name": "&#C8C8C8Color: &aCHESTNUT"
+        },
+        "BLACK": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/3efb0b9857d7c8d295f6df97b605f40b9d07ebe128a6783d1fa3e1bc6e44117"
+          },
+          "name": "&#C8C8C8Color: &aBLACK"
+        },
+        "DARKBROWN": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/156b7bc1a4836eb428ea8925eceb5e01dfbd30c7deff6c9482689823203cfd2f"
+          },
+          "name": "&#C8C8C8Color: &aDARKBROWN"
+        },
+        "BROWN": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/25e397def0af06feef22421860088186639732aa0a5eb5756e0aa6b03fd092c8"
+          },
+          "name": "&#C8C8C8Color: &aBROWN"
+        },
+        "CREAMY": {
+          "material": "PLAYER_HEAD",
+          "meta": {
+            "texture": "http://textures.minecraft.net/texture/a6dae0ade0e0dafb6dbc7786ce4241242b6b6df527a0f7af0a42184c93fd646b"
+          },
+          "name": "&#C8C8C8Color: &aCREAMY"
+        }
+      }
+    },
+    "style": {
+      "enabled": true,
+      "default": "NONE",
+      "values": {
+        "WHITEFIELD": {
+          "material": "LEAD",
+          "name": "&#C8C8C8Style: &aWHITEFIELD"
+        },
+        "WHITE": {
+          "material": "LEAD",
+          "name": "&#C8C8C8Style: &aWHITE"
+        },
+        "NONE": {
+          "material": "LEAD",
+          "name": "&#C8C8C8Style: &aNONE"
+        },
+        "BLACK_DOTS": {
+          "material": "LEAD",
+          "name": "&#C8C8C8Style: &aBLACK_DOTS"
+        },
+        "WHITE_DOTS": {
+          "material": "LEAD",
+          "name": "&#C8C8C8Style: &aWHITE_DOTS"
+        }
+      }
+    },
+    "saddled": {
+      "enabled": true,
+      "default": false,
+      "values": {
+        "true": {
+          "material": "SADDLE",
+          "name": "&#C8C8C8Saddled: &atrue"
+        },
+        "false": {
+          "material": "SADDLE",
+          "name": "&#C8C8C8Saddled: &cfalse"
+        }
+      }
+    }
+  }
+}

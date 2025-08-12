@@ -1,0 +1,29 @@
+on break of coal ore or copper ore or iron ore or gold ore:
+    if gamemode of player is adventure:
+        set {_loc} to location of event-block
+        set {_type} to type of event-block
+        wait 0.01 seconds
+        set block at {_loc} to stone
+        wait 60 seconds
+        if {_type} is coal ore:
+            set block at {_loc} to coal ore
+        else if {_type} is copper ore:
+            set block at {_loc} to copper ore
+        else if {_type} is iron ore:
+            set block at {_loc} to iron ore
+        else if {_type} is gold ore:
+            set block at {_loc} to gold ore
+            
+on break of deepslate lapis ore or deepslate redstone ore or deepslate gold ore:
+    if gamemode of player is adventure:
+        set {_loc} to location of event-block
+        set {_type} to type of event-block
+        wait 0.01 seconds
+        set block at {_loc} to deepslate
+        wait 60 seconds
+        if {_type} is deepslate lapis ore:
+            set block at {_loc} to deepslate lapis ore
+        else if {_type} is deepslate redstone ore:
+            set block at {_loc} to deepslate redstone ore
+        else if {_type} is deepslate gold ore:
+            set block at {_loc} to deepslate gold ore

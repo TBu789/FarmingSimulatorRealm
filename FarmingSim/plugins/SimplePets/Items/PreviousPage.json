@@ -1,0 +1,14 @@
+{
+  "enabled": true,
+  "item": {
+    "material": "PLAYER_HEAD",
+    "lore": [
+      "&#D1C9C9Click Here to go",
+      "&#D1C9C9the previous page"
+    ],
+    "meta": {
+      "texture": "http://textures.minecraft.net/texture/ee79665a21e660648990505a9667589325da403813bc9d8dbd180afef4d989f0"
+    },
+    "name": "&#E3AA4F&l<&#E3C79A&l----"
+  }
+}

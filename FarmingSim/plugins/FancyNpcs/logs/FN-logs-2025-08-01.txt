@@ -1,0 +1,5 @@
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"FancyNpcs (2.5.2) has been enabled.","timestamp":1754070470184,"threadID":38,"threadName":"Server thread","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"WARN","message":"You are not using the latest version of the FancyNpcs plugin.","timestamp":1754070470249,"threadID":94,"threadName":"ForkJoinPool.commonPool-worker-2","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"WARN","message":"Could not fetch skin: invalid_image_url: Failed to find image from url: Request failed with status code 403","timestamp":1754070485367,"threadID":92,"threadName":"FancyNpcs-Skins-3","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"WARN","message":"Could not fetch skin: invalid_image_url: Failed to find image from url: Request failed with status code 403","timestamp":1754070486572,"threadID":89,"threadName":"FancyNpcs-Skins-0","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"FancyNpcs has been disabled.","timestamp":1754156513998,"threadID":38,"threadName":"Server thread","properties":{}}

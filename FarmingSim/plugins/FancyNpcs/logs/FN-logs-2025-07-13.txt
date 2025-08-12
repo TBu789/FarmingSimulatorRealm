@@ -1,0 +1,3 @@
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"FancyNpcs (2.5.2) has been enabled.","timestamp":1752391573820,"threadID":50,"threadName":"Server thread","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"WARN","message":"You are not using the latest version of the FancyNpcs plugin.","timestamp":1752391573872,"threadID":106,"threadName":"ForkJoinPool.commonPool-worker-2","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"Updated skin for NPC: farmer","timestamp":1752391585766,"threadID":104,"threadName":"FancyNpcs-Skins-2","properties":{}}

@@ -1,0 +1,201 @@
+command /settings [<text>]:
+  trigger:
+    if arg-1 is not set:
+      set {_page} to "Main"
+      set {settings::%uuid of player%::rows} to 4
+    else:
+      set {_page} to arg-1
+    set {settings::%uuid of player%::page} to {_page}
+    
+    open chest inventory with {settings::%uuid of player%::rows} rows named "&e&lSettings > %{_page}%" to player
+    
+    set slot 0 of player's current inventory to skull from value "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2E2Y2E0NWMxYjAyOTQxMDk3NWNjMGI3NjEyMTZjNGEwNTRlNzFhMWQxMjg1MWY5NDA0MjgxYTk2YTM0N2I3OSJ9fX0=" named "&eBack"
+    set slot 8 of player's current inventory to barrier named "&cClose"
+    
+    set slot 1 of player's current inventory to gray stained glass pane named " "
+    set slot 2 of player's current inventory to gray stained glass pane named " "
+    set slot 3 of player's current inventory to gray stained glass pane named " "
+    set slot 4 of player's current inventory to gray stained glass pane named " "
+    set slot 5 of player's current inventory to gray stained glass pane named " "
+    set slot 6 of player's current inventory to gray stained glass pane named " "
+    set slot 7 of player's current inventory to gray stained glass pane named " "
+    
+    set {_level} to the placeholder "objective_scorep_{curLevel}" for player parsed as number
+    if {_page} is "Main":
+      set {settings::%uuid of player%::backpage} to "profile"
+      if {_level} >= 500:
+        set slot 22 of player's current inventory to grass block named "&fPickUp Settings" with lore "&a[Level 500 Required]"
+      else:
+        set slot 22 of player's current inventory to grass block named "&fPickUp Settings" with lore "&c[Level 500 Required]"
+    if {_page} is "Pickup":
+      set {settings::%uuid of player%::backpage} to "settings"
+      set slot 18 of player's current inventory to wheat named "&fWheat Collection"
+      set slot 19 of player's current inventory to carrot named "&fCarrot Collection"
+      set slot 20 of player's current inventory to potato named "&fPotato Collection"
+      set slot 21 of player's current inventory to beetroot named "&fBeetroot Collection"
+      set slot 22 of player's current inventory to pitcher plant named "&fPitcher Plant Collection"
+      set slot 23 of player's current inventory to rotten flesh named "&fRotten Flesh Collection"
+      set slot 24 of player's current inventory to porkchop named "&fPorkchop Collection"
+      set slot 25 of player's current inventory to wooden hoe named "&fStarter Hoe Collection"
+      set slot 26 of player's current inventory to leather named "&fLeather Collection"
+      
+      set {_wheat} to the placeholder "objective_scorep_{pickup_wheat}" for player parsed as number
+      set {_carrot} to the placeholder "objective_scorep_{pickup_carrot}" for player parsed as number
+      set {_potato} to the placeholder "objective_scorep_{pickup_potato}" for player parsed as number
+      set {_beetroot} to the placeholder "objective_scorep_{pickup_beetroot}" for player parsed as number
+      set {_pitcher} to the placeholder "objective_scorep_{pickup_pitcher}" for player parsed as number
+      set {_rottenflesh} to the placeholder "objective_scorep_{pickup_rottenflesh}" for player parsed as number
+      set {_porkchop} to the placeholder "objective_scorep_{pickup_porkchop}" for player parsed as number
+      set {_hoe} to the placeholder "objective_scorep_{pickup_hoe}" for player parsed as number
+      set {_leather} to the placeholder "objective_scorep_{pickup_leather}" for player parsed as number
+      
+      if {_wheat} is 1:
+        set slot 27 of player's current inventory to red dye named "&cDisabled" with lore "&7Click to change"
+      else:
+        set slot 27 of player's current inventory to lime dye named "&aEnabled" with lore "&7Click to change"
+      if {_carrot} is 1:
+        set slot 28 of player's current inventory to red dye named "&cDisabled" with lore "&7Click to change"
+      else:
+        set slot 28 of player's current inventory to lime dye named "&aEnabled" with lore "&7Click to change"
+      if {_potato} is 1:
+        set slot 29 of player's current inventory to red dye named "&cDisabled" with lore "&7Click to change"
+      else:
+        set slot 29 of player's current inventory to lime dye named "&aEnabled" with lore "&7Click to change"
+      if {_beetroot} is 1:
+        set slot 30 of player's current inventory to red dye named "&cDisabled" with lore "&7Click to change"
+      else:
+        set slot 30 of player's current inventory to lime dye named "&aEnabled" with lore "&7Click to change"
+      if {_pitcher} is 1:
+        set slot 31 of player's current inventory to red dye named "&cDisabled" with lore "&7Click to change"
+      else:
+        set slot 31 of player's current inventory to lime dye named "&aEnabled" with lore "&7Click to change"
+      if {_rottenflesh} is 1:
+        set slot 32 of player's current inventory to red dye named "&cDisabled" with lore "&7Click to change"
+      else:
+        set slot 32 of player's current inventory to lime dye named "&aEnabled" with lore "&7Click to change"
+      if {_porkchop} is 1:
+        set slot 33 of player's current inventory to red dye named "&cDisabled" with lore "&7Click to change"
+      else:
+        set slot 33 of player's current inventory to lime dye named "&aEnabled" with lore "&7Click to change"
+      if {_hoe} is 1:
+        set slot 34 of player's current inventory to red dye named "&cDisabled" with lore "&7Click to change"
+      else:
+        set slot 34 of player's current inventory to lime dye named "&aEnabled" with lore "&7Click to change"
+      if {_leather} is 1:
+        set slot 35 of player's current inventory to red dye named "&cDisabled" with lore "&7Click to change"
+      else:
+        set slot 35 of player's current inventory to lime dye named "&aEnabled" with lore "&7Click to change"
+    
+on inventory click:
+  if name of event-inventory is "&e&lSettings > %{settings::%uuid of player%::page}%":
+    cancel event
+    if index of event-slot is 8:
+      close player's inventory
+      stop
+    if index of event-slot is 0:
+      set {settings::%uuid of player%::rows} to 4
+      make player execute command "%{settings::%uuid of player%::backpage}%"
+      stop
+    set {_level} to the placeholder "objective_scorep_{curLevel}" for player parsed as number
+    if {settings::%uuid of player%::page} is "Main":
+      if index of event-slot is 22:
+        if {_level} < 499:
+          stop
+        set {settings::%uuid of player%::rows} to 5
+        make player execute command "settings Pickup"
+        stop
+    if {settings::%uuid of player%::page} is "Pickup":
+      set {_wheat} to the placeholder "objective_scorep_{pickup_wheat}" for player parsed as number
+      set {_carrot} to the placeholder "objective_scorep_{pickup_carrot}" for player parsed as number
+      set {_potato} to the placeholder "objective_scorep_{pickup_potato}" for player parsed as number
+      set {_beetroot} to the placeholder "objective_scorep_{pickup_beetroot}" for player parsed as number
+      set {_pitcher} to the placeholder "objective_scorep_{pickup_pitcher}" for player parsed as number
+      set {_rottenflesh} to the placeholder "objective_scorep_{pickup_rottenflesh}" for player parsed as number
+      set {_porkchop} to the placeholder "objective_scorep_{pickup_porkchop}" for player parsed as number
+      set {_hoe} to the placeholder "objective_scorep_{pickup_hoe}" for player parsed as number
+      set {_leather} to the placeholder "objective_scorep_{pickup_leather}" for player parsed as number
+      
+      if index of event-slot is 27:
+        if {_wheat} is 1:
+          execute console command "scoreboard players reset %player% pickup_wheat"
+        else:
+          execute console command "scoreboard players set %player% pickup_wheat 1"
+      if index of event-slot is 28:
+        if {_carrot} is 1:
+          execute console command "scoreboard players reset %player% pickup_carrot"
+        else:
+          execute console command "scoreboard players set %player% pickup_carrot 1"
+      if index of event-slot is 29:
+        if {_potato} is 1:
+          execute console command "scoreboard players reset %player% pickup_potato"
+        else:
+          execute console command "scoreboard players set %player% pickup_potato 1"
+      if index of event-slot is 30:
+        if {_beetroot} is 1:
+          execute console command "scoreboard players reset %player% pickup_beetroot"
+        else:
+          execute console command "scoreboard players set %player% pickup_beetroot 1"
+      if index of event-slot is 31:
+        if {_pitcher} is 1:
+          execute console command "scoreboard players reset %player% pickup_pitcher"
+        else:
+          execute console command "scoreboard players set %player% pickup_pitcher 1"
+      if index of event-slot is 32:
+        if {_rottenflesh} is 1:
+          execute console command "scoreboard players reset %player% pickup_rottenflesh"
+        else:
+          execute console command "scoreboard players set %player% pickup_rottenflesh 1"
+      if index of event-slot is 33:
+        if {_porkchop} is 1:
+          execute console command "scoreboard players reset %player% pickup_porkchop"
+        else:
+          execute console command "scoreboard players set %player% pickup_porkchop 1"
+      if index of event-slot is 34:
+        if {_hoe} is 1:
+          execute console command "scoreboard players reset %player% pickup_hoe"
+        else:
+          execute console command "scoreboard players set %player% pickup_hoe 1"
+      if index of event-slot is 35:
+        if {_leather} is 1:
+          execute console command "scoreboard players reset %player% pickup_leather"
+        else:
+          execute console command "scoreboard players set %player% pickup_leather 1"
+          
+      make player execute command "settings Pickup"
+
+on entity pickup of wheat:
+  set {_allowed} to the placeholder "objective_scorep_{pickup_wheat}" for event-player parsed as number
+  if {_allowed} is 1:
+    cancel event
+on entity pickup of carrots:
+  set {_allowed} to the placeholder "objective_scorep_{pickup_carrot}" for event-player parsed as number
+  if {_allowed} is 1:
+    cancel event
+on entity pickup of potato:
+  set {_allowed} to the placeholder "objective_scorep_{pickup_potato}" for event-player parsed as number
+  if {_allowed} is 1:
+    cancel event
+on entity pickup of beetroot:
+  set {_allowed} to the placeholder "objective_scorep_{pickup_beetroot}" for event-player parsed as number
+  if {_allowed} is 1:
+    cancel event
+on entity pickup of pitcher plant:
+  set {_allowed} to the placeholder "objective_scorep_{pickup_pitcher}" for event-player parsed as number
+  if {_allowed} is 1:
+    cancel event
+on entity pickup of rotten flesh:
+  set {_allowed} to the placeholder "objective_scorep_{pickup_rottenflesh}" for event-player parsed as number
+  if {_allowed} is 1:
+    cancel event
+on entity pickup of porkchop:
+  set {_allowed} to the placeholder "objective_scorep_{pickup_porkchop}" for event-player parsed as number
+  if {_allowed} is 1:
+    cancel event
+on entity pickup of wooden hoe:
+  set {_allowed} to the placeholder "objective_scorep_{pickup_hoe}" for event-player parsed as number
+  if {_allowed} is 1:
+    cancel event
+on entity pickup of leather:
+  set {_allowed} to the placeholder "objective_scorep_{pickup_leather}" for event-player parsed as number
+  if {_allowed} is 1:
+    cancel event

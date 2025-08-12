@@ -1,0 +1,14 @@
+on first join:
+  broadcast "&e%player% &ais new to &6Farming Simulator&a!"
+  send "&a[Tutorial] Hello %player%! It's recommended you start the tutorial at the tutorial npc right next to you for the best experience!" to player
+  send "&aHey! This you want to know who made this? Just join &ehttps://discord.gg/bcTQH4TUcS &afor more information (PS: This is open source!)" to player
+
+command /welcome [<player>]:
+  permission: none
+  permission message: &cYou are missing permission!
+  trigger:
+    if arg is not set:
+      send "&cUsage: /welcome <online player>"
+      stop
+    broadcast "&e%name of arg% &ais new to &6Farming Simulator&a!"
+    send "&a[Tutorial] Hello %arg-1%! It's recommended you start the tutorial at the tutorial npc right next to you for the best experience!" to arg-1
