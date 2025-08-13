@@ -28,6 +28,7 @@ Es wird empfohlen das dazugehörige RessourcePack zu verwenden, welches in `/Res
 Programmierung:
 - TBu789
 - Miner16ma
+- WorldCrafter66
 
 Map Design
 - TBu789
