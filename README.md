@@ -38,7 +38,15 @@ Art / RessourcePack
 - WorldCrafter66
 
 ## Lizenz
-Die Lizenz regelt die Nutzung und weitere Veröffentlichung dieses Realms/Projektes. Sie befindet sich in der `LICENSE.md`-Datei und sollte gründlich durch gelesen werden. Das dazugehörige RessourcePack unterliegt der Lizenz in `/RessourcePack/LICENSE.md`
+Die Lizenz regelt die Nutzung und weitere Veröffentlichung dieses Realms/Projektes. Sie befindet sich in der `LICENSE.md`-Datei und sollte gründlich durch gelesen werden. Das dazugehörige RessourcePack unterliegt der Lizenz in `/RessourcePack/LICENSE.md`.
+
+## In Betriebnahme
+Damit nachdem Aufsetzen des Servers alles spielbereit ist, müssen folgende Befehle in die Konsole eingegeben werden während der Server läuft:
+- `scoreboard players set %reset_ticks game 3000`
+- `scoreboard players set %20 game 20`
+- `scoreboard players set %60 game 60`
+
+Bei Problemen oder Fragen bitte auf unserem  [Discord Server](https://discord.gg/bcTQH4TUcS) ein Ticket erstellen.
 
 ## Danksagung
 Danke an alle die bei dem Erstellen dieses Realm mit geholfen haben. Ohne euch wäre dies alles nicht möglich gewesen. Auch ein großen Dankeschön an alle Supporter und Booster, die geholfen haben diese Realm am laufen zu halten. Natürlich darf auch nicht die Spieler vergessen, die dieses Realm/Projekt erst zu etwas ganz besonderem gemacht haben.
