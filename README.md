@@ -22,7 +22,7 @@ In den Dateien in `/FarmSim/world/datapacks` ist  Datapack enthalten, dass nicht
 - LeaderBoards Datapack: https://modrinth.com/datapack/leaderboards-datapack
 
 ## RessourcePack
-Es wird empfohlen das dazugehörige RessourcePack zu verwenden, welches in `/RessourcePack/` vorzufinden ist.
+Es wird empfohlen das dazugehörige RessourcePack zu verwenden, welches in `/RessourcePack/` vorzufinden ist. Es ist nicht das RessourcePack enthalten, welches auf dem Realm lief, da nicht alle Modele und Texturen aus Lizenzgründen von uns veröffentlicht werden dürfen.
 
 ## Mitwirkende
 Programmierung:
