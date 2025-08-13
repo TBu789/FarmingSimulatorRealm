@@ -28,7 +28,6 @@ Es wird empfohlen das dazugehörige RessourcePack zu verwenden, welches in `/Res
 Programmierung:
 - TBu789
 - Miner16ma
-- WorldCrafter66
 
 Map Design
 - TBu789
@@ -36,7 +35,7 @@ Map Design
 - legoofost
 
 Art / RessourcePack
-- WorldCrafter66
+- [WorldCrafter66](https://github.com/WorldCrafter66)
 
 ## Lizenz
 Die Lizenz regelt die Nutzung und weitere Veröffentlichung dieses Realms/Projektes. Sie befindet sich in der `LICENSE.md`-Datei und sollte gründlich durch gelesen werden. Das dazugehörige RessourcePack unterliegt der Lizenz in `/RessourcePack/LICENSE.md`.
