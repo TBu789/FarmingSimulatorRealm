@@ -32,7 +32,8 @@ Programmierung:
 Map Design
 - TBu789
 - Nurmick
-- legoofost
+- [legoofost](https://www.twitch.tv/legoofost)
+
 
 Art / RessourcePack
 - [WorldCrafter66](https://github.com/WorldCrafter66)
